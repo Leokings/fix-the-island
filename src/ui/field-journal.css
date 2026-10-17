@@ -177,7 +177,6 @@ body.production-ui {
 .production-ui .expedition-menu p { font-size: 16px; line-height: 1.45; }
 .production-ui .expedition-menu a { color: var(--journal-teal-dark); text-underline-offset: 3px; }
 .production-ui .production-mode-detail { color: var(--journal-muted); }
-.production-ui .production-credits { font-size: 14px; }
 .production-ui .ending-journal {
   color: var(--journal-ink);
   background: var(--journal-paper);

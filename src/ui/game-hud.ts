@@ -61,9 +61,7 @@ export class GameHud {
     const help=document.createElement('p');help.textContent=`${PLAYER_COPY.controls}. ${PLAYER_COPY.touchControls}`;
     const modeDetail=document.createElement('p');modeDetail.className='production-mode-detail';modeDetail.textContent=MODE_COPY.practice.detail;
     const betaNotice=document.createElement('p');betaNotice.className='production-mode-detail';betaNotice.textContent=GENLAYER_BETA_NOTICE;
-    const credit=document.createElement('a');credit.className='production-credits';credit.href=`${import.meta.env.BASE_URL}licenses/Nunito-OFL.txt`;credit.target='_blank';credit.rel='noopener';credit.textContent='Nunito · SIL Open Font License';
-    const islandCredit=document.createElement('a');islandCredit.className='production-credits';islandCredit.href=`${import.meta.env.BASE_URL}licenses/kenney-survival-CC0.txt`;islandCredit.target='_blank';islandCredit.rel='noopener';islandCredit.textContent='Robot: Quaternius · CC0 | Props: Kenney · CC0';
-    this.menu.append(this.title,this.intro,modeDetail,this.start,this.resume,this.previousPractice,this.connected,this.tutorialButton,betaNotice,help,credit,document.createElement('br'),islandCredit);
+    this.menu.append(this.title,this.intro,modeDetail,this.start,this.resume,this.previousPractice,this.connected,this.tutorialButton,betaNotice,help);
     this.controls.append(this.recover,this.reverify,this.recoverHash,this.audit);
     this.expedition.className='connected-expedition';this.expedition.hidden=true;
     for(const [b,label,id] of [[this.newExpedition,'Start a new connected expedition','new-expedition'],[this.resumeExpedition,'Resume previous connected expedition','resume-expedition']] as const){b.type='button';b.textContent=label;b.id=id;b.dataset.key=id;}
