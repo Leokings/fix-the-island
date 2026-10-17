@@ -1,0 +1,41 @@
+Date: 2026-10-08
+Scope: authorized Stage A domain/input/fixed-tick/renderer smoke only.
+Publish: LOCKED. No Stage B journey or final art implemented.
+
+Runtime: Node 24.19.0 / npm 11.17.0 through explicit installed paths.
+Commands run from C:/Users/leoki/OneDrive/Documents/okex hackathon/fix-the-island.
+
+npm CLI run build: initial core typecheck and Vite build, exit 0.
+npm CLI run dev: Vite ready at http://127.0.0.1:5173/.
+Owned ongoing exec session: 23496. strictPort=true. Keep this session up.
+node tools/smoke-check.mjs: initial actual browser run, exit 0.
+Native WebGL2 1920x1080, keyboard movement and same-scene inspection,
+eight imported catalogs, paused domain identity across warm/cool swap,
+and no console/page errors. Initial report used base commit 85a9bba with
+working-tree changes explicitly recorded; final report is rerun after
+the Builder source commit and runtime stamp refresh.
+
+npm CLI test: exit 0; 10 domain/layout checks in tests/unit/core.test.ts.
+npm CLI run build: exit 0 after camera/inset revision 2 integration.
+Renderer diagnostics addition first produced TS2345: unknown program
+handle could not be passed to WebGL getProgramParameter; build exit 1.
+Corrected the DOM handle boundary type; subsequent build exit 0.
+node --check tools/smoke-check.mjs: exit 0.
+Domain/content renderer-import scan: no matches, expected rg exit 1.
+git diff --check: exit 0.
+
+Current camera candidates: walking yaw35/pitch52/span8.4m, inspection
+yaw35/pitch58/span5.8m. These remain reversible, not Stage B locked.
+Real cast-shadow allocation, normal/roughness inputs, half-resolution
+screen AO, fog, tone/exposure, bloom hook and instanced placeholders.
+Final browser details and actual input trail: smoke-report.json.
+Native diagnostic media: smoke-warm.png, smoke-inspect.png,
+swap-warm.png and swap-cool.png. Not final reference-matched evidence.
+
+src/content/site-plan.ts supplies eight approved-plan root constraints,
+positions and exact dependency IDs; it owns no catalog or validator.
+src/genlayer is imported and was not edited. Independent Backend and
+process files remain owned by those roles and are not staged here.
+No signing, transactions, wallet requests, deployment or paid calls.
+No reference image is imported by the game. All visible smoke assets
+remain placeholders; hero/worker GLB binding awaits specialist gate.

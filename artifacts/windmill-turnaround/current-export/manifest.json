@@ -1,0 +1,354 @@
+{
+  "publish": "LOCKED",
+  "status": "native recapture complete; no specialist gate decision",
+  "started_utc": "2026-10-08T13:02:27.911838+00:00",
+  "completed_utc": "2026-10-08T13:08:07.869885+00:00",
+  "source_glb": "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\assets\\windmill\\headland-windmill.glb",
+  "expected_sha256": "d9eb34a14eec2784f7060372695281f59a6dfc091aadf061e7047ddbb291226a",
+  "sha256_before": "d9eb34a14eec2784f7060372695281f59a6dfc091aadf061e7047ddbb291226a",
+  "sha256_after": "d9eb34a14eec2784f7060372695281f59a6dfc091aadf061e7047ddbb291226a",
+  "source_bytes_unchanged": true,
+  "existing_asset_source_files_unchanged": true,
+  "protected_file_sha256": {
+    "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\assets\\windmill\\headland-windmill.glb": "d9eb34a14eec2784f7060372695281f59a6dfc091aadf061e7047ddbb291226a",
+    "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\assets\\windmill\\README.md": "5493ba3ee8c7b3a44c2d0e43efe63d60359a537cc066ac2b2e1023a1e1984327",
+    "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\assets\\windmill\\source\\asset-metadata.json": "6b072797f1cce811c7f1dba71b44474cb74d0c091bde2b4ee312a8897784ee6c",
+    "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\assets\\windmill\\source\\build_windmill.py": "be9ca938f7600788f06230446556a82b41f588123d883a69a478b18c7360df21",
+    "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\assets\\windmill\\source\\check_glb.py": "90931392fb64dcf91c743ab2c14b9228b021aedb975c49bcd03e56f98dd7c947",
+    "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\assets\\windmill\\source\\glb-import-check.json": "1a98362da5ae5fff61821a201e71edabe4fa29b6c46ca6f892bde7da957ede02",
+    "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\assets\\windmill\\source\\headland-windmill.blend": "9802a5f1e19181d055a2741a2bb59e2c3e2e7b0d0f79f1e228b70a970f206172",
+    "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\assets\\windmill\\source\\windmill_albedo_1024.png": "eba498d81b52e6aca231f07fb4ff2d1df716ef0917a75cf2fc2d03dd8aa8e56e",
+    "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\assets\\windmill\\source\\windmill_normal_1024.png": "f6bce961a04bfd3f67961b004f289015efb4813f283d4fb5268f9539ab91451d",
+    "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\assets\\windmill\\source\\windmill_roughness_1024.png": "d0ebcf3d6d0bb113e96ba0e0a110930e615011eef28b494f6f70cdc1a55faa57"
+  },
+  "scene_setup": "Factory-empty scene; exactly one GLB imported; no retained source meshes loaded",
+  "asset_import": {
+    "nodes": 40,
+    "meshes": 29,
+    "triangles": 19996,
+    "materials": [
+      "Bronze",
+      "Linen",
+      "Oak",
+      "PaleTimber",
+      "Plaster",
+      "RussetShingle",
+      "Sandstone",
+      "TealPaint"
+    ],
+    "material_count": 8,
+    "images": [
+      {
+        "name": "windmill_albedo_1024",
+        "size": [
+          1024,
+          1024
+        ],
+        "packed": true
+      },
+      {
+        "name": "windmill_normal_1024",
+        "size": [
+          1024,
+          1024
+        ],
+        "packed": true
+      },
+      {
+        "name": "windmill_roughness_1024",
+        "size": [
+          1024,
+          1024
+        ],
+        "packed": true
+      }
+    ],
+    "all_meshes_have_uv": true,
+    "node_names": [
+      "Door",
+      "Door_Bronze",
+      "Door_Oak",
+      "Foundation",
+      "Foundation_Sandstone",
+      "GearCover",
+      "GearCover_Bronze",
+      "GearCover_TealPaint",
+      "GroundHousing",
+      "GroundHousing_Bronze",
+      "GroundHousing_Oak",
+      "GroundHousing_PaleTimber",
+      "GroundHousing_TealPaint",
+      "HeadlandWindmill",
+      "InputGearRoot",
+      "InputGearRoot_Bronze",
+      "InputGearRoot_Oak",
+      "OutputGearRoot",
+      "OutputGearRoot_Bronze",
+      "OutputGearRoot_Oak",
+      "SailRoot",
+      "SailRoot_Bronze",
+      "SailRoot_Linen",
+      "SailRoot_Oak",
+      "SailRoot_PaleTimber",
+      "ShingleRoof",
+      "ShingleRoof_Bronze",
+      "ShingleRoof_Oak",
+      "ShingleRoof_RussetShingle",
+      "ShingleRoof_TealPaint",
+      "StormDamage",
+      "StormDamage_Oak",
+      "StormDamage_PaleTimber",
+      "TowerShell",
+      "TowerShell_Bronze",
+      "TowerShell_Linen",
+      "TowerShell_Oak",
+      "TowerShell_PaleTimber",
+      "TowerShell_Plaster",
+      "TowerShell_TealPaint"
+    ],
+    "bounds_blender_z_up_m": [
+      [
+        -2.360290050506592,
+        -2.2649998664855957,
+        0.0
+      ],
+      [
+        2.3602898120880127,
+        1.5499999523162842,
+        5.660290241241455
+      ]
+    ],
+    "bounds_gltf_y_up_m": [
+      [
+        -2.360290050506592,
+        0.0,
+        -1.5499999523162842
+      ],
+      [
+        2.3602898120880127,
+        5.660290241241455,
+        2.2649998664855957
+      ]
+    ],
+    "import_result": [
+      "FINISHED"
+    ],
+    "animations": 0
+  },
+  "render": {
+    "engine": "Cycles",
+    "device": "CPU",
+    "threads": 4,
+    "samples": 16,
+    "denoising": "native OpenImageDenoise",
+    "resolution_percentage": 100,
+    "view_transform": "AgX",
+    "world_color": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "neutral_key": {
+      "position_blender": [
+        -4,
+        -6,
+        10
+      ],
+      "power_w": 1600,
+      "size_m": 6
+    },
+    "neutral_fill": {
+      "position_blender": [
+        6,
+        1,
+        6
+      ],
+      "power_w": 1000,
+      "size_m": 7
+    }
+  },
+  "views": [
+    {
+      "path": "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\artifacts\\windmill-turnaround\\current-export\\front.png",
+      "sha256_png": "596dc46ecf977a90214127caa439e37a24d9a56b531725d174baeab40ec0fe36",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "postprocessed": false,
+      "source_sha256": "d9eb34a14eec2784f7060372695281f59a6dfc091aadf061e7047ddbb291226a",
+      "target_blender_m": [
+        0,
+        -0.15,
+        2.7
+      ],
+      "target_gltf_m": [
+        0,
+        2.7,
+        0.15
+      ],
+      "camera_position_blender_m": [
+        0.0,
+        -31.991188049316406,
+        5.884119033813477
+      ],
+      "camera_position_gltf_m": [
+        0.0,
+        5.884119033813477,
+        31.991188049316406
+      ],
+      "camera_distance_m": 32,
+      "vertical_span_m": 7.0,
+      "horizontal_span_m": 12.44444465637207,
+      "yaw_deg": 0,
+      "downward_pitch_deg": 5.710593137499643
+    },
+    {
+      "path": "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\artifacts\\windmill-turnaround\\current-export\\side.png",
+      "sha256_png": "3140ab7abba4c31092a5a61f08cd04cb27d96dc1b07cb02ebc87504d8d00f735",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "postprocessed": false,
+      "source_sha256": "d9eb34a14eec2784f7060372695281f59a6dfc091aadf061e7047ddbb291226a",
+      "target_blender_m": [
+        0,
+        -0.15,
+        2.7
+      ],
+      "target_gltf_m": [
+        0,
+        2.7,
+        0.15
+      ],
+      "camera_position_blender_m": [
+        31.841188430786133,
+        -0.15000000596046448,
+        5.884119033813477
+      ],
+      "camera_position_gltf_m": [
+        31.841188430786133,
+        5.884119033813477,
+        0.15000000596046448
+      ],
+      "camera_distance_m": 32,
+      "vertical_span_m": 7.0,
+      "horizontal_span_m": 12.44444465637207,
+      "yaw_deg": 90,
+      "downward_pitch_deg": 5.710593137499643
+    },
+    {
+      "path": "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\artifacts\\windmill-turnaround\\current-export\\back.png",
+      "sha256_png": "419807ffd8da71ecad7aea9a21010ac9c97efdcb0a4acb9f775ecc83663fcc19",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "postprocessed": false,
+      "source_sha256": "d9eb34a14eec2784f7060372695281f59a6dfc091aadf061e7047ddbb291226a",
+      "target_blender_m": [
+        0,
+        -0.15,
+        2.7
+      ],
+      "target_gltf_m": [
+        0,
+        2.7,
+        0.15
+      ],
+      "camera_position_blender_m": [
+        0.0,
+        31.69118881225586,
+        5.884119033813477
+      ],
+      "camera_position_gltf_m": [
+        0.0,
+        5.884119033813477,
+        -31.69118881225586
+      ],
+      "camera_distance_m": 32,
+      "vertical_span_m": 7.0,
+      "horizontal_span_m": 12.44444465637207,
+      "yaw_deg": 180,
+      "downward_pitch_deg": 5.710593137499643
+    },
+    {
+      "path": "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\artifacts\\windmill-turnaround\\current-export\\locked-yaw35-pitch52-span8p4.png",
+      "sha256_png": "69a35d528381284c9e3b375d5c66277dcc4af5ef8e54f1170bdcd9ab95d9c7f7",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "postprocessed": false,
+      "source_sha256": "d9eb34a14eec2784f7060372695281f59a6dfc091aadf061e7047ddbb291226a",
+      "target_blender_m": [
+        0,
+        -0.1,
+        2.55
+      ],
+      "target_gltf_m": [
+        0,
+        2.55,
+        0.1
+      ],
+      "camera_position_blender_m": [
+        11.300125122070312,
+        -16.238252639770508,
+        27.76634407043457
+      ],
+      "camera_position_gltf_m": [
+        11.300125122070312,
+        27.76634407043457,
+        16.238252639770508
+      ],
+      "camera_distance_m": 32,
+      "vertical_span_m": 8.4,
+      "horizontal_span_m": 14.933333396911621,
+      "yaw_deg": 35,
+      "downward_pitch_deg": 52
+    },
+    {
+      "path": "C:\\Users\\leoki\\OneDrive\\Documents\\okex hackathon\\fix-the-island\\artifacts\\windmill-turnaround\\current-export\\assembly-close.png",
+      "sha256_png": "98666292380a1b916b80af6d472d98a763be0799d699e95f8001d2c10381c26a",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "postprocessed": false,
+      "source_sha256": "d9eb34a14eec2784f7060372695281f59a6dfc091aadf061e7047ddbb291226a",
+      "target_blender_m": [
+        1.25,
+        -1.59,
+        1.25
+      ],
+      "target_gltf_m": [
+        1.25,
+        1.25,
+        1.59
+      ],
+      "camera_position_blender_m": [
+        16.56317138671875,
+        -25.148727416992188,
+        16.56317138671875
+      ],
+      "camera_position_gltf_m": [
+        16.56317138671875,
+        16.56317138671875,
+        25.148727416992188
+      ],
+      "camera_distance_m": 32,
+      "vertical_span_m": 2.25,
+      "horizontal_span_m": 4.0,
+      "yaw_deg": 33.02386755579665,
+      "downward_pitch_deg": 28.589869448517263
+    }
+  ],
+  "limits": [
+    "Isolated Blender studio only; no live game, collision, animation or repair-state evidence",
+    "16 samples with native denoising can soften very fine surface grain",
+    "Front/side/back retain original 5.71-degree downward elevation",
+    "Existing original gate does not authorize these bytes; main must review all five current views",
+    "No GLB export, source mesh rebuild, imported material edit or new asset art performed"
+  ]
+}

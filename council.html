@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>Island Council · Mock Preview</title>
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; background: #e9b48e; }
+      #council-world { position: fixed; inset: 0; }
+      #council-world canvas { display: block; width: 100%; height: 100%; }
+      #council-interface { position: fixed; inset: 0; pointer-events: none; }
+      #loading { position: fixed; inset: 0; display: grid; place-items: center; font: 800 18px system-ui, sans-serif; color: #5a3a22; }
+      body.ready #loading { display: none; }
+    </style>
+  </head>
+  <body>
+    <main id="council-world"></main>
+    <section id="council-interface" aria-label="Council preview interface"></section>
+    <p id="loading">Lighting the council fire…</p>
+    <script type="module" src="/src/council-demo/main.ts"></script>
+  </body>
+</html>

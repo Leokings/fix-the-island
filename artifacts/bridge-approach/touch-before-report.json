@@ -1,0 +1,50 @@
+{
+  "viewport": "900x480",
+  "input": "touch joystick",
+  "reloaded": false,
+  "steps": [
+    {
+      "step": "reported spot",
+      "at": {
+        "x": -7.77,
+        "z": 2.45
+      },
+      "prompt": "E / Interact · Spring Pump",
+      "focus": "village_pump"
+    },
+    {
+      "step": "try W",
+      "input": "W (up)",
+      "moved": 0.03
+    },
+    {
+      "step": "try D",
+      "input": "D (right)",
+      "moved": 0
+    },
+    {
+      "step": "bridge landing",
+      "at": {
+        "x": -7.77,
+        "z": 2.42
+      },
+      "prompt": "E / Interact · Spring Pump",
+      "focus": "village_pump"
+    },
+    {
+      "step": "interact at landing",
+      "inspection": "village_pump",
+      "deckOpen": false
+    },
+    {
+      "step": "pump front",
+      "prompt": "E / Interact · Spring Pump",
+      "focus": "village_pump"
+    },
+    {
+      "step": "interact at pump",
+      "inspection": "village_pump"
+    }
+  ],
+  "errors": []
+}

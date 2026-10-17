@@ -1,0 +1,239 @@
+{
+  "scope": "Unmodified failure evidence copies; originals preserved; no game/save/progress mutation",
+  "reportCommit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+  "runtimeCommit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+  "reportResult": "journey input check error",
+  "listedFrames": [
+    "00-title.png",
+    "01-hoist-construction.png",
+    "02-pump-advisory.png",
+    "03-sluice-flow.png"
+  ],
+  "listedCompositions": [
+    "ref-01-1920x1080-closed.png",
+    "ref-01-1920x1080-open.png",
+    "ref-01-844x390-closed.png",
+    "ref-01-844x390-open.png",
+    "ref-01-667x375-closed.png",
+    "ref-01-667x375-open.png",
+    "ref-06-1920x1080-closed.png",
+    "ref-06-1920x1080-open.png",
+    "ref-06-844x390-closed.png",
+    "ref-06-844x390-open.png",
+    "ref-06-667x375-closed.png",
+    "ref-06-667x375-open.png",
+    "ref-04-1920x1080-closed.png",
+    "ref-04-1920x1080-open.png",
+    "ref-04-844x390-closed.png",
+    "ref-04-844x390-open.png",
+    "ref-04-667x375-closed.png",
+    "ref-04-667x375-open.png"
+  ],
+  "files": [
+    {
+      "file": "journey-report.json",
+      "sha256": "e79028fe1e8e7d523784d69da5a7d8846221773fc94d4fcc9352648a24a2440b",
+      "classification": "Original report; listed captures have its declared source identity."
+    },
+    {
+      "file": "composition\\measurements.json",
+      "sha256": "d6d520420d70b62a613212eed9e005c798b3a3365d8a948985495823135d9f5f",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-01-1920x1080-closed.png",
+      "sha256": "c82b49a5d2f41edfac294305da8f9ef568a2b7dcaea0a40c5a5c126f2199a88c",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-01-1920x1080-open.png",
+      "sha256": "0d4f0a3dd50529625ce387ab699df81cb619fce3f07c7c2b094c00a55515b0a8",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-01-667x375-closed.png",
+      "sha256": "92ef94f93bc35b6005bb34834872013a98d1cf6466c3de0ac602ab2e40d52397",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-01-667x375-open.png",
+      "sha256": "17f06c920926571d0841fefaad9dff361c93fd91482054d55c3702154ef7dc50",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-01-844x390-closed.png",
+      "sha256": "7619bebf7432690483781e7f309fd74e051100636c54b20413be8c3145fdac0c",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-01-844x390-open.png",
+      "sha256": "366bbc98a74bffa071a239586658e78813b4096391fcf568b6b8ebbea5452b48",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-02-1920x1080-closed.png",
+      "sha256": "9549b3801034f7e55c42c9c4783d906bf5f13a9c24552a3d813ee4e9bfcd80ef",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-02-1920x1080-open.png",
+      "sha256": "ab0b1c374139dff927252f47343bd6d271f3fa03d5623392b56b53cdaf5af1d1",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-02-667x375-closed.png",
+      "sha256": "c1a08d07aefebf55002f9095875eb9221bce65094a0a6b8bf6da4bb4b02d5e72",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-02-667x375-open.png",
+      "sha256": "09c853af079673e3b70b0c81a93509b7ec2e66953f516d8e4fda689cd8ad6c34",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-02-844x390-closed.png",
+      "sha256": "9ff8bf8500a8d26eb66e54856a80cc18a142223304161eabfd0eb7c7eb298550",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-02-844x390-open.png",
+      "sha256": "498819c10d4e15472f8a467f7b786e448202a1bff99a3105c6cbe12bae992d08",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-03-1920x1080-closed.png",
+      "sha256": "c78d7d23d7dabe759b4a1cae8c9384c71df34dc4b36a1acb15d0538fe6c2de26",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-03-1920x1080-open.png",
+      "sha256": "49e450207827ac2f36861a93c1e130a9d5b4c8f4df8d50585675a1a7f460cb0f",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-03-667x375-closed.png",
+      "sha256": "0295612d5fa528558cb62022157b2eec164823c3bd55e910d6cfa92b7194c962",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-03-667x375-open.png",
+      "sha256": "48523943e17f7e2b615bd8fbf5920ac9c20cc3767fc40bd047ddeeedec1675ff",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-03-844x390-closed.png",
+      "sha256": "ee9a1a011ba34102bb691fc9f69ab0b440e37d2a766ff79c87d8bd2a50faba19",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-03-844x390-open.png",
+      "sha256": "93bc9c56dc2d7fab5937540dc0be2add32e9279d00c5c5adae500b7a3adcda54",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-04-1920x1080-closed.png",
+      "sha256": "511f1fc55753c99807975202634b35986856830c4e8c244658126742837cb1cf",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-04-1920x1080-open.png",
+      "sha256": "c4e3b55f4a0fcfc804ce8d97c767e6fcd8cbb827e45283ad7497f25ef9051a30",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-04-667x375-closed.png",
+      "sha256": "fefe069cd86d22c47b3f32fb1d5bb86168ade9866c37ea59cb0537889ad3d00f",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-04-667x375-open.png",
+      "sha256": "92f7e824616c96cc7b33e1bc8ac79e33e51b0f180ce52297991d2fddd72bf62d",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-04-844x390-closed.png",
+      "sha256": "8ae9cce20c9113ce58cf06623908dd142a79cd7661eaa3d8e0d1ff501f0362b1",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-04-844x390-open.png",
+      "sha256": "8ebd42498a112e1595b7b020b10c643a1b9885f4ba4680e741155a4ead7f934f",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-06-1920x1080-closed.png",
+      "sha256": "55a0127b013be158c3c604b4a0770e3c74750752e93b735447f089645b2f4c4b",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-06-1920x1080-open.png",
+      "sha256": "d8e8ac04c35f60e47d5eefaee8b0bc40d4fc1230456629521570db95bcc0fa2c",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-06-667x375-closed.png",
+      "sha256": "1d24ed19d20357d5312ec0e4c0159dd57e89f5ec89795457395fc35c2780bebf",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-06-667x375-open.png",
+      "sha256": "53419e138441a0bb06af9476ba721080065f1487f54dabee9677f47a15013605",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-06-844x390-closed.png",
+      "sha256": "66aa9a458b7cdcdc52710c1a8690276a9b66678e5dbf9cf24cf2bd79e8f97b43",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "composition\\ref-06-844x390-open.png",
+      "sha256": "bda09f41146ad66011df934e435caeace06c06b895d9600782f8dc10b6a90767",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "loop-frames\\00-title.png",
+      "sha256": "4eb12f6eccc38bf4a3718fdcd8d11eb00bc6104540300cad5a1d239a69861489",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "loop-frames\\01-hoist-construction.png",
+      "sha256": "3434d17e7c725a161c877336347e92d68ebab5d8b9bfb021f422a6ae70f7d149",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "loop-frames\\02-pump-advisory.png",
+      "sha256": "c08d7f6b999cc6af533f0ee8ccd370835c35b4ec0d8f18ebe69719f13b92d3bd",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "loop-frames\\03-sluice-flow.png",
+      "sha256": "f9d505a01aa3f47d9d7160a27dea57976a25baff75294f8f7a49941e0c48640b",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "loop-frames\\04-bridge-bracing.png",
+      "sha256": "01c7d429eafa338470e98f38995548f37cbbc7982af8884272b69282ac6f256c",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "loop-frames\\05-bridge-crossed.png",
+      "sha256": "a1d4bed295590dabcdcb444df41d02dc92567dece5826d57e78af5f3b6c14506",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "loop-frames\\06-windmill-gears.png",
+      "sha256": "dfc112808d778b7235d1d99290faf141b763effba145a1cbea3b33a519ce8373",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "loop-frames\\07-pathlight-shield.png",
+      "sha256": "1a0a300a6260ef6ca48073a90e4d5f65e5c61c490fd26e2efcfbfb6d1f1b8618",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    },
+    {
+      "file": "failure.png",
+      "sha256": "676b90c9bf0c811f9ab17ba8ea040b7d3122f752ee7161adf8f8adf08ae84d30",
+      "classification": "Mixed historical directory. ONLY entries listed in the original report inherit that report identity; unlisted media retains unknown/unmapped lineage."
+    }
+  ]
+}

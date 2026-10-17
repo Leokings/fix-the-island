@@ -1,0 +1,67 @@
+Fix the Island — Stage B technical boot/check log
+Publish LOCKED. Placeholder source; no visual verdict or public chain execution.
+Server: existing owned Vite exec session 23496; 127.0.0.1:5173, strictPort.
+Node 24.19.0 / npm 11.17.0. Broken npm shim bypassed by explicit Node/npm-cli paths.
+Direct viem 2.57.4 declared and npm --save-exact --no-audit --no-fund install exit 0.
+
+Owned Stage A source checkpoint: 2002c94d21c692100faffa13f0ff7fa29ea1d25b.
+Stage A main exit is recorded separately by main; no gate is authored here.
+Stage B source base before builder checkpoint: backend commit 773c58fb50e5e069fbea9104fc00fb112933389f.
+Owned Stage B source checkpoint: d6019354c6463757b8ea6132681057c3fd11ebca.
+Closed helper panel integration checkpoint: 3c349f7 (both imported panel files tracked).
+
+Intermediate boundaries retained truthfully:
+- Early real-input hoist restore and subsequent walking: exit 0, one site only.
+- Draft full route stopped at the pier apron/pump ramp support seam. Shared visible floor stitched; step/foot safety unchanged.
+- Next route reached hoist/pump/sluice, then an off-pad pump detour. Walking targets moved onto the actual visible pad/path.
+- Ramp diagnostic found divergent light/cistern height planes at their overlap. Shared branch landing/plane authored; all eight centreline/four-foot scans then passed.
+- New pending/background-site units exposed prepared metadata leaking into the strict RepairDraft save. Runtime and export canonicalized to its three fields; strict schema retained.
+- Pointer route crossed the restored bridge, then found a guard obscuring the driver target. Service cover now opens physically for construction, closes for test, and hit selection follows the active tab.
+- Following route restored windmill, then endpoint-only eight-direction steering drifted off the light branch. Capture driver now follows short actual-keyboard path targets, without teleport/injection.
+- Initial journal layout measurement used the M shortcut while its textarea was focused. Corrected the test to not type/measure through an active text field; keyboard simulation is explicitly labelled.
+- Draft 14:10:49 UTC route reached the path-light construction (8 frames / 30 views) but did not converge at the cistern branch. Offline diagnostic isolated the physical north rail tip; route now uses the visible east-bank clearance. Arrival-jitter/whole-foot/rail-collision units cover both directions.
+- Browser steering now releases keys before slow state reads and records arrival/progress/final failure pose. It is still actual keyboard movement with unchanged physics.
+- Bridge uses a real west-anchored dead-end workwalk to expose both shoes and repair joints. It requires hoist/pump/sluice and never reaches the east bank or grants the crossing. Fixed service target retains 8.4 m span/angles and 1.68 m actor.
+- Placeholder shelter bounds and temporary tower locations use shared visible/collision constants. An intermediate shelter annex blocked the pump seam (3 failed units); its footprint was corrected, retaining the original seam and obstacle checks.
+
+2026-10-08 14:42 Lagos: npm run build exit 0, 499 modules. Nonfatal >500kB minified-chunk warning retained.
+2026-10-08 14:42 Lagos: npm test exit 0, 83/83 tests in six files.
+2026-10-08 14:55 Lagos: npm run build exit 0; npm test exit 0, 83/83.
+Main independent clean boot of 3c349f7: git clone --no-hardlinks, detached exact checkpoint, npm ci --no-audit --no-fund exit 0 (269 packages), build exit 0 (499 modules), test exit 0 (83/83). Isolated compiled preview at 5183: HTTP 200, exact runtime SHA, actual W movement 2.773 m -> E inspection -> Esc close, hardware Chrome, zero page/console errors. This is checkpoint boot only, not full-loop/camera evidence; main owns that scratch preview.
+2026-10-08 15:41 Lagos current source: npm run build exit 0, 500 modules; npm test exit 0, 95/95 in six files. Nonfatal chunk warning retained.
+Connected history cache only suppresses repeat installation animation AFTER every original grant/tx/context check passes. Reopen/mismatched-grant/no-cache-authority regression passes.
+Draft layout-check: exit 0, eight checks, no console/page errors. Includes real 1920/844/667 closed/open + journal and visualViewport keyboard SIMULATION; not a native mobile OS keyboard claim.
+
+Checkpoint c18cf536e52f588fc4f2c54452c5322c48d55fb5: strict hardware-Chrome journey stopped at the bridge workwalk boundary (4 frames / 18 compositions); final pose (-4.126720513823064, 6, -0.11597975466118791). No page/console errors. This was NOT an ending or full camera evidence set.
+Independent Builder clean clone at exact c18cf536e52f588fc4f2c54452c5322c48d55fb5: git clone --no-hardlinks --no-checkout then detached checkout; npm ci --no-audit --no-fund exit 0 (269 packages), npm run build exit 0 (500 modules), npm test exit 0 (95/95). Clone origin removed locally. No preview/wallet/signing action in this clone check.
+Main separately reports exact-c18 compiled preview keyboard and 844/667 browser touch-event checks with no page/console errors; these are boot/input checks, not a physical handset or completed journey claim.
+Workwalk correction uses the visible centre Z=.45, a visible west-bank support overlap, and precise actual-input entry/exit targets. The existing bridge rails, closed crossing, .28m footprint, .22m step and 38-degree limits remain unchanged.
+2026-10-08 16:04 Lagos current source before next checkpoint: npm run build exit 0 (500 modules; nonfatal chunk warning); npm test exit 0, 105/105 in six files. New diagnostic tests cover +/- .35m arrival in both directions with eight-way steering through short path targets, four-foot support, and the reported failed pose. Diagnostic support arguments do not grant game progress or serve as walkthrough evidence.
+Camera/service constants remain a candidate pending all native compositions and main review. No final hero or windmill asset has been bound at Stage B.
+Exact d93a9f920062fb501b39658e876678ec4bd8ef66 clean Builder clone: npm ci exit 0 (269 packages), build exit 0 (500 modules), test exit 0 (105/105, 2026-10-08 16:13 Lagos). Main independently reports fresh detached d93 install/build/test exit 0 (105/105 at 16:17 Lagos).
+Strict d93 actual-input journey: restored hoist, pump, sluice, bridge and windmill; used the visible Z=.45 workwalk and crossed the approved local bridge. Stopped at path-light arrival (17.078043904303396, 12, -21.099045546245275), 7 frames / 30 compositions, no page/console errors. Source/runtime SHA matched exactly. This is NOT an eight-site ending.
+Read-only shared-floor probe found no obstacle hit there: moving to (17.12,-21.09) loses north-foot support outside the visible pad, while the target itself has support. Capture route now uses the deeper visible service line Z=-21.8 and precise entry/exit waypoints; collision/floor safety and game geometry are unchanged. Reported-pose, +/- .35m eight-way service-arrival and actual visible-board detour regressions added. Initial 116/116 unit run exited 0 at 16:23 Lagos; final command results follow the next source checkpoint.
+Six new d93 bridge native views were opened locally: desktop far-bank end is no longer offscreen behind the repair inset. Closed 667-wide minimap occlusion of the far-bank shoe and whole-bridge protected-region bounds remain explicit candidate deviations for main review, not acceptance claims.
+2026-10-08 16:25 Lagos final targeted source checks: npm run build exit 0 (500 modules; unchanged nonfatal chunk warning); npm test exit 0, 116/116 in six files. Eight-way diagnostic legs also assert their starting full-foot support. Only the real-input route and regression/log files changed after d93; game geometry/physics/art stayed fixed.
+
+Full final input route and matching source/runtime SHA evidence are recorded in journey-report.json after the owned checkpoint. Do not use intermediate partial reports as a completed-loop claim.
+Capture hardware: default installed Chrome, ANGLE NVIDIA GeForce RTX 2070 Direct3D11. No SwiftShader override. FPS scope is the recorded host/run only.
+Same renderer supplies allocated cast shadows and linked-program checks; queued/pending/accepted states cannot award progress.
+No tool invokes wallet signing, broadcasts, deployment, paid APIs or publishing.
+
+2026-10-08 18:12 Lagos licensed-reuse integration, current owned source before checkpoint:
+- Explicit Node/npm-cli run build exit 0, 512 modules; nonfatal chunk warning retained.
+- Explicit Node/npm-cli test exit 0, 129/129 in eight files (9.48 seconds).
+- Exact hero c0fdba913057c656b3b9a1e46f590691a09a22a2932574f71147d6a98046c5bb and windmill d9eb34a14eec2784f7060372695281f59a6dfc091aadf061e7047ddbb291226a consumed without re-export; hashes tested.
+- Hero/worker SkeletonUtils clones compose motion with bind quaternions; old capsule/cone-tree render geometry removed.
+- Nature factory returns 60 planted trunks. Boot constructs one immutable level with exactly their collider footprints and required site IDs before creating World. Fraction-only visibility cannot authorize required foliage.
+- Shared authored site contacts are sampled from the renamed land grid, with no Y=2 fallback; terrain/bank UVs use metres.
+- Earlier dirty reuse capture at 2026-10-08T16:58:32.826Z: boot/walk/pier inspection exit 0, actual movement 3.292872m, three alternating leg poses, 1920/667 native captures, 0 page/console errors. Runtime metadata still 05959cd while source base was doc-only 2ac9fda plus dirty game changes; this is not strict checkpoint evidence.
+The later current-source boot/expedition reports are separate timestamped files; no full eight-site ending or camera/art acceptance is asserted here. Earlier hold/placeholder statements above remain historical and are superseded by the human's licensed-reuse authorization. Primary 5173 preview session 23496 remains running.
+
+3a34561 strict native boot: tools/reuse-boot.mjs --strict-commit exit 0 at 2026-10-08T17:16:09.237Z; exact source/runtime SHA, 3.292872m actual movement, pier inspection at 1920/667, 60 planted colliders/60 planted trees, linked programs/allocated shadows, zero page/console errors and exactly unchanged paused domain across warm/cool/warm. Title-window frame observation 122 frames / 2.0189662s (~60.43fps), this host/run only, not a journey average or guarantee.
+81017e2 strict journey: four actual repairs restored, five frames / 24 compositions. Stopped on the approved deck at (-2.463044548982732,6,-2.0142259315969904): a driver wall-clock budget reported requested80ms/measured192.64ms; whole-foot samples were valid with no obstacles and zero page/console errors. This was NOT an ending. Report preserved at reuse-journey/2026-10-08T17-22-54-790Z/journey-report.json.
+Short actual-input timing diagnostic at 2026-10-08T17:34:13.771Z exits 0: 14 trusted-timestamp keyboard pulses, released-state traversal and zero progression/errors. Browser event durations are separated from protocol round trips. Overrun is now recorded rather than conflated with product safety; bounded released-state support/corridor recovery precedes replanning, preserving .28/.22/38 limits.
+Just-started cd8cb51 replay intentionally stopped before repairs on the human's request to correct materials before recapture. Its partial native files are preserved; no completed-loop claim.
+2026-10-08 18:36 Lagos material correction: initial build exit 1 on a new test's nullable DataTexture type, repaired with explicit non-null assertion. Final build exit 0 (512 modules); unit suite exit 0, 131/131 in eight files. New tests cover positive decoded tangent Z in every map family and separate restrained construction timber. Existing GLB bytes and authority/physics remain unchanged.
+Capture tooling now copies only actually generated local storage after supported Save clicks at each repaired site and ending, with originating run/commit/timestamp/tick/frame trace and hash. Failure also attempts an earned-state export. No B run starts from these exports; each full proof starts fresh. They exist for later provenance-bound art continuations, not fabricated progress.

@@ -1,0 +1,48 @@
+# Installed packages and generated builds.
+node_modules/
+.vercel/
+/dist/
+/coverage/
+*.tsbuildinfo
+
+# Task-local tool runtimes and caches.
+/.runtime/
+/runtime/
+/.cache/
+/.vite/
+/.npm-cache/
+
+# Generated browser test output.
+/test-results/
+/playwright-report/
+/blob-report/
+
+# Local environment files. Example public configuration stays trackable.
+.env
+.env.*
+!.env.example
+
+# Capture media stays local; source assets and text evidence stay trackable.
+/artifacts/**/*.png
+/artifacts/**/*.jpg
+/artifacts/**/*.jpeg
+/artifacts/**/*.webp
+/artifacts/**/*.gif
+/artifacts/**/*.mp4
+/artifacts/**/*.webm
+/artifacts/**/*.mov
+/artifacts/**/*.wav
+/artifacts/**/*.mp3
+/artifacts/**/*.zip
+/artifacts/stage-b/annotations/*.svg
+/artifacts/stage-b/comparisons/*.svg
+
+# Tool and operating-system noise.
+npm-debug.log*
+Thumbs.db
+.DS_Store
+__pycache__/
+*.pyc
+*.blend1
+
+.vercel

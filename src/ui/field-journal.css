@@ -1,0 +1,427 @@
+/* Isolated preparation. Import LAST and opt in with body.production-ui.
+ * Keep RepairPanel.arrange()/repairRegions() authoritative for all outer rects.
+ * Nunito is unmodified, locally served; license: public/licenses/Nunito-OFL.txt.
+ */
+@font-face {
+  font-family: "Nunito";
+  src: url("../../assets/fonts/Nunito-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+}
+
+body.production-ui {
+  --journal-paper: #fff6df;
+  --journal-page: #f1e5c8;
+  --journal-ink: #293c37;
+  --journal-muted: #566158;
+  --journal-line: #918568;
+  --journal-teal: #285c52;
+  --journal-teal-dark: #1e483f;
+  --journal-rust: #874326;
+  --journal-focus: #134e79;
+  --journal-shadow: 0 2px 0 rgb(39 47 34 / 18%), 0 4px 10px rgb(39 47 34 / 12%);
+  font-family: "Nunito", system-ui, sans-serif;
+  color: var(--journal-ink);
+  font-synthesis: none;
+}
+
+.production-ui :is(.game-hud, .repair-panel, #touch-controls, #portrait) {
+  font-family: "Nunito", system-ui, sans-serif;
+  color: var(--journal-ink);
+}
+
+.production-ui :is(.game-hud, .repair-panel, #touch-controls) button {
+  background: var(--journal-paper);
+  color: var(--journal-ink);
+  border: 1px solid var(--journal-line);
+  border-radius: 6px 6px 8px 6px;
+  font-family: inherit;
+  font-weight: 800;
+  line-height: 1.2;
+  box-shadow: 0 2px 0 rgb(39 47 34 / 20%);
+  touch-action: manipulation;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.production-ui :is(.game-hud, .repair-panel, #touch-controls) button:disabled {
+  opacity: 1;
+  color: #686b60;
+  background: #e6dfcc;
+  border-color: #aba38d;
+  border-style: dashed;
+  box-shadow: none;
+  cursor: default;
+}
+
+.production-ui :is(.game-hud, .repair-panel, #touch-controls) button:not(:disabled):active {
+  background: #dfd0aa;
+  box-shadow: inset 0 2px 0 rgb(39 47 34 / 20%);
+}
+
+.production-ui :is(.game-hud, .repair-panel, #touch-controls) :focus-visible {
+  outline: 3px solid var(--journal-focus);
+  outline-offset: -4px; /* Visible inside overflow-clipped docks and 44px targets. */
+}
+
+.production-ui :is(#start-practice, #continue, #interact),
+.production-ui .rp-button:is([data-key="test"], [data-key="submit"]) {
+  background: var(--journal-teal);
+  color: var(--journal-paper);
+  border-color: var(--journal-teal-dark);
+}
+
+.production-ui :is(#start-practice, #continue, #interact):focus-visible,
+.production-ui .rp-button:is([data-key="test"], [data-key="submit"]):focus-visible {
+  outline-color: var(--journal-paper);
+}
+
+.production-ui :is(#start-practice, #continue, #interact):disabled {
+  background: #e6dfcc;
+  color: #686b60;
+  border-color: #aba38d;
+}
+
+.production-ui :is(#start-practice, #continue, #interact):not(:disabled):active,
+.production-ui .rp-button:is([data-key="test"], [data-key="submit"]):not(:disabled):active {
+  background: var(--journal-teal-dark);
+  color: var(--journal-paper);
+  box-shadow: inset 0 2px 0 rgb(0 0 0 / 25%);
+}
+
+.production-ui .rp-button:is([aria-pressed="true"], [aria-selected="true"]) {
+  background: #dce9d7;
+  color: #204c42;
+  border-color: #285c52;
+  box-shadow: inset 0 -3px 0 #285c52;
+}
+
+@media (hover: hover) {
+  .production-ui :is(.game-hud, .repair-panel, #touch-controls) button:not(:disabled):hover {
+    background: #ecdfbd;
+    color: var(--journal-ink);
+    border-color: #526657;
+  }
+  .production-ui :is(#start-practice, #continue, #interact):not(:disabled):hover,
+  .production-ui .rp-button:is([data-key="test"], [data-key="submit"]):not(:disabled):hover {
+    background: var(--journal-teal-dark);
+    color: var(--journal-paper);
+  }
+}
+
+/* Exploration: small paper labels; the island remains the main surface. */
+.production-ui .game-hud > p {
+  background: var(--journal-paper);
+  border-radius: 3px 7px 7px 3px;
+  box-shadow: var(--journal-shadow);
+  font-weight: 700;
+}
+.production-ui .game-hud #mode,
+.production-ui .repair-panel .rp-mode {
+  background: var(--journal-ink);
+  color: var(--journal-paper);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+.production-ui .game-hud #mode { padding: 4px 8px; }
+.production-ui .game-hud #diagnosis {
+  width: fit-content;
+  max-width: min(620px, calc(100vw - 600px));
+  font-size: 19px;
+  line-height: 25px;
+  padding: 6px 12px;
+  border-left: 4px solid var(--journal-rust);
+}
+.production-ui .game-hud #prompt {
+  font-size: 16px;
+  line-height: 22px;
+  padding: 7px 12px;
+}
+.production-ui .game-hud #save-status {
+  font-size: 14px;
+  color: var(--journal-muted);
+  background: var(--journal-paper);
+}
+.production-ui .game-hud #save-status:empty { display: none; }
+.production-ui .general-controls button { font-size: 14px; }
+.production-ui .production-progress { font-variant-numeric: tabular-nums; font-weight: 900; }
+.production-ui kbd {
+  display: inline-block;
+  padding: 1px 5px;
+  border: 1px solid var(--journal-line);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  font: inherit;
+  font-weight: 900;
+}
+
+/* Warm title treatment: bold ink, a small ochre rule, generous open letterforms. */
+.production-ui .expedition-menu {
+  background: var(--journal-paper);
+  border: 1px solid var(--journal-line);
+  border-top: 5px solid #b87839;
+  border-radius: 7px 18px 10px 7px;
+  box-shadow: var(--journal-shadow);
+}
+.production-ui .expedition-menu h1 {
+  font-size: 42px;
+  font-weight: 1000;
+  line-height: 1.05;
+  letter-spacing: -.035em;
+  color: #654529;
+  text-shadow: 0 2px 0 #e1c994;
+  text-wrap: balance;
+}
+.production-ui .expedition-menu p { font-size: 16px; line-height: 1.45; }
+.production-ui .expedition-menu a { color: var(--journal-teal-dark); text-underline-offset: 3px; }
+.production-ui .production-mode-detail { color: var(--journal-muted); }
+.production-ui .production-credits { font-size: 14px; }
+.production-ui .ending-journal {
+  color: var(--journal-ink);
+  background: var(--journal-paper);
+  border-left: 4px solid var(--journal-teal);
+  border-radius: 3px 10px 10px 3px;
+  box-shadow: var(--journal-shadow);
+}
+.production-ui .ending-journal h2 { font-weight: 900; }
+.production-ui #minimap {
+  background: var(--journal-paper);
+  border: 2px solid #7c785d;
+  border-radius: 42% 44% 40% 45%;
+  box-shadow: var(--journal-shadow);
+}
+.production-ui .map-route { stroke: #998461; stroke-width: 2; }
+.production-ui .map-site { fill: #ad653e; stroke: #443b32; stroke-width: 1; }
+.production-ui .map-site.restored { fill: #326857; stroke-width: 1.5; }
+.production-ui .map-site.pending { fill: #e3b35a; stroke-dasharray: 1.5 1; }
+.production-ui .map-player { fill: #164f79; stroke: #fff6df; stroke-width: 1.5; }
+
+/* No changes to left/top/width/height/inset/transform of JS-positioned nodes. */
+.production-ui .repair-panel { font-size: 18px; line-height: 1.3; }
+.production-ui .rp-diagnosis {
+  background: var(--journal-paper);
+  color: var(--journal-ink);
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 28px;
+  padding: 3px 10px;
+  border-left: 4px solid var(--journal-rust);
+  border-radius: 3px 7px 7px 3px;
+}
+.production-ui .rp-tabs .rp-button {
+  font-size: 16px;
+  border-radius: 6px 6px 0 0;
+  box-shadow: none;
+}
+.production-ui .rp-tabs .rp-button[aria-selected="true"] { box-shadow: inset 0 -3px 0 var(--journal-teal); }
+.production-ui .rp-context { background: var(--journal-paper); }
+.production-ui .rp-socket-row .rp-button {
+  background: var(--journal-page);
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 16px;
+}
+.production-ui .rp-help { font-size: 16px; line-height: 20px; font-weight: 700; }
+.production-ui .rp-dock,
+.production-ui .rp-with-drawer .rp-dock {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.production-ui .rp-content { scrollbar-color: var(--journal-line) var(--journal-paper); }
+.production-ui .rp-tray { flex: 0 0 auto; }
+.production-ui .rp-part { flex: 0 0 auto; min-width: 112px; max-width: 168px; }
+.production-ui .rp-part-glyph { font-size: 26px; }
+.production-ui .rp-part-label { font-size: 16px; line-height: 20px; font-weight: 800; }
+.production-ui :is(.rp-field-nav, .rp-detent, .rp-port-picker, .rp-empty) {
+  color: var(--journal-ink);
+  background: var(--journal-paper);
+  border-radius: 6px;
+}
+.production-ui :is(.rp-field-nav, .rp-detent, .rp-port-picker) span { padding: 0 4px; }
+.production-ui .rp-paging span { background: var(--journal-paper); border-radius: 3px; padding: 3px; }
+.production-ui .rp-actions .rp-button { font-size: 17px; }
+.production-ui .rp-button[data-key="remove"] { color: #823e27; }
+.production-ui .rp-anchor {
+  background: var(--journal-paper);
+  border-color: #4a6658;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 3px var(--journal-paper), 0 2px 3px rgb(0 0 0 / 18%);
+}
+.production-ui .rp-drawer {
+  background: var(--journal-paper);
+  border-color: var(--journal-line);
+  border-radius: 7px 10px 7px 7px;
+  box-shadow: var(--journal-shadow);
+}
+.production-ui .rp-drawer-heading { font-weight: 900; color: #654529; }
+.production-ui .rp-facts { font-size: 17px; line-height: 22px; }
+.production-ui .rp-rationale {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.35;
+  color: var(--journal-ink);
+  background: #fffdf3;
+  border-color: var(--journal-line);
+}
+.production-ui .rp-rationale::placeholder { color: var(--journal-muted); opacity: 1; }
+.production-ui .rp-rationale[aria-invalid="true"] { border-color: var(--journal-rust); }
+.production-ui .rp-counts { font-size: 14px; line-height: 18px; font-variant-numeric: tabular-nums; }
+.production-ui .rp-details { font-size: 17px; line-height: 1.4; }
+.production-ui .rp-issue { border-color: var(--journal-rust); }
+.production-ui .rp-status { font-size: 16px; }
+.production-ui .production-hint { border-top: 1px solid var(--journal-line); padding-top: 6px; }
+.production-ui .production-hint summary {
+  min-height: 44px;
+  display: list-item;
+  align-content: center;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* Explicit production/debug separation; recovery and mode controls stay visible.
+ * Authoring nodes must carry production-debug, or use these known IDs.
+ * Removing production-ui is the full fallback to current placeholder styling.
+ */
+.production-ui:not(.production-developer-ui) :is(.production-debug, #style-toggle, #measure) {
+  display: none !important;
+}
+
+@media (max-width: 999px) {
+  .production-ui .game-hud #mode,
+  .production-ui .repair-panel.rp-phone .rp-mode {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 3px 5px;
+  }
+  .production-ui .game-hud #diagnosis {
+    max-width: calc(100vw - 224px);
+    font-size: 15px;
+    line-height: 18px;
+    padding: 3px 7px;
+  }
+  .production-ui .game-hud #prompt { font-size: 14px; line-height: 18px; padding: 5px 7px; }
+  .production-ui .game-hud #save-status { font-size: 13px; }
+  .production-ui .general-controls button { font-size: 14px; }
+  .production-ui .expedition-menu h1 { font-size: 30px; }
+  .production-ui .expedition-menu p { font-size: 14px; line-height: 1.3; margin: 8px 0; }
+  .production-ui .ending-journal :is(p, li) { font-size: 14px; }
+  .production-ui .repair-panel.rp-phone .rp-diagnosis { font-size: 16px; line-height: 20px; padding: 2px 6px; }
+  .production-ui .rp-phone .rp-tabs .rp-button { font-size: 13px; }
+  .production-ui .rp-phone .rp-socket-row .rp-button { font-size: 14px; }
+  .production-ui .rp-phone .rp-help { font-size: 14px; line-height: 18px; }
+  .production-ui .rp-phone .rp-part { width: 116px; min-width: 116px; max-width: 140px; gap: 3px; }
+  .production-ui .rp-phone .rp-part-glyph { font-size: 18px; }
+  .production-ui .rp-phone .rp-part-label { font-size: 14px; line-height: 16px; }
+  .production-ui .rp-phone .rp-actions .rp-button { font-size: 14px; }
+  .production-ui .rp-phone .rp-actions [data-key="feedback"] { width: auto; min-width: 52px; font-size: 13px; }
+  .production-ui .rp-phone .rp-drawer-heading { font-size: 17px; line-height: 20px; }
+  .production-ui .rp-phone .rp-facts { font-size: 14px; line-height: 18px; }
+  .production-ui .rp-phone :is(.rp-rationale, .rp-details) { font-size: 16px; }
+  .production-ui .rp-phone .rp-counts { font-size: 13px; line-height: 18px; }
+  .production-ui .rp-phone .rp-endpoints .rp-button { font-size: 14px; }
+  .production-ui .rp-phone :is(.rp-field-nav, .rp-detent, .rp-port-picker) span { font-size: 14px; }
+  .production-ui .rp-keyboard .rp-rationale { font-size: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .production-ui :is(.game-hud, .repair-panel, #touch-controls) button { transition: none; }
+}
+@media (forced-colors: active) {
+  .production-ui :is(.game-hud, .repair-panel, #touch-controls) button { border: 1px solid ButtonText; }
+  .production-ui .rp-button:is([aria-selected="true"], [aria-pressed="true"]) { border: 3px solid Highlight; }
+  .production-ui :is(.game-hud, .repair-panel, #touch-controls) :focus-visible { outline-color: Highlight; }
+}
+
+/* Compact expedition guide; repairs can be locked, the imported land cannot. */
+.production-ui .island-quests { position:absolute;left:24px;top:140px;max-width:350px;background:var(--journal-paper);border-radius:8px;padding:9px 12px;box-shadow:var(--journal-shadow);pointer-events:auto;font-size:15px; }
+.production-ui .island-quests summary { cursor:pointer;font-weight:900; }
+.production-ui .island-quests ol { margin:8px 0 0;padding:0;list-style:none;line-height:1.7;font-size:14px; }
+.production-ui .objective-marker { position:absolute;transform:translate(-50%,-100%);padding:4px 8px;border:2px solid #d6b357;border-radius:12px;background:var(--journal-paper);font-weight:900;font-size:14px;box-shadow:var(--journal-shadow);pointer-events:none;white-space:nowrap; }
+.production-ui .map-site.next-objective { stroke:#ffe397;stroke-width:1.8; }
+.production-ui .general-controls #mute { display:inline-block; }
+.production-ui .rp-goal,.production-ui .rp-guidance { display:block; }
+.production-ui .rp-goal { font-size:19px;line-height:23px; }
+.production-ui .rp-guidance { font-size:15px;line-height:18px;font-weight:700; }
+.production-ui .rp-test-result { font-size:19px;font-weight:900;color:var(--journal-teal); }
+.production-ui .rp-learning { position:absolute;background:var(--journal-paper);border-radius:8px;padding:10px;box-shadow:var(--journal-shadow);pointer-events:auto;overflow:auto;font-size:14px; }
+.production-ui .rp-learning strong { display:block;font-size:15px; }
+.production-ui .rp-learning-steps { display:grid;gap:4px;margin:9px 0 4px; }
+.production-ui .rp-learning-steps button { text-align:left;font-size:13px;min-height:32px;padding:4px 6px; }
+.production-ui .rp-learning-steps button.complete { background:#dce9d7;color:#285c52; }
+.production-ui .rp-balance-meter { position:relative;height:10px;margin-top:10px;background:linear-gradient(90deg,#c48e64,#f1d888 44%,#abcaa2 48%,#abcaa2 52%,#f1d888 56%,#c48e64);border-radius:8px; }
+.production-ui .rp-balance-needle { position:absolute;top:-4px;bottom:-4px;width:4px;background:#344d47;border:1px solid white;border-radius:3px; }
+.production-ui .rp-balance-target { position:absolute;left:50%;height:16px;top:-3px;border-left:2px solid #285c52; }
+.production-ui .rp-meter-legends { display:flex;justify-content:space-between;gap:4px;font-size:11px;margin:5px 0; }
+.production-ui .rp-weight-help { font-size:12px;line-height:15px;margin:5px 0;font-weight:800; }
+.production-ui .rp-preview-note,.production-ui .rp-learning-hint { margin:5px 0;font-size:12px;line-height:16px; }
+.production-ui .rp-socket-picker { position:absolute;top:132px;left:0;right:0;max-height:240px;overflow:auto;background:var(--journal-paper);display:grid;grid-template-columns:repeat(2,1fr);pointer-events:auto;z-index:4; }
+.production-ui .rp-socket-picker button { min-height:44px;font-size:13px; }
+.production-ui .rp-setting-choices,.production-ui .rp-port-choices { display:flex;gap:5px;flex-shrink:0; }
+.production-ui .rp-setting-choices button,.production-ui .rp-port-choices button { font-size:14px; }
+@media(max-width:999px) {
+  .production-ui .island-quests { left:8px;top:90px;max-width:196px;padding:7px;font-size:12px; }
+  .production-ui .island-quests ol { max-height:160px;overflow:auto;font-size:12px; }
+  .production-ui .objective-marker { font-size:12px; }
+  .production-ui .rp-goal { font-size:15px;line-height:17px; }
+  .production-ui .rp-guidance { font-size:12px;line-height:13px; }
+  .production-ui .rp-diagnosis { overflow:auto; }
+  .production-ui .rp-learning { padding:5px;font-size:12px; }
+  .production-ui .rp-learning strong { font-size:12px; }
+  .production-ui .rp-meter-legends { font-size:10px;margin:4px 0; }
+  .production-ui .rp-weight-help { font-size:10px;line-height:12px;margin:4px 0; }
+  .production-ui .rp-learning-steps { display:flex;margin:5px 0 0;gap:3px; }
+  .production-ui .rp-learning-steps button { flex:1;min-height:32px;font-size:11px;line-height:12px;padding:2px; }
+  .production-ui .rp-preview-note { font-size:10px;line-height:11px;margin:3px 0; }
+  .production-ui .rp-socket-picker { max-height:103px; }
+}
+
+/* Compact play HUD. The journal is optional; errors/recovery remain visible. */
+.production-ui .game-hud #mode { width:auto;height:auto;font-size:12px;line-height:20px;padding:4px 9px;border-radius:16px; }
+.production-ui .game-hud #diagnosis { left:24px;top:108px;max-width:410px;font-size:14px;line-height:19px;padding:5px 9px;border-left-width:3px; }
+.production-ui .island-quests { top:62px;max-width:310px;font-size:14px;padding:8px 10px; }
+.production-ui .island-quests[open] { z-index:5;max-height:calc(100vh - 175px);overflow:auto; }
+.production-ui .game-hud #save-status { top:164px;font-size:12px;max-width:410px; }
+.production-ui .game-hud #save-status.routine-save { display:none; }
+.production-ui .game-hud #prompt { font-size:14px;line-height:20px;border-radius:14px;padding:6px 11px; }
+.production-ui .objective-marker { border-width:1px;font-size:12px;padding:3px 7px; }
+.production-ui .ending-journal { width:350px;padding:14px;border-radius:12px; }
+.production-ui .ending-journal h2 { font-size:22px; }
+.production-ui .ending-journal details { margin:12px 0;font-size:14px; }
+.production-ui .ending-journal summary { cursor:pointer;font-weight:800; }
+.production-ui .ending-journal li { font-size:13px; }
+@media(max-width:999px) {
+  .production-ui .game-hud #mode { font-size:11px;line-height:18px;padding:3px 7px; }
+  .production-ui .general-controls { top:8px;right:8px; }
+  .production-ui .general-controls button { font-size:11px;padding:4px 7px; }
+  .production-ui .island-quests { top:44px;left:8px;max-width:260px;font-size:12px;padding:6px 8px; }
+  .production-ui .game-hud #diagnosis { top:84px;left:8px;max-width:270px;font-size:12px;line-height:16px;padding:4px 7px;max-height:48px; }
+  .production-ui .game-hud #save-status { top:136px;left:8px;max-width:270px;font-size:11px; }
+  .production-ui .game-hud #prompt { font-size:12px;line-height:16px;padding:5px 8px; }
+  .production-ui .ending-journal { top:48px;width:250px;bottom:auto;max-height:calc(100vh - 120px);padding:10px; }
+  .production-ui .ending-journal h2 { font-size:18px;margin-bottom:5px; }
+  .production-ui .ending-journal p { font-size:12px;line-height:16px;margin:6px 0; }
+  .production-ui .ending-journal details { margin:7px 0;font-size:12px; }
+}
+
+/* Connected expedition controls in the expedition menu. */
+.production-ui .connected-expedition { display: grid; gap: 6px; margin: 8px 0; }
+.production-ui .connected-expedition[hidden] { display: none; }
+.production-ui .expedition-confirm { background: #fff3d6; border: 2px solid #c9a24a; border-radius: 10px; padding: 8px 10px; }
+.production-ui .expedition-confirm[hidden] { display: none; }
+.production-ui .expedition-confirm p { margin: 0 0 8px; font-size: 14px; }
+.production-ui .expedition-confirm-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.production-ui .expedition-confirm .primary { background: #2f5c55; color: #fdf7e8; }
+.production-ui .expedition-note { margin: 0; font-size: 13px; color: #7a5a2c; }
+.production-ui .expedition-note:empty { display: none; }
+
+/* Notices that arrive while a repair is open (the corner status is hidden then). */
+.production-ui .repair-notice { position: fixed; z-index: 30; top: 92px; left: 50%; transform: translateX(-50%); width: min(560px, calc(100vw - 32px));
+  display: flex; align-items: flex-start; gap: 8px; padding: 8px 8px 8px 14px; border-radius: 12px; border: 2px solid #c9a24a;
+  background: #fff3d6; color: var(--journal-ink); font: 700 14px/1.35 "Nunito", system-ui, sans-serif; box-shadow: 0 4px 0 rgb(37 58 53 / 22%); pointer-events: auto; }
+.production-ui .repair-notice[hidden] { display: none; }
+.production-ui .repair-notice span { flex: 1; padding-top: 4px; overflow-wrap: anywhere; }
+.production-ui .repair-notice .repair-notice-dismiss { flex: 0 0 auto; min-width: 36px; min-height: 36px; padding: 0; border-radius: 50%; font-size: 20px; line-height: 1; }
+@media (max-width: 999px) { .production-ui .repair-notice { top: 58px; font-size: 12px; padding: 4px 4px 4px 10px; } .production-ui .repair-notice .repair-notice-dismiss { min-width: 32px; min-height: 32px; } }

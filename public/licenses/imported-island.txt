@@ -1,0 +1,14 @@
+Island — Poly by Google
+Source: https://poly.pizza/m/bzLVwG4AzvA
+License: Creative Commons Attribution 3.0 Unported
+https://creativecommons.org/licenses/by/3.0/
+
+Adaptations in Fix the Island: rescaled and repositioned in the running scene;
+ground/collision extracted from the visible mesh; repair equipment added.
+No endorsement by the original author is implied.
+
+RobotExpressive — Tomás Laulhé / Quaternius, CC0 1.0
+https://github.com/mrdoob/three.js/tree/dev/examples/models/gltf/RobotExpressive
+https://creativecommons.org/publicdomain/zero/1.0/
+Upstream conversion, expressions and material changes by Don McCurdy.
+Game adaptations: scale to 1.65 m and authored-animation blending.

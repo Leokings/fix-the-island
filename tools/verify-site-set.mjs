@@ -1,0 +1,52 @@
+// Read-only release verification; keeps live consensus status separate from code identity.
+import { readFileSync,writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import assert from 'node:assert/strict';
+import { createClient } from 'genlayer-js';
+import { studionet } from 'genlayer-js/chains';
+import { TransactionHashVariant,CalldataAddress } from 'genlayer-js/types';
+import { resolveFreshDeploymentOutputDir } from './deployment-output-dir.mjs';
+const client=createClient({chain:studionet});
+assert.equal(Number(await client.request({method:'eth_chainId'})),61999);
+const flags=process.argv.slice(2),outputIndex=flags.indexOf('--output-dir');
+if(outputIndex>=0&&!flags[outputIndex+1])throw new Error('--output-dir needs a path');
+const requestedOutputDir=outputIndex>=0?flags[outputIndex+1]:'artifacts/deployment/v4-studionet';
+const outputDir=resolveFreshDeploymentOutputDir(requestedOutputDir);
+if(flags.some((flag,index)=>flag!=='--output-dir'&&index!==outputIndex+1))throw new Error('Usage: node tools/verify-site-set.mjs [--output-dir <deployment-dir>]');
+const manifest=JSON.parse(readFileSync('contracts/sites/manifest.json','utf8'));
+const fixtureSource=readFileSync(manifest.pier_hoist.file,'utf8');
+const fixtureVersion=fixtureSource.match(/_VERSION='([^']+)'/)?.[1];
+assert.ok(fixtureVersion,'Generated contract fixture version is missing');
+const addresses=Object.fromEntries(Object.keys(manifest).map(site=>{
+  const report=JSON.parse(readFileSync(`${outputDir}/${site}.json`,'utf8'));
+  assert.equal(report.network,'studionet');assert.equal(report.state,'finalized-success');
+  assert.equal(report.codeHash,manifest[site].codeHash);
+  assert.match(report.balanceBeforeWei??'',/^\d+$/);assert.match(report.balanceAfterWei??'',/^\d+$/);
+  assert.equal(report.balanceDecreaseWei,'0');
+  return [site,report.address];
+}));
+const caller=new CalldataAddress(Uint8Array.from(Buffer.from('797d3b25fb2cca0ff93f60df1910267f3822d655','hex')));
+const expeditionId=`0x${'e'.repeat(64)}`;
+const rows=[];
+for(const [site,address]of Object.entries(addresses)){
+  const report=JSON.parse(readFileSync(`${outputDir}/${site}.json`,'utf8'));
+  assert.equal(report.address,address);
+  const read=(functionName,args=[])=>client.readContract({address,functionName,args,leaderOnly:false,jsonSafeReturn:true,transactionHashVariant:TransactionHashVariant.LATEST_FINAL});
+  const [source,protocol,progress,tx]=await Promise.all([client.getContractCode(address),read('get_protocol'),read('get_progress',[caller,expeditionId]),client.getTransaction({hash:report.txId})]);
+  const hash='0x'+createHash('sha256').update(source.replace(/\r\n/g,'\n')).digest('hex');
+  const leaderReceipts=tx.consensus_data?.leader_receipt;
+  assert.equal(hash,manifest[site].codeHash);assert.equal(tx.statusName ?? tx.status_name,'FINALIZED');assert.equal(tx.resultName ?? tx.result_name,'MAJORITY_AGREE');
+  assert.ok(Array.isArray(leaderReceipts)&&leaderReceipts.some(item=>item.execution_result==='SUCCESS'&&item.genvm_result?.error_code==null));
+  assert.equal(protocol.chainId,61999);assert.equal(protocol.protocolVersion,'repair-v2');
+  assert.equal(protocol.fixtureVersion,fixtureVersion);assert.deepEqual(protocol.sites,[site]);
+  assert.equal(protocol.architecture,'async-notify-v1');assert.equal(protocol.dependentsConfigured,true);
+  assert.deepEqual(protocol.dependencies,Object.fromEntries(manifest[site].requires.map(id=>[id,addresses[id].toLowerCase()])));
+  const children=Object.keys(manifest).filter(child=>manifest[child].requires.includes(site));
+  assert.deepEqual(protocol.dependents,Object.fromEntries(children.map(id=>[id,addresses[id].toLowerCase()])));
+  assert.equal(progress.expeditionId,expeditionId);assert.equal(progress.dependencyReady,manifest[site].requires.length===0);
+  assert.equal(report.state,'finalized-success');
+  assert.equal(tx.status,7);
+  const row={site,address,txId:report.txId,sourceHash:hash,sourceAndBindingsVerified:true,execution:'SUCCEEDED',status:'FINALIZED',progress};
+  rows.push(row);console.log(JSON.stringify(row));
+}
+writeFileSync(`${outputDir}/site-set-verification.json`,JSON.stringify({checkedAt:new Date().toISOString(),network:'studionet',chainId:61999,nativeContextChainId:61999,sites:rows,expeditionId},null,2));

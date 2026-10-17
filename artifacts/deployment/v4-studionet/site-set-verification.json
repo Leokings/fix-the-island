@@ -1,0 +1,159 @@
+{
+  "checkedAt": "2026-10-16T09:12:25.992Z",
+  "network": "studionet",
+  "chainId": 61999,
+  "nativeContextChainId": 61999,
+  "sites": [
+    {
+      "site": "pier_hoist",
+      "address": "0x0840A940861876b3230131F2342e2152Dd037764",
+      "txId": "0xe8994850922d535b3a5ae98463b8fe09de8c91e5b898d2198edc4274a21ab916",
+      "sourceHash": "0x88a2d4fc92ed1c59fa917a102b42f3f1fc34ff0a21e1ee3c088c83ccd6e46a06",
+      "sourceAndBindingsVerified": true,
+      "execution": "SUCCEEDED",
+      "status": "FINALIZED",
+      "progress": {
+        "approvedSiteIds": [],
+        "confirmedParentSiteIds": [],
+        "dependencyReady": true,
+        "expeditionId": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "nextNonce": "0",
+        "requiredParentSiteIds": []
+      }
+    },
+    {
+      "site": "village_pump",
+      "address": "0xDFb8C78746eF99235c550692E5de3fAC85a89305",
+      "txId": "0xdad4f6b3f3523d8092c5d0e741cc248a8ca79f5edf3ba29a74b6b5ae7fd0608d",
+      "sourceHash": "0xf03e325a3b23f952b0293cb1ffcd75e090638c4dca309f631a64b4ea3c07b1fd",
+      "sourceAndBindingsVerified": true,
+      "execution": "SUCCEEDED",
+      "status": "FINALIZED",
+      "progress": {
+        "approvedSiteIds": [],
+        "confirmedParentSiteIds": [],
+        "dependencyReady": true,
+        "expeditionId": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "nextNonce": "0",
+        "requiredParentSiteIds": []
+      }
+    },
+    {
+      "site": "tidal_sluice",
+      "address": "0xEb9cB49fe62bBBbB266bc1a43250aa14B574D98A",
+      "txId": "0xfbf33f6b8eef12e120b42e065ba6ecaf061f8e39b922b9fa4bfae5d31ee10f86",
+      "sourceHash": "0xd3ab2302167d4b37fc641114c1128d07e854690e533bfeb9116a1a090f2511eb",
+      "sourceAndBindingsVerified": true,
+      "execution": "SUCCEEDED",
+      "status": "FINALIZED",
+      "progress": {
+        "approvedSiteIds": [],
+        "confirmedParentSiteIds": [],
+        "dependencyReady": true,
+        "expeditionId": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "nextNonce": "0",
+        "requiredParentSiteIds": []
+      }
+    },
+    {
+      "site": "creek_bridge",
+      "address": "0x3c9A076e1EbEa11CAb8C7083eeA211195814EC14",
+      "txId": "0x3b9c33c6aa8698cddfcb08c94289ab12900121e3cff8b8326399a27ff8d3518d",
+      "sourceHash": "0x4cc32eb05bd1d636a932fd4c73b41fb7a046bc8ae0dfc73e58206ba1dd84c2a7",
+      "sourceAndBindingsVerified": true,
+      "execution": "SUCCEEDED",
+      "status": "FINALIZED",
+      "progress": {
+        "approvedSiteIds": [],
+        "confirmedParentSiteIds": [],
+        "dependencyReady": false,
+        "expeditionId": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "nextNonce": "0",
+        "requiredParentSiteIds": [
+          "pier_hoist",
+          "village_pump",
+          "tidal_sluice"
+        ]
+      }
+    },
+    {
+      "site": "coast_windmill",
+      "address": "0x48e28F7e653D54b1c56af07b92785f9d0f1c421F",
+      "txId": "0xadbe5cda3a0ed82485b2a9d15534cfe918836eb4f9f03bca78672aaaf51bafea",
+      "sourceHash": "0x63d7aba0d356d706bb71eb1148ec0feefc5c4ba6d628124ee87f78d1626d80fd",
+      "sourceAndBindingsVerified": true,
+      "execution": "SUCCEEDED",
+      "status": "FINALIZED",
+      "progress": {
+        "approvedSiteIds": [],
+        "confirmedParentSiteIds": [],
+        "dependencyReady": false,
+        "expeditionId": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "nextNonce": "0",
+        "requiredParentSiteIds": [
+          "creek_bridge"
+        ]
+      }
+    },
+    {
+      "site": "woodland_pathlight",
+      "address": "0x0504139B936025E1Ad98CF3a51207cF40Efc7a58",
+      "txId": "0x6ab339158ad9e64fe9598aa031ff7fd59f84419e7cbf0bf98bdff100d982f60a",
+      "sourceHash": "0x3761cd1ef213b398fe5f7ee8a97f43cd6e8b9e3dcba5d6e571c23c4da7bb64c9",
+      "sourceAndBindingsVerified": true,
+      "execution": "SUCCEEDED",
+      "status": "FINALIZED",
+      "progress": {
+        "approvedSiteIds": [],
+        "confirmedParentSiteIds": [],
+        "dependencyReady": false,
+        "expeditionId": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "nextNonce": "0",
+        "requiredParentSiteIds": [
+          "coast_windmill"
+        ]
+      }
+    },
+    {
+      "site": "upland_waterworks",
+      "address": "0xB78Fd9c82F5AA4d5F9810f73f1380e574C6A8680",
+      "txId": "0x84e75c30e03f48de5e50e1298680b4d0ab80a51c08bfb4d034b5ca50c65dd768",
+      "sourceHash": "0xdbb2ce183aa45370c7662be2ebd0c8fe71519917b7299b097472e9c18983671e",
+      "sourceAndBindingsVerified": true,
+      "execution": "SUCCEEDED",
+      "status": "FINALIZED",
+      "progress": {
+        "approvedSiteIds": [],
+        "confirmedParentSiteIds": [],
+        "dependencyReady": false,
+        "expeditionId": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "nextNonce": "0",
+        "requiredParentSiteIds": [
+          "creek_bridge",
+          "village_pump"
+        ]
+      }
+    },
+    {
+      "site": "ridge_beacon",
+      "address": "0x219B7Ab617355FAe1f2a7232B9CbE78e146697Bb",
+      "txId": "0xe9de07107e6c083526fc57181c7ec554b32736b4cb0766c2e5d69230be9515ec",
+      "sourceHash": "0x0c02787f0d3fb4f2f16dab94be52407811526b530fae958169f92a8c3c10a393",
+      "sourceAndBindingsVerified": true,
+      "execution": "SUCCEEDED",
+      "status": "FINALIZED",
+      "progress": {
+        "approvedSiteIds": [],
+        "confirmedParentSiteIds": [],
+        "dependencyReady": false,
+        "expeditionId": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "nextNonce": "0",
+        "requiredParentSiteIds": [
+          "woodland_pathlight",
+          "upland_waterworks"
+        ]
+      }
+    }
+  ],
+  "expeditionId": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+}

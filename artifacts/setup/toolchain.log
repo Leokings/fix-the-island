@@ -1,0 +1,44 @@
+Date: 2026-10-08
+Scope: setup only; Stage A game source awaits plan approval.
+Publish: LOCKED.
+
+Required reading complete: game-builder/SKILL.md, builder-protocol.md,
+visual-bar.md, game-builder-blender-assets/SKILL.md, BRIEF.md,
+art/BAR.md, refs-locked/SOURCES.md, docs/TOOLCHAIN-RESEARCH.md.
+Viewed at original resolution: refs-locked/ref-01.png through ref-06.png.
+
+Runtime verified:
+Node: 24.19.0
+npm: 11.17.0
+Node executable: C:/Program Files/nodejs/node.exe
+npm CLI: C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js
+
+Exact registry-verified installed pins:
+three: 0.186.1
+genlayer-js: 1.1.8
+vite: 8.3.3
+typescript: 7.0.2
+vitest: 5.0.3
+@playwright/test: 1.64.0
+@types/node: 24.19.1
+@types/three: 0.186.0
+
+Install: npm CLI install --no-audit --no-fund; exit 0.
+Build: npm CLI run build (tsc --noEmit && vite build); exit 0.
+Dependency inventory: npm CLI ls --depth=0; exit 0.
+Module imports: three, genlayer-js, GLTFLoader, EffectComposer, SSAOPass;
+exit 0. Three.js reported revision 186.
+These checks cover tooling only, not gameplay or browser rendering.
+No game tests authored or executed during setup.
+
+Local Git identity: Local Game Builder <game-builder@localhost>.
+Repository configuration only; no remote or push.
+Installed dependencies, dist, local runtime directories and generated
+capture media ignored; source, locked refs, tools and text logs trackable.
+No game foundation, final hero, or art implementation authored.
+Planner, backend and hero specialist paths not edited.
+
+Dev server: not started. Port 5173 has no listener.
+Coordinate ownership with the main task before starting the server.
+From the project root, boot command:
+& 'C:/Program Files/nodejs/node.exe' 'C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js' run dev

@@ -1,0 +1,70 @@
+{
+  "glb_sha256": "c0fdba913057c656b3b9a1e46f590691a09a22a2932574f71147d6a98046c5bb",
+  "source_blend_sha256": "01ebf48a15132c1cccac5c348688707ceb32164310f9a6ebbf897706ac649846",
+  "native_images": [
+    {
+      "name": "bind-a-pose",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "sha256": "88f0308c821d7267dfb97b9aed5290dd805a5579bf72e59e605c908ddb17d639",
+      "modified_utc": "2026-10-08T12:33:34.780352+00:00"
+    },
+    {
+      "name": "front",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "sha256": "71b4a9ccf47ee98c1a4f0ad944d43f81f48a1b1b7fc8bc8e671c451a4c810a46",
+      "modified_utc": "2026-10-08T12:34:08.026346+00:00"
+    },
+    {
+      "name": "side",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "sha256": "2853ee48408b85063a1e1505f35de925067f7a25ed111c397d1462528dcbef0e",
+      "modified_utc": "2026-10-08T12:34:34.155967+00:00"
+    },
+    {
+      "name": "back",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "sha256": "f71a86e371f533d6034082e9d186c1e0c4f63ee0b84aec6dc4c0e6cd8ba00114",
+      "modified_utc": "2026-10-08T12:35:08.135230+00:00"
+    },
+    {
+      "name": "locked-game-camera",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "sha256": "2f3b25d16acfec80fecc37155523ae65b9e8f565d8a44ca5d4869e76863cf913",
+      "modified_utc": "2026-10-08T12:37:36.898047+00:00"
+    },
+    {
+      "name": "locked-angle-close",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "sha256": "1d1fa8394a706e0c8b4393644026e9963182841f1f6d54f62f91744cafa47923",
+      "modified_utc": "2026-10-08T12:40:17.255605+00:00"
+    }
+  ],
+  "locked_camera_projected_bind_A_pose_bounds": {
+    "min_x": 896.9463886599988,
+    "min_y": 467.4152759728687,
+    "max_x": 1022.4494686326476,
+    "max_y": 631.8895294623716,
+    "width_px": 125.50307997264883,
+    "height_px": 164.47425348950287,
+    "vertical_body_axis_px": 132.9828786703422,
+    "note": "Bind A-pose includes brim, toe-box depth and spread arms; body height and camera span are unchanged."
+  }
+}

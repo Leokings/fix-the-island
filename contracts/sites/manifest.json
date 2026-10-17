@@ -1,0 +1,88 @@
+{
+  "pier_hoist": {
+    "file": "contracts/sites/pier_hoist.py",
+    "sourceBytes": 29019,
+    "codeHash": "0x4b01c7a310e5f38662add4f16fda1aab361daf7a34ad66c995b04f8b9bde6615",
+    "requires": [],
+    "constructorArgs": [
+      "{}"
+    ]
+  },
+  "village_pump": {
+    "file": "contracts/sites/village_pump.py",
+    "sourceBytes": 32263,
+    "codeHash": "0x070359de55683c38d09b33f270d1a0f88d3cc34a049bd9fbbdf236e4be9d4e82",
+    "requires": [],
+    "constructorArgs": [
+      "{}"
+    ]
+  },
+  "tidal_sluice": {
+    "file": "contracts/sites/tidal_sluice.py",
+    "sourceBytes": 29308,
+    "codeHash": "0x373655a90265f3e5bf1fb2fe3988c0ddd4855b162601e19d76d24fd4bf376e17",
+    "requires": [],
+    "constructorArgs": [
+      "{}"
+    ]
+  },
+  "creek_bridge": {
+    "file": "contracts/sites/creek_bridge.py",
+    "sourceBytes": 29498,
+    "codeHash": "0x3264bb86bd7a74fdcc997a3f12a25cb85793bdfee85c87eda1d4834bd2828a90",
+    "requires": [
+      "pier_hoist",
+      "village_pump",
+      "tidal_sluice"
+    ],
+    "constructorArgs": [
+      "JSON object of required site IDs to finalized verified addresses"
+    ]
+  },
+  "coast_windmill": {
+    "file": "contracts/sites/coast_windmill.py",
+    "sourceBytes": 28982,
+    "codeHash": "0x8cf8618583883596e012c1f3ca99f73315ddf2281805070444d5803d1864a298",
+    "requires": [
+      "creek_bridge"
+    ],
+    "constructorArgs": [
+      "JSON object of required site IDs to finalized verified addresses"
+    ]
+  },
+  "woodland_pathlight": {
+    "file": "contracts/sites/woodland_pathlight.py",
+    "sourceBytes": 29016,
+    "codeHash": "0xe93b05271aebc958d9584c30895eca46b53f2a90147e7dabded37ffe7d0973e0",
+    "requires": [
+      "coast_windmill"
+    ],
+    "constructorArgs": [
+      "JSON object of required site IDs to finalized verified addresses"
+    ]
+  },
+  "upland_waterworks": {
+    "file": "contracts/sites/upland_waterworks.py",
+    "sourceBytes": 29469,
+    "codeHash": "0xf7b7a99dfb547ec18e28e313136ac48048059726dcd55f88e24a81c68b8266f6",
+    "requires": [
+      "creek_bridge",
+      "village_pump"
+    ],
+    "constructorArgs": [
+      "JSON object of required site IDs to finalized verified addresses"
+    ]
+  },
+  "ridge_beacon": {
+    "file": "contracts/sites/ridge_beacon.py",
+    "sourceBytes": 29498,
+    "codeHash": "0x034e0abd9d55fd266f566e81028bd5f5a904df80f18a5e3724ba12ac98846591",
+    "requires": [
+      "woodland_pathlight",
+      "upland_waterworks"
+    ],
+    "constructorArgs": [
+      "JSON object of required site IDs to finalized verified addresses"
+    ]
+  }
+}

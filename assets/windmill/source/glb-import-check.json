@@ -1,0 +1,67 @@
+{
+  "source": "actual GLB imported into empty Blender scene",
+  "sha256": "d9eb34a14eec2784f7060372695281f59a6dfc091aadf061e7047ddbb291226a",
+  "main_gated_sha256_matches": false,
+  "required_nodes": {
+    "HeadlandWindmill": true,
+    "SailRoot": true,
+    "GearCover": true,
+    "InputGearRoot": true,
+    "OutputGearRoot": true,
+    "Door": true,
+    "GroundHousing": true,
+    "StormDamage": true
+  },
+  "mesh_objects": 29,
+  "nodes": 40,
+  "triangles_imported": 19996,
+  "triangles_glb": 19996,
+  "all_meshes_have_uv": true,
+  "uv_finite": true,
+  "bounds_blender_z_up": [
+    [
+      -2.360290050506592,
+      -2.2649998664855957,
+      0.0
+    ],
+    [
+      2.3602898120880127,
+      1.5499999523162842,
+      5.660290241241455
+    ]
+  ],
+  "images": [
+    {
+      "name": "windmill_albedo_1024",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "windmill_normal_1024",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "windmill_roughness_1024",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    }
+  ],
+  "animations": 0,
+  "non_asset_objects": [],
+  "sail_pivot_blender": [
+    0.0,
+    -1.649999976158142,
+    3.299999952316284
+  ],
+  "foundation_min_z": 0.0
+}

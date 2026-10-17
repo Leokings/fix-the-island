@@ -1,0 +1,1083 @@
+[
+  {
+    "siteId": "pier_hoist",
+    "artifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "crank",
+          "optionId": "crank_standard",
+          "slotId": "crank",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "pulley",
+          "optionId": "pulley_standard",
+          "slotId": "pulley",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "boom",
+          "optionId": "boom_standard",
+          "slotId": "boom",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "rope",
+          "optionId": "rope_standard",
+          "slotId": "rope",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "guard",
+          "optionId": "guard_standard",
+          "slotId": "guard",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "weight_a",
+          "optionId": "weight_a_3",
+          "slotId": "weight_a",
+          "orientationQuarterTurns": 0,
+          "settingId": "rail_1000"
+        },
+        {
+          "id": "weight_b",
+          "optionId": "weight_b_2",
+          "slotId": "weight_b",
+          "orientationQuarterTurns": 0,
+          "settingId": "rail_1500"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "shore_workzone",
+        "outputModeId": "balanced_lift",
+        "routeId": "nest_safe_access"
+      },
+      "connections": [
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "crank",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "pulley",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "pulley",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "boom",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "rope",
+            "portId": "anchor"
+          },
+          "to": {
+            "partId": "boom",
+            "portId": "anchor"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "guard",
+            "portId": "cover"
+          },
+          "to": {
+            "partId": "pulley",
+            "portId": "guard"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "weight_a",
+            "portId": "force"
+          },
+          "to": {
+            "partId": "boom",
+            "portId": "weight_a"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "weight_b",
+            "portId": "force"
+          },
+          "to": {
+            "partId": "boom",
+            "portId": "weight_b"
+          }
+        }
+      ]
+    },
+    "rationale": "The guarded pulley and balanced lift keep loads steady. Crews will use the marked path, stay clear of shoreline nests, and inspect the rope before each shift."
+  },
+  {
+    "siteId": "village_pump",
+    "artifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "screen",
+          "optionId": "screen_standard",
+          "slotId": "screen",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "inlet",
+          "optionId": "inlet_standard",
+          "slotId": "inlet",
+          "orientationQuarterTurns": 0,
+          "settingId": "inlet_4"
+        },
+        {
+          "id": "pump",
+          "optionId": "pump_standard",
+          "slotId": "pump",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "relief",
+          "optionId": "relief_standard",
+          "slotId": "relief",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "outlet",
+          "optionId": "outlet_standard",
+          "slotId": "outlet",
+          "orientationQuarterTurns": 0,
+          "settingId": "outlet_3"
+        },
+        {
+          "id": "trunk",
+          "optionId": "trunk_standard",
+          "slotId": "trunk",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "bypass",
+          "optionId": "bypass_standard",
+          "slotId": "bypass",
+          "orientationQuarterTurns": 0,
+          "settingId": "bypass_1"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "pump_pad",
+        "outputModeId": "relieved_delivery",
+        "routeId": "clean_drain"
+      },
+      "connections": [
+        {
+          "channel": "water",
+          "from": {
+            "partId": "screen",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "inlet",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "inlet",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "pump",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "pump",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "relief",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "relief",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "outlet",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "outlet",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "trunk",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "relief",
+            "portId": "bypass"
+          },
+          "to": {
+            "partId": "bypass",
+            "portId": "in"
+          }
+        }
+      ]
+    },
+    "rationale": "Relief water goes to the soakaway, away from the nesting creek. We will run the screened pump in short daytime spells and inspect the drain weekly."
+  },
+  {
+    "siteId": "tidal_sluice",
+    "artifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "source",
+          "optionId": "source_standard",
+          "slotId": "source",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "bank_baffle",
+          "optionId": "bank_baffle_standard",
+          "slotId": "bank_baffle",
+          "orientationQuarterTurns": 0,
+          "settingId": "bank_shield"
+        },
+        {
+          "id": "creek_baffle",
+          "optionId": "creek_baffle_standard",
+          "slotId": "creek_baffle",
+          "orientationQuarterTurns": 0,
+          "settingId": "creek_open"
+        },
+        {
+          "id": "nursery_gate",
+          "optionId": "nursery_gate_standard",
+          "slotId": "nursery_gate",
+          "orientationQuarterTurns": 0,
+          "settingId": "nursery_3"
+        },
+        {
+          "id": "creek",
+          "optionId": "creek_standard",
+          "slotId": "creek",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "nursery",
+          "optionId": "nursery_standard",
+          "slotId": "nursery",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "rack",
+          "optionId": "rack_standard",
+          "slotId": "rack",
+          "orientationQuarterTurns": 0,
+          "settingId": "stored"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "reedbed_edge",
+        "outputModeId": "retained_split",
+        "routeId": "onsite_rack"
+      },
+      "connections": [
+        {
+          "channel": "water",
+          "from": {
+            "partId": "source",
+            "portId": "creek"
+          },
+          "to": {
+            "partId": "creek_baffle",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "creek_baffle",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "creek",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "source",
+            "portId": "nursery"
+          },
+          "to": {
+            "partId": "nursery_gate",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "nursery_gate",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "nursery",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "source",
+            "portId": "bank"
+          },
+          "to": {
+            "partId": "bank_baffle",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "rack",
+            "portId": "mount"
+          },
+          "to": {
+            "partId": "source",
+            "portId": "rack"
+          }
+        }
+      ]
+    },
+    "rationale": "The nursery gets its share while the creek keeps flowing. The bank shield limits erosion, and debris stays in the rack for safe removal and inspection."
+  },
+  {
+    "siteId": "creek_bridge",
+    "artifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "shoe_left",
+          "optionId": "shoe_left_standard",
+          "slotId": "shoe_left",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "shoe_right",
+          "optionId": "shoe_right_standard",
+          "slotId": "shoe_right",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "deck_left",
+          "optionId": "deck_left_standard",
+          "slotId": "deck_left",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "deck_right",
+          "optionId": "deck_right_standard",
+          "slotId": "deck_right",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "beam",
+          "optionId": "beam_standard",
+          "slotId": "beam",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "brace_left",
+          "optionId": "brace_left_standard",
+          "slotId": "brace_left",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "brace_right",
+          "optionId": "brace_right_standard",
+          "slotId": "brace_right",
+          "orientationQuarterTurns": 1,
+          "settingId": "fixed"
+        },
+        {
+          "id": "rail",
+          "optionId": "rail_standard",
+          "slotId": "rail",
+          "orientationQuarterTurns": 0,
+          "settingId": "tensioned"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "bank_shoes",
+        "outputModeId": "opposing_truss",
+        "routeId": "clear_channel"
+      },
+      "connections": [
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "deck_left",
+            "portId": "shoe"
+          },
+          "to": {
+            "partId": "shoe_left",
+            "portId": "deck"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "deck_right",
+            "portId": "shoe"
+          },
+          "to": {
+            "partId": "shoe_right",
+            "portId": "deck"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "deck_left",
+            "portId": "join"
+          },
+          "to": {
+            "partId": "deck_right",
+            "portId": "join"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "brace_left",
+            "portId": "shoe"
+          },
+          "to": {
+            "partId": "shoe_left",
+            "portId": "brace"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "brace_right",
+            "portId": "shoe"
+          },
+          "to": {
+            "partId": "shoe_right",
+            "portId": "brace"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "brace_left",
+            "portId": "beam"
+          },
+          "to": {
+            "partId": "beam",
+            "portId": "left"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "brace_right",
+            "portId": "beam"
+          },
+          "to": {
+            "partId": "beam",
+            "portId": "right"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "rail",
+            "portId": "mount"
+          },
+          "to": {
+            "partId": "beam",
+            "portId": "rail"
+          }
+        }
+      ]
+    },
+    "rationale": "Two opposed braces carry the deck from bank shoes, leaving the riverbed clear. The tensioned rail protects walkers; crews will inspect the braces after floods."
+  },
+  {
+    "siteId": "coast_windmill",
+    "artifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "shaft",
+          "optionId": "shaft_standard",
+          "slotId": "shaft",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "driver",
+          "optionId": "driver_gear_24",
+          "slotId": "driver",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "driven",
+          "optionId": "driven_gear_12",
+          "slotId": "driven",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "coupling",
+          "optionId": "coupling_standard",
+          "slotId": "coupling",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "generator",
+          "optionId": "generator_standard",
+          "slotId": "generator",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "guard",
+          "optionId": "guard_standard",
+          "slotId": "guard",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "service_pad",
+        "outputModeId": "guarded_generation",
+        "routeId": "nest_safe_access"
+      },
+      "connections": [
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "shaft",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "driver",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "driver",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "driven",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "driven",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "coupling",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "coupling",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "generator",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "guard",
+            "portId": "cover"
+          },
+          "to": {
+            "partId": "driver",
+            "portId": "guard"
+          }
+        }
+      ]
+    },
+    "rationale": "The mill sits on the service pad behind the cliff edge. Maintenance will use the service track and stay clear of the gull nesting ledge."
+  },
+  {
+    "siteId": "woodland_pathlight",
+    "artifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "source",
+          "optionId": "source_standard",
+          "slotId": "source",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "fuse",
+          "optionId": "fuse_standard",
+          "slotId": "fuse",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "regulator",
+          "optionId": "regulator_standard",
+          "slotId": "regulator",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "lamp",
+          "optionId": "lamp_standard",
+          "slotId": "lamp",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "return",
+          "optionId": "return_standard",
+          "slotId": "return",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "shield",
+          "optionId": "shield_standard",
+          "slotId": "shield",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "path_edge",
+        "outputModeId": "downshield",
+        "routeId": "sleeved_route"
+      },
+      "connections": [
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "source",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "fuse",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "fuse",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "regulator",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "regulator",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "lamp",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "lamp",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "return",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "return",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "source",
+            "portId": "return"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "shield",
+            "portId": "mount"
+          },
+          "to": {
+            "partId": "lamp",
+            "portId": "shade"
+          }
+        }
+      ]
+    },
+    "rationale": "The shield points light down onto the path, not into the fern habitat. A sleeved cable protects walkers and wildlife; we will isolate power before repairs."
+  },
+  {
+    "siteId": "upland_waterworks",
+    "artifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "cistern",
+          "optionId": "cistern_standard",
+          "slotId": "cistern",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "filter",
+          "optionId": "filter_standard",
+          "slotId": "filter",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "splitter",
+          "optionId": "splitter_standard",
+          "slotId": "splitter",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "village_valve",
+          "optionId": "village_valve_standard",
+          "slotId": "village_valve",
+          "orientationQuarterTurns": 0,
+          "settingId": "village_4"
+        },
+        {
+          "id": "habitat_valve",
+          "optionId": "habitat_valve_standard",
+          "slotId": "habitat_valve",
+          "orientationQuarterTurns": 0,
+          "settingId": "habitat_2"
+        },
+        {
+          "id": "village",
+          "optionId": "village_standard",
+          "slotId": "village",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "habitat",
+          "optionId": "habitat_standard",
+          "slotId": "habitat",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "overflow",
+          "optionId": "overflow_standard",
+          "slotId": "overflow",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "cistern_pad",
+        "outputModeId": "filtered_split",
+        "routeId": "gravity_route"
+      },
+      "connections": [
+        {
+          "channel": "water",
+          "from": {
+            "partId": "cistern",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "filter",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "filter",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "splitter",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "splitter",
+            "portId": "village"
+          },
+          "to": {
+            "partId": "village_valve",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "splitter",
+            "portId": "habitat"
+          },
+          "to": {
+            "partId": "habitat_valve",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "village_valve",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "village",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "habitat_valve",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "habitat",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "cistern",
+            "portId": "overflow"
+          },
+          "to": {
+            "partId": "overflow",
+            "portId": "in"
+          }
+        }
+      ]
+    },
+    "rationale": "The village and habitat each keep their planned share through the filter. We will clean the filter before dry weather and keep the gravity-fed overflow clear."
+  },
+  {
+    "siteId": "ridge_beacon",
+    "artifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "source",
+          "optionId": "source_standard",
+          "slotId": "source",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "fuse",
+          "optionId": "fuse_standard",
+          "slotId": "fuse",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "regulator",
+          "optionId": "regulator_standard",
+          "slotId": "regulator",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "reflector",
+          "optionId": "reflector_standard",
+          "slotId": "reflector",
+          "orientationQuarterTurns": 0,
+          "settingId": "coastal_sector"
+        },
+        {
+          "id": "lens",
+          "optionId": "lens_standard",
+          "slotId": "lens",
+          "orientationQuarterTurns": 0,
+          "settingId": "clear"
+        },
+        {
+          "id": "shield",
+          "optionId": "shield_standard",
+          "slotId": "shield",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "plinth",
+          "optionId": "plinth_standard",
+          "slotId": "plinth",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "safe_plinth",
+        "outputModeId": "coastal_signal",
+        "routeId": "clear_access"
+      },
+      "connections": [
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "source",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "fuse",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "fuse",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "regulator",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "regulator",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "lens",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "lens",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "source",
+            "portId": "return"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "plinth",
+            "portId": "mount"
+          },
+          "to": {
+            "partId": "reflector",
+            "portId": "seat"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "reflector",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "lens",
+            "portId": "seat"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "shield",
+            "portId": "mount"
+          },
+          "to": {
+            "partId": "lens",
+            "portId": "shield"
+          }
+        }
+      ]
+    },
+    "rationale": "The reflector aims the warning beam out to sea, while the shield keeps inland homes and nests dark. The safe plinth leaves clear access for maintenance."
+  }
+]

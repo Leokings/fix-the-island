@@ -1,0 +1,23 @@
+Date: 2026-10-08
+Scope: authorized Stage A README and capture-tool skeleton only.
+Publish: LOCKED.
+
+Changes: README.md, tools/capture.mjs, package.json capture command.
+No game foundation, game art, backend source or Planner files changed.
+No new dependencies installed.
+
+Checks through C:/Program Files/nodejs/node.exe:
+--check tools/capture.mjs: exit 0.
+npm CLI run capture -- --help: exit 0; specification printed.
+tools/capture.mjs without a registered route: expected exit 2.
+git diff --check: exit 0.
+
+The skeleton records browser keyboard/pointer inputs, checks a runtime
+commit stamp and native 1920x1080/pixel-ratio-1 viewport before a still.
+No playable route is registered. No live capture, walkthrough or game
+test was run. Media conversion, SxS tooling and live routes remain future
+work after the applicable gates.
+
+PLAN.md was absent at the final check. Game source authorization remains
+pending main's reviewed-plan handoff. Port 5173 has no listener; no server
+or browser was started by these checks.

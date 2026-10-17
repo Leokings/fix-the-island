@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #c2d2cd; color: #302f29; }
+body { font-family: Georgia, serif; }
+#world { position: fixed; inset: 0; }
+#world canvas { display: block; width: 100%; height: 100%; }
+#smoke-hud { position: fixed; top: 16px; left: 18px; max-width: min(600px, calc(100vw - 36px)); padding: 12px 16px; background: #fbf7e6e8; border-radius: 4px; pointer-events: none; }
+#smoke-hud p { margin: 4px 0; }
+#mode { font-size: 15px; }
+#details { font-size: 12px; }
+#prompt { font-size: 17px; }
+#style-toggle { position: fixed; bottom: 18px; left: 18px; min-height: 44px; padding: 8px 16px; background: #fbf7e6; border: 1px solid #73705b; border-radius: 4px; color: inherit; font: inherit; cursor: pointer; }
+#touch-controls { display: none; }
+#portrait { display: none; }
+@media (pointer: coarse) {
+  #touch-controls { display: block; }
+  #joystick { position: fixed; left: 18px; bottom: 18px; width: 100px; height: 100px; border: 2px solid #fbf7e6aa; border-radius: 50%; background: #302f292b; touch-action: none; }
+  #interact { position: fixed; bottom: 18px; right: 18px; min-width: 90px; min-height: 52px; border: 1px solid #73705b; border-radius: 4px; font: inherit; background: #fbf7e6; }
+  #style-toggle { bottom: 18px; left: 134px; font-size: 14px; }
+  #smoke-hud { top: 8px; left: 8px; padding: 6px 10px; }
+}
+@media (orientation: portrait) { #portrait { display: block; position: fixed; bottom: 140px; left: 16px; right: 16px; background: #fbf7e6; padding: 10px; text-align: center; } }

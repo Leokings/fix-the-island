@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "game-builder": {
+      "source": "ericzakariasson/skills",
+      "sourceType": "github",
+      "skillPath": "skills/game-builder/SKILL.md",
+      "computedHash": "cdc0aa9fb603ce3799deac993d58218f835be9059a80e75def59e5ad487e756c"
+    }
+  }
+}

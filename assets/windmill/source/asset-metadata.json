@@ -1,0 +1,99 @@
+{
+  "asset": "Original Headland Windmill",
+  "publish": "LOCKED",
+  "triangles_authored": 19996,
+  "triangles_glb": 19996,
+  "mesh_objects": 29,
+  "glb_meshes": 29,
+  "glb_nodes": 40,
+  "materials": 8,
+  "uv_layers": [
+    "AtlasUV"
+  ],
+  "bounds_blender_z_up": [
+    [
+      -2.360290050506592,
+      -2.2649998664855957,
+      0.0
+    ],
+    [
+      2.3602898120880127,
+      1.5499999523162842,
+      5.660290241241455
+    ]
+  ],
+  "bounds_gltf_y_up": [
+    [
+      -2.360290050506592,
+      0.0,
+      -1.5499999523162842
+    ],
+    [
+      2.3602898120880127,
+      5.660290241241455,
+      2.2649998664855957
+    ]
+  ],
+  "pivots_gltf_metres": {
+    "TowerShell": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "ShingleRoof": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "Foundation": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "SailRoot": [
+      0.0,
+      3.3,
+      1.65
+    ],
+    "Door": [
+      -0.5,
+      0.47,
+      1.365
+    ],
+    "StormDamage": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "GroundHousing": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "GearCover": [
+      0.58,
+      1.16,
+      1.87
+    ],
+    "InputGearRoot": [
+      1.12,
+      1.2,
+      1.895
+    ],
+    "OutputGearRoot": [
+      1.65,
+      1.2,
+      1.895
+    ]
+  },
+  "glb_bytes": 4886524,
+  "glb_checks": {
+    "magic": "glTF",
+    "version": 2,
+    "header_length_matches": true,
+    "animations": 0,
+    "missing_uv_primitives": 0,
+    "embedded_images": 3,
+    "external_uris": []
+  }
+}

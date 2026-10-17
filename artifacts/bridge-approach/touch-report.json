@@ -1,0 +1,49 @@
+{
+  "viewport": "900x480",
+  "input": "touch joystick",
+  "steps": [
+    {
+      "step": "reported spot",
+      "at": {
+        "x": -7.77,
+        "z": 2.05
+      },
+      "prompt": "E / Interact · Spring Pump",
+      "focus": "village_pump"
+    },
+    {
+      "step": "try W",
+      "input": "W (up)",
+      "moved": 1.56
+    },
+    {
+      "step": "try D",
+      "input": "D (right)",
+      "moved": 1.6
+    },
+    {
+      "step": "bridge landing",
+      "at": {
+        "x": -6.88,
+        "z": -0.25
+      },
+      "prompt": "E / Interact · Splitbank Bridge",
+      "focus": "creek_bridge"
+    },
+    {
+      "step": "interact at landing",
+      "inspection": "creek_bridge",
+      "deckOpen": false
+    },
+    {
+      "step": "pump front",
+      "prompt": "E / Interact · Spring Pump",
+      "focus": "village_pump"
+    },
+    {
+      "step": "interact at pump",
+      "inspection": "village_pump"
+    }
+  ],
+  "errors": []
+}

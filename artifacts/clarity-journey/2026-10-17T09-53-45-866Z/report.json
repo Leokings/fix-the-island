@@ -1,0 +1,1273 @@
+{
+  "scope": "Imported-island all-eight local expedition, CPU BFS over actual visible geometry, real keyboard walking and repair inputs, typed explanations, finale, supported Save and Continue reload. No wallet interaction, seeded state, teleport or injected completion.",
+  "started": "2026-10-17T09:53:45.866Z",
+  "source": {
+    "commit": "9983520543b9c94afaeac0a669d2560a4bce4906",
+    "runtimeSourceSha256": "795af10ec35c4cce58385e63a749a2deb903b3f60e9f22538f32667b3192b693",
+    "files": {
+      "assets/fonts/NOTICE.md": "4019280fce5ccda0f79dc75d5decd7b03e0ecf2ba45614f30ea4dd400726ec39",
+      "assets/fonts/Nunito-Variable.ttf": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+      "assets/hero/README.md": "d7fd4e4160c8a8a48b2d0cd48fffe5c35419e3b031d5e892d09fb8bb207552ac",
+      "assets/hero/restorer.glb": "c0fdba913057c656b3b9a1e46f590691a09a22a2932574f71147d6a98046c5bb",
+      "assets/hero/source/bone-bind.json": "0227b82541965a3d3d0f209cc1f72fa653721b9fb536bc2fe68566bb74d18ed4",
+      "assets/hero/source/build_restorer.py": "2a3b41be21cb901960b124efe63db102ed83da4f8969aeca06e1a97c5ace2bc1",
+      "assets/hero/source/glb-readback.json": "7868c8887765f01edb6bbea8e9933796b5dfa0efccacdc305731f3c9fdf751b8",
+      "assets/hero/source/restorer.blend": "01ebf48a15132c1cccac5c348688707ceb32164310f9a6ebbf897706ac649846",
+      "assets/hero/source/restorer_albedo.png": "c78a5c377d6d785c83589defce34b187a87bad77ba8a3182fa29ae71e0d50574",
+      "assets/hero/source/restorer_orm.png": "8644e4408bc040e6fa456d10098075701ace11319e2684bf15240675c66503e4",
+      "assets/hero/source/validation.json": "dd40d6d8449c754491ec62774d4f356dd5c236afc23ce562afef55af9b99679f",
+      "assets/hero/source/verify_restorer.py": "8f747ec1719ccec06610028c93dae31846371ebe94101f3c4c81bf090677169a",
+      "assets/island/README.md": "63b74d76d449b409f19c8dcb44a68aeb649ef235ad7e55751a91513e2ee227d3",
+      "assets/island/google-island.glb": "be58e0854603da189f8bbc4584e073589b5945c37cd243d4f410fb9175324f3b",
+      "assets/props/kenney-factory/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+      "assets/props/kenney-factory/hopper-round.glb": "8d4a49f1608b0cdb33d4506bed0ca0648df31437ae2b488a418fa15e5a65b278",
+      "assets/props/kenney-factory/lever-single.glb": "d7056a698ecb46c972d51848a77c8a9aca86f085cc5800347fce1c19c6c59477",
+      "assets/props/kenney-factory/machine.glb": "a39e3042bcb7789274428357383317d70e1c31906e5301c99e7d9e90ac584863",
+      "assets/props/kenney-factory/pipe-large-curve.glb": "5da8bbe6f74293df2cc57e743eeea0aee3e831531af1841aad0a49d47d1e1638",
+      "assets/props/kenney-factory/pipe-large-long.glb": "8e6650cc662695c28fffb1ffa10f190255f7d9c6c1d4a2a48d375e9bbb89b04f",
+      "assets/props/kenney-factory/pipe-large-valve.glb": "57126374dce5b172e06d5d6f8cbaab97c9cffe3e5e726060eb14c50a5bd519b6",
+      "assets/props/kenney-factory/piston-round.glb": "cd67c755d4ea6f53b5a5583447f45e9abb5d87f344d9f053820d1b09d719fcdd",
+      "assets/props/kenney-survival/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+      "assets/props/kenney-survival/barrel.glb": "3a0d12f6bdd1badd361f64ce0fbbf878a4ccfc2de8ff1ac4ed4c1aea2a9ee04a",
+      "assets/props/kenney-survival/box-large.glb": "69b4052f32b7b27e5d2ee27041b091a07d4a2dd4d877168a701607a97609f0f6",
+      "assets/props/kenney-survival/box.glb": "346eebd23986793b992ca6e05e9f98d6f5db96a9bfa3aa7c8360ac8b7920def8",
+      "assets/props/kenney-survival/fence.glb": "5d8050e39c8b83b5835ea38b9b17429b4a03e289b566a1db771b7e1d9c6e4050",
+      "assets/props/kenney-survival/grass-large.glb": "68d23ba79b8b8c7a8fc5da6c4b688cce6d9a739720fbf9c3134e5388e91d6f07",
+      "assets/props/kenney-survival/patch-grass-large.glb": "458f467382babd3f0d075a8bef781119c8fead62f806366a274cbc0e7e65b3a1",
+      "assets/props/kenney-survival/resource-planks.glb": "d3804257474a3baab7ac067be91de5c3d6d18d5803775dc876cb6d9442c30873",
+      "assets/props/kenney-survival/signpost.glb": "6d33757888c4ec9249610266ca8d60532b1138ae28fd37e93fa843ec4856fd25",
+      "assets/props/kenney-survival/structure-canvas.glb": "f450f215599f8962b63737825c7d55d7be498742551ba21e5633d6459b194134",
+      "assets/props/kenney-survival/tent-canvas.glb": "efc4bca46a22e4cc4fe391aeafba161c24bc39bfa75e192c57eaacaf686f9717",
+      "assets/props/kenney-survival/tool-hammer.glb": "9b27f03c26dabd49a7ea358615e63fe65e1c3d0157887d4ee1ecdfa1f0e688f3",
+      "assets/props/kenney-survival/tree-log-small.glb": "5b416addc4cb01d9d6ad30ec282606a8fefb018043d3253d5e42c1e353aab3c8",
+      "assets/props/kenney-survival/workbench.glb": "bf72d2d535fa29127e5078a6c4c2023a74fa5cd7d02d91ad550e897e088e1dc8",
+      "assets/robot/README.md": "c2ba2abbd0faa39a3d19768941f173cf3354fd4585180695cd4949ae1bdaff4a",
+      "assets/robot/RobotExpressive.glb": "047f5e5fb3bb6d378bd1df16ca6137f2a596c99b3a1b5690b4020c05aaf6f319",
+      "assets/windmill/README.md": "5493ba3ee8c7b3a44c2d0e43efe63d60359a537cc066ac2b2e1023a1e1984327",
+      "assets/windmill/headland-windmill.glb": "d9eb34a14eec2784f7060372695281f59a6dfc091aadf061e7047ddbb291226a",
+      "assets/windmill/source/asset-metadata.json": "6b072797f1cce811c7f1dba71b44474cb74d0c091bde2b4ee312a8897784ee6c",
+      "assets/windmill/source/build_windmill.py": "be9ca938f7600788f06230446556a82b41f588123d883a69a478b18c7360df21",
+      "assets/windmill/source/check_glb.py": "90931392fb64dcf91c743ab2c14b9228b021aedb975c49bcd03e56f98dd7c947",
+      "assets/windmill/source/glb-import-check.json": "1a98362da5ae5fff61821a201e71edabe4fa29b6c46ca6f892bde7da957ede02",
+      "assets/windmill/source/headland-windmill.blend": "9802a5f1e19181d055a2741a2bb59e2c3e2e7b0d0f79f1e228b70a970f206172",
+      "assets/windmill/source/review_current_glb.py": "406ae5181547ea797055eb657879f173104b759c6db206cc2d40512554a30b38",
+      "assets/windmill/source/windmill_albedo_1024.png": "eba498d81b52e6aca231f07fb4ff2d1df716ef0917a75cf2fc2d03dd8aa8e56e",
+      "assets/windmill/source/windmill_normal_1024.png": "f6bce961a04bfd3f67961b004f289015efb4813f283d4fb5268f9539ab91451d",
+      "assets/windmill/source/windmill_roughness_1024.png": "d0ebcf3d6d0bb113e96ba0e0a110930e615011eef28b494f6f70cdc1a55faa57",
+      "index.html": "298fb13cb62afc702d19469c917f9d5da4641b04372d78631177ede47850ec2a",
+      "package-lock.json": "70c46d85508ee86fd8c3f87328ef32b928dca50c009cc47d076bb9bdb0f16b74",
+      "package.json": "1eb3e68766d59d778bba1c0598ba655e0bc1b8205b036f2f60012e2b2fec180f",
+      "src/application/recover-repairs.ts": "0c49907a1fcd044ca3f4fe09bd63b992b051ad9187b2aa4eba8525a2378b8021",
+      "src/application/submit-repair.ts": "d2a5f07ef257056a21f1082ae02cf3a5e66d9793c4c43236aab11f38a0761204",
+      "src/application/unknown-submission.ts": "d4b14f53c5875113397e7fbc776dd39c46f13c1a8bb5ce13f7b834019e4a9467",
+      "src/audio/game-audio.ts": "ae76a277107aa9666ae3eceb0b1a7613fb604a17ad913dd7c645e74803f941b7",
+      "src/content/assembly-layout.ts": "86c5e9dbe5e945ec3da5228d2de749ae6a37b0f05fe5a8288365b3a8eee33359",
+      "src/content/coherent-land.ts": "c50fb4036bbbe75e9b45a31d825f17705f6879f9fc6031a60d8d0133749de2c1",
+      "src/content/imported-scenery.ts": "0c69397454222aee1a8bf312a36166d2a24fe3d4aa2072901b8bfa018229467d",
+      "src/content/island-level.ts": "f41e934720926ac642837cb8b8d2732515628ce12ad087dcdd7551446ae53ed8",
+      "src/content/nature-layout.ts": "c4c1af17c59d7b304090eb59ffee5a4c36f20c2067d1834505604265f3ce1202",
+      "src/content/repair-dressing.ts": "f97bf6268638e3b4f6ecd843b9d5ed9978ccb4c19939dd8f6a731ed16de6baa4",
+      "src/content/route-contract.ts": "99256d757d0eaf483f81fe5b5e265ea5a49aef7e055e2731e43e607c3e20ecc9",
+      "src/content/service-layout.ts": "177362fcc753f4c422aca5f3cf20890d845c78196b7ecf89dc09a749290aede0",
+      "src/content/site-plan.ts": "7dfc8afb857b45daf14f5f754562045fcc07ec97b7a2d974e4e5495caee11826",
+      "src/content/smoke-level.ts": "c879dedc3f203b16bc362b67964f20fad6831dc9890adaa6b0a9634f7d092a71",
+      "src/content/stylized-island.ts": "2d2ee325d22f1ee8addf2f3d0cf0d17c2228af3dbfde9dc05a5bcbafd662b531",
+      "src/council-demo/main.ts": "da3ba1933dde812a009a23514f8754f2c5a6d841dab38c7301645e0ba3cb1f29",
+      "src/domain/feedback-text.ts": "ee4f72088ea1f063081ff50d313140d68f81d77f051010056f83b7bc9f05c93b",
+      "src/domain/fixed-tick.ts": "0a9e1538f62045389b09be3b1cb5c56ddf4bef63c30823562a411f183e794f78",
+      "src/domain/motion.ts": "8b07135b91cf5a8bfb8910c98a6127ded2ff2bd5f1774fcd9d3d073abdd5da36",
+      "src/domain/save.ts": "a585d808edcf4ba19fcd3f69ef8b4c4d014efe4ce2dc6ccce1c22e97741606f8",
+      "src/domain/terrain.ts": "7904f76d2b4af444697ab353b19e276300585f5395d1ede65fc1544bf99b27e9",
+      "src/domain/world.ts": "6d3e7ef6b8e3a58d3491d971729dff566fcce94868949a0a4842d79e5d85f317",
+      "src/game.css": "9add3d6493cef576f5fd06e87ecbc990de7e7e904c31cae125d1b722b0cc3279",
+      "src/genlayer/adapter.ts": "812c51e85904050854f256f45a12cd87bf9e0cc501fbd9cbafbf4087b585029c",
+      "src/genlayer/advisory.ts": "9d435b6186658cd8c0e9027af2783cc2bbe33e2e01fd87221b9df7672efe5401",
+      "src/genlayer/canonical.ts": "8434e96cc1c9666463e97ea35f1c70eb5d5bc1997c719eb82e25b24348b2de34",
+      "src/genlayer/catalog.ts": "eefd97522c355177b3958c8acbfbdb2651635569e41e6edc60f1b4a6fc4f0301",
+      "src/genlayer/config.ts": "8ac40bc79d24e6937095a1b97be637e328092d26dd608efe12531f920c8783d5",
+      "src/genlayer/contract-meta.ts": "068bea3981390807e5380d2979a0325759d12a7dd3b9cbbf378a8b4e8830b2a7",
+      "src/genlayer/council/contract-meta.ts": "b578530eed174c673c446b6e7781a06824b70347e2bb7da8ad5f5f0997793f43",
+      "src/genlayer/council/live-adapter.ts": "8963781fd3a2a0026b7c0fd97b3b624fc977c97ed5ea0717cb9fd9113c6c861f",
+      "src/genlayer/council/mock-fixtures.ts": "9418ff00dfc1fe826ed6225e9aa963b9fb67f59fb2b3c8a97ba6af698fb08da4",
+      "src/genlayer/council/types.ts": "a78288341d7ae9258a48fba06d8d1067d36abdc7bd8079136e6cc67bd95d3f00",
+      "src/genlayer/council/validator-votes.ts": "4ce7c8e8bb4aaebe0d97be2f414dd373375fef7ddfc191aaf0e6410b6536f308",
+      "src/genlayer/deployments.json": "48dd9ed13d32aa2b5724f2e18366440bc52a86ad3f5c957f55c4a1b908224b40",
+      "src/genlayer/deployments.studionet.json": "8acc78e6b6edcc4d440f8f03cac0cbd3cdf3a10649e1c37ff472ee021a8f39d3",
+      "src/genlayer/deployments.studionet.legacy.json": "f48381d11ed63fdf5c795b005909a044c6b4bd28db6be0e8fed6cf8963b68d37",
+      "src/genlayer/deployments.ts": "2748c8e6c2417880bce487a6b55fed6eeac1561ee3f1fd028279b4d7d1f80de8",
+      "src/genlayer/evidence.ts": "a252b5f6afa44a8c727fdaddf72eb3ca950e75414c2db7d3ae1e0f53159f8056",
+      "src/genlayer/examples.ts": "e383ee699ee6b432cef4d1a0e83026dd64c04a5d7330d257e9674b8606ac85cb",
+      "src/genlayer/expedition.ts": "b2ded6f30808db54d5673e1090b0a9fc1e3c4a6031ac4aac3f3b5088f34cbb6f",
+      "src/genlayer/index.ts": "4ff00d0966d9f86ebb68ff48d14c280d22a8d391d5753ae4196e50d46ba7a475",
+      "src/genlayer/injected-provider.ts": "1d831eda7ee5e27938a7778c98499dcc9297f80eb514332d544ce26aa25fe48f",
+      "src/genlayer/native-context.ts": "a35cf739593141b28e7757527778e50aa62bd218a5c18048674c5aea0f104766",
+      "src/genlayer/read-retry.ts": "9a25a08911c9055269aa27a7e2e44c6a7a69a9619f7fe188473163f9b7abbb56",
+      "src/genlayer/runtime-check.ts": "ef71cbe090b71913e5298e3ac4a54fa37034b64cc7819e22b213215593898f90",
+      "src/genlayer/schema.ts": "c10e63d29b7145ce1fa6dc5a12e1344ebc9ec50c10fbafa785f565df67262ae7",
+      "src/genlayer/site-contract-meta.ts": "c19c96dba823516fb3bda4e13e801059771caa24e64f9ec4645380e4d654fa7f",
+      "src/genlayer/studio-recovery.ts": "58fc924774f38177222d76db3a01d2e26a37c1f8a7fe25f12d85f7bb0c5045ed",
+      "src/genlayer/types.ts": "14d08b3aececf146d4bf3acb5a421983990eda4dabe0d57bd7dba2228b200eda",
+      "src/input/browser-input.ts": "f0c3c2289d8bed4e26bf5a7bc3aaf78420a0a505e477eed9e9432458ed9f4d9a",
+      "src/input/corridor-steering.ts": "8590f4a5862f54d2f1db5be6ab75134904d4f832dba5ee66fc0a98abc12fb771",
+      "src/input/route-matrix.ts": "1ac95a78c6830065264150d31716cd5dcf98991ebb0088899138fd87656c76e0",
+      "src/main.ts": "e943b20a98971a51aa4b1dbe24b2313eff8f1a85420c4f6258b1bf8d52eedf65",
+      "src/render/animated-hero.ts": "19cb3fddcc1fc5582da73238a1a6896d8ba12ae626fb362c1f211aaa563d5c24",
+      "src/render/contract.ts": "3fadc8094441eaf1ac93858ac403e540e7d069bd30d695989f9bf3ad5a076f08",
+      "src/render/council/campfire.ts": "c718732d34038cda9c48b682dfc033732aa09aadb28dec1cb2e68b5fde0d89c6",
+      "src/render/council/council-actor.ts": "8bbb11ed88b83573067bd5e3586dda977b8c31541ea7e914440f500f25604d88",
+      "src/render/council/council-scene.ts": "2d3c44ee900d894904aa5e30a8d357b97c69c76ceb295aca2e09e11a015f68c3",
+      "src/render/council/pump-site.ts": "709c5c0efa90b4a41e60a3fcec2ba61c165f64790c02b1049828bf062c2f588a",
+      "src/render/council/terrain.ts": "e3e900abe9a7d86635789b41762cc0abc8c97cb7d7193af46fccd173ea57fd48",
+      "src/render/environment/island-nature.ts": "18339b917bbc6707113c73ed1a55761cd04107b108ac5c0da675c2bff1b8e9f3",
+      "src/render/environment/repair-props.ts": "dab8b3edd41bb59ea86652132df174ffd3608420fe2fec52cdfe63dbd9b554e4",
+      "src/render/environment/scenery-instance.ts": "4c5a31364a5463ac455dea309e880bc4beed65bc55788142166af0110eedab74",
+      "src/render/environment/small-world-detail.ts": "fa8ab5414b20abb93df608a630000d636b435c6434055cd096cee6a9be822120",
+      "src/render/environment/surface-materials.ts": "ba89b5d11e90a072091d9ac102e951ede31ab02ddd3fbe5a03bdc500601bbe2c",
+      "src/render/hero-rig.ts": "4cb9a963e3f15a05da169dd6f97e58d6d1ca609ecf5ec50f2fb48c3e2abdc2a4",
+      "src/render/hit-test.ts": "5abf8d5df360e1804c204b3375ffebbed38460065a54c1661ea7beb2a186a925",
+      "src/render/imported-world.ts": "9254b1e4b201f819d3db879b3ba0b559ebd3c424eb716e40494ebece66f4727e",
+      "src/render/island-cutaway.ts": "6ad9bf489df6dd32137bf25a4ffac09ca00aaa104a59134cdfdbb17f6ef97cb4",
+      "src/render/island/council-circle.ts": "7148170ed2bf718fa710673ffbc0eea2e7cf3f6c6382ad0873e3bdc334f3eb11",
+      "src/render/island/machines/bridge.ts": "93c50b1f88333f4a135fcf4d8a18c410d05ab813f025907ea43c91f56413821f",
+      "src/render/island/machines/electric.ts": "06767f54121d0c43f804fb77e422cb87a977b8622581c46cff47dbf74e8efd2e",
+      "src/render/island/machines/hoist.ts": "da53a69c11dd02e5da8932ce3b3d225d68e02815e964adfdfee5a150f981eb8c",
+      "src/render/island/machines/sluice.ts": "729d4bc9a8c0605aeb385ae857b2677f1530572880172d5c0eb6f6e194f6a42d",
+      "src/render/island/machines/waterworks.ts": "d5a17e6aa8e5ddf846d5386573239902cacf7e76e5e6503920e5193e5a70375d",
+      "src/render/island/machines/windmill.ts": "d363a6b1cef19a6d5069193f656ecbe8248a7278c5e030376527c14bd469faa7",
+      "src/render/island/props.ts": "2540ba8db5bc6d7d553dbb780e5d68fc6fbdc8179e4cc6d0342655b09be3aa47",
+      "src/render/island/pump-machinery.ts": "7d2630b2121955d7a3de07c5d2b7b31a15d31e315aa48045f53df2a1c6ec344a",
+      "src/render/island/scaffold.ts": "8c7960ee15879fdd902def12b59c4f0f00e3e92d7b753253ccf65793f7994688",
+      "src/render/island/site-councils.ts": "65deff4a22b716ec4b4e34aa26bfc219cd83b0a5d3b3e3f6b0423de7bbe800d3",
+      "src/render/island/site-machinery.ts": "45e6390c4a4a322edabe206ec27372fd76f7446147787aab51bab228c3dc61b2",
+      "src/render/island/stylized-world.ts": "fd103e91d768cf7a218fa4e0052a712a0527ad7fd865fecf93e1cf6b1c6d457b",
+      "src/render/island/village-life.ts": "5db3531169e52ac4f5846b64663cc101604dbd08e00c1a99e05d46bb7c8a43f7",
+      "src/render/island/windmill-pads.ts": "4c25eb7dc548aad675ef5167ee5f772ec8e1819edc1048867e3697133cef1ac6",
+      "src/render/layout.ts": "1dbe8ce32e525648910d2166f65873a74c9ab2e0c0b836dbc443735b37253b12",
+      "src/render/lighting-rig.ts": "afb4682ba8e816e143128e8a08b29ddcf989429cb0f27456e229ea0e1eb8f1b4",
+      "src/render/presets.ts": "cf6132ac33e5398db7a91bef92c493226c9a8775fb6656573f87439a6d59d44d",
+      "src/render/restoration-feedback.ts": "cc71d492a6c0aca5c73461150f0936ca904591eabae7f3e9a5c0def1fb512430",
+      "src/render/three-renderer.ts": "7e3c143c9c4b66ce6f36d4d5b3383281a495c11e4bc34e61eda8c0916e9367a0",
+      "src/render/windmill-asset.ts": "2dc7ab5b9f221fb8b212ba14af4c0467e6ad2366e3741bed9c78148d00d3188f",
+      "src/smoke.css": "d2b6e6e9a05548084846b52bd1fcc1b7d61c2798302eb8b130bbec254ae53a13",
+      "src/ui/build-view.css": "bdd5f990a8c5d76a38a3ec806d3947b184a32c5a47588d0ed6e8f408356c07d4",
+      "src/ui/build-view.ts": "187d4d9fd16991afc748bb0282c887634d1af1a2b2935ea7c6614247b902ac94",
+      "src/ui/council/council-copy.ts": "20fbeb676bb9263e28daed693fdc1e1cfcabb97479c875bf6c9bf99b7d6360db",
+      "src/ui/council/council-overlay.ts": "0e9ac7eecd3aca189f5eb9ae9e13bf70c1cf211bf8fa66041c17145faa6ab452",
+      "src/ui/council/council-reveal.ts": "4af0aa848c0126bb51eba983ac766658544e007657df430057ede75b37f87c9d",
+      "src/ui/council/council.css": "bed3687ad748e905bafc3439d621dbff79caf51386354455773360dcaa63794a",
+      "src/ui/council/site-council-model.ts": "8efc64286a5163c5ebf6db57c92a06ac2ffb82d2f8c19c14dcff49d6cddd4c4f",
+      "src/ui/field-journal.css": "db05dd1f22381ae7fba67021db97ca5eb04e4a16934086bb20c12c3d0dc37581",
+      "src/ui/game-hud.ts": "f711b67b1ead7ca95134086c654b93fc8da8a6849b3c9e67fa70f3072aa6b0b7",
+      "src/ui/player-copy.ts": "461e76c07c8be9cf34d4a7c5fa0cce600ad76049d81aa3ae4da9f4c8ecc3a7bb",
+      "src/ui/quest-guide.ts": "2e6227a4203686841ad65eabea3203fe360969a8ac35ff7621753a1b897a732b",
+      "src/ui/repair-learning.ts": "6a85aace304ef93c4f9f83d93acd61a88696cdc41bfbe370b2788ddf9dd04376",
+      "src/ui/repair-panel.css": "a9bf53f5227b1b97e9fbe85f412e04420d075afda0e4c7cd26a6cfaa3e0d0594",
+      "src/ui/repair-panel.ts": "9ad8eb57aca78d0d21b656a90a0f4ddfa45f7f71e22f5dfd6a5e85b90ff15129",
+      "src/ui/tutorial.css": "0557b521b9346e7fbb4e4bb1c39e16bbfe486ecd91b8faf8dbd7da30edabdea0",
+      "src/ui/tutorial.ts": "2314a591436f7efea8d570264e8446bed6c25f0dfd7986f1c5889a09145208e8",
+      "vite.config.ts": "5a1cd619d0014f8a935cbd5d0fefdc757e64c1ef3f77de11201f726b0fafb219"
+    },
+    "workingTree": "M src/genlayer/contract-meta.ts\n?? src/genlayer/runtime-check.ts"
+  },
+  "frames": [
+    {
+      "file": "00-fresh-landing.png",
+      "time": "2026-10-17T09:54:09.314Z",
+      "sourceCommit": "9983520543b9c94afaeac0a669d2560a4bce4906",
+      "runtimeCommit": "1054af807625bf9b6ebb2499eff8fa13d7929861",
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "tick": 74,
+      "inspectionId": null,
+      "position": {
+        "x": -10.2,
+        "y": 0.43739982446034753,
+        "z": 18.6
+      },
+      "restoredSiteIds": []
+    },
+    {
+      "file": "01-pier_hoist-tested.png",
+      "time": "2026-10-17T09:54:22.747Z",
+      "sourceCommit": "9983520543b9c94afaeac0a669d2560a4bce4906",
+      "runtimeCommit": "1054af807625bf9b6ebb2499eff8fa13d7929861",
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "tick": 854,
+      "inspectionId": "pier_hoist",
+      "position": {
+        "x": -10.523114725811082,
+        "y": 0.4402287757569812,
+        "z": 18.138544348383853
+      },
+      "restoredSiteIds": []
+    }
+  ],
+  "routes": [
+    {
+      "siteId": "pier_hoist",
+      "gridStep": 0.4,
+      "visited": 24,
+      "elapsedMs": 19,
+      "rawPoints": 2,
+      "points": [
+        {
+          "x": -10.2,
+          "y": 0.43739982446034753,
+          "z": 18.6
+        },
+        {
+          "x": -10.6,
+          "y": 0.43972905476888013,
+          "z": 18.200000000000003
+        }
+      ],
+      "arrived": {
+        "x": -10.523114725811082,
+        "y": 0.4402287757569812,
+        "z": 18.138544348383853
+      }
+    },
+    {
+      "siteId": "village_pump",
+      "gridStep": 0.4,
+      "visited": 1522,
+      "elapsedMs": 759,
+      "rawPoints": 33,
+      "points": [
+        {
+          "x": -10.523114725811082,
+          "y": 0.4402287757569812,
+          "z": 18.138544348383853
+        },
+        {
+          "x": -10.523114725811082,
+          "y": 0.726269360395529,
+          "z": 16.138544348383853
+        },
+        {
+          "x": -10.523114725811082,
+          "y": 1.666027170003779,
+          "z": 14.138544348383853
+        },
+        {
+          "x": -10.523114725811082,
+          "y": 2.5366627083324067,
+          "z": 12.138544348383853
+        },
+        {
+          "x": -10.523114725811082,
+          "y": 3.3426946250475456,
+          "z": 10.138544348383853
+        },
+        {
+          "x": -10.523114725811082,
+          "y": 3.5992377208322854,
+          "z": 8.138544348383853
+        },
+        {
+          "x": -10.523114725811082,
+          "y": 3.599994042683954,
+          "z": 6.138544348383853
+        },
+        {
+          "x": -10.123114725811082,
+          "y": 3.599999880107844,
+          "z": 5.338544348383852
+        }
+      ]
+    }
+  ],
+  "repairs": [
+    {
+      "id": "pier_hoist",
+      "advice": {
+        "mode": "advisory",
+        "valid": true,
+        "flags": {
+          "schema": true,
+          "inventory": true,
+          "budget": true,
+          "connections": true,
+          "operation": true
+        },
+        "materialCost": 16,
+        "budget": 16,
+        "metrics": {
+          "counterweightMoment": 6000,
+          "loadMoment": 6000
+        },
+        "feedback": []
+      },
+      "rationale": "Crews stay on the marked access path and lift slowly with the guarded pulley so loads never swing over the nests.",
+      "approvedArtifact": {
+        "schemaVersion": "repair-v1",
+        "parts": [
+          {
+            "id": "crank",
+            "optionId": "crank_standard",
+            "slotId": "crank",
+            "orientationQuarterTurns": 0,
+            "settingId": "fixed"
+          },
+          {
+            "id": "pulley",
+            "optionId": "pulley_standard",
+            "slotId": "pulley",
+            "orientationQuarterTurns": 0,
+            "settingId": "fixed"
+          },
+          {
+            "id": "boom",
+            "optionId": "boom_standard",
+            "slotId": "boom",
+            "orientationQuarterTurns": 0,
+            "settingId": "fixed"
+          },
+          {
+            "id": "rope",
+            "optionId": "rope_standard",
+            "slotId": "rope",
+            "orientationQuarterTurns": 0,
+            "settingId": "fixed"
+          },
+          {
+            "id": "guard",
+            "optionId": "guard_standard",
+            "slotId": "guard",
+            "orientationQuarterTurns": 0,
+            "settingId": "fixed"
+          },
+          {
+            "id": "weight_a",
+            "optionId": "weight_a_3",
+            "slotId": "weight_a",
+            "orientationQuarterTurns": 0,
+            "settingId": "rail_1000"
+          },
+          {
+            "id": "weight_b",
+            "optionId": "weight_b_2",
+            "slotId": "weight_b",
+            "orientationQuarterTurns": 0,
+            "settingId": "rail_1500"
+          }
+        ],
+        "connections": [
+          {
+            "channel": "mechanical",
+            "from": {
+              "partId": "crank",
+              "portId": "out"
+            },
+            "to": {
+              "partId": "pulley",
+              "portId": "in"
+            }
+          },
+          {
+            "channel": "mechanical",
+            "from": {
+              "partId": "pulley",
+              "portId": "out"
+            },
+            "to": {
+              "partId": "boom",
+              "portId": "in"
+            }
+          },
+          {
+            "channel": "mechanical",
+            "from": {
+              "partId": "guard",
+              "portId": "cover"
+            },
+            "to": {
+              "partId": "pulley",
+              "portId": "guard"
+            }
+          },
+          {
+            "channel": "mechanical",
+            "from": {
+              "partId": "weight_a",
+              "portId": "force"
+            },
+            "to": {
+              "partId": "boom",
+              "portId": "weight_a"
+            }
+          },
+          {
+            "channel": "mechanical",
+            "from": {
+              "partId": "weight_b",
+              "portId": "force"
+            },
+            "to": {
+              "partId": "boom",
+              "portId": "weight_b"
+            }
+          },
+          {
+            "channel": "mechanical",
+            "from": {
+              "partId": "rope",
+              "portId": "anchor"
+            },
+            "to": {
+              "partId": "boom",
+              "portId": "anchor"
+            }
+          }
+        ],
+        "configuration": {
+          "mountZoneId": "shore_workzone",
+          "outputModeId": "balanced_lift",
+          "routeId": "nest_safe_access"
+        }
+      },
+      "restoredSiteIds": [
+        "pier_hoist"
+      ],
+      "tick": 1752
+    }
+  ],
+  "checks": [],
+  "navigations": [
+    {
+      "time": "2026-10-17T09:54:48.586Z",
+      "phase": "walk:village_pump",
+      "url": "http://127.0.0.1:5173/"
+    }
+  ],
+  "complete": false,
+  "geometry": {
+    "id": "stylized-island-v1",
+    "triangles": 14085,
+    "obstacles": 162,
+    "stats": {
+      "environment": "stylized-island-v1",
+      "walkTriangles": 14085,
+      "obstacles": 126,
+      "decor": 516,
+      "sitePositions": {
+        "pier_hoist": {
+          "x": -13,
+          "y": 0.44222222222222224,
+          "z": 17
+        },
+        "village_pump": {
+          "x": -10,
+          "y": 3.5999999999999996,
+          "z": 2.5
+        },
+        "tidal_sluice": {
+          "x": 13,
+          "y": 0.568743758830421,
+          "z": 16
+        },
+        "creek_bridge": {
+          "x": -3,
+          "y": 3.49,
+          "z": 0
+        },
+        "coast_windmill": {
+          "x": 19,
+          "y": 6.599999999999999,
+          "z": -5
+        },
+        "woodland_pathlight": {
+          "x": 5,
+          "y": 6.598886689078449,
+          "z": -12
+        },
+        "upland_waterworks": {
+          "x": -13.8,
+          "y": 12.599916416108167,
+          "z": -14.8
+        },
+        "ridge_beacon": {
+          "x": -2,
+          "y": 9.6,
+          "z": -25
+        }
+      },
+      "spawn": {
+        "x": -10.2,
+        "y": 0.43739982446034753,
+        "z": 18.6
+      },
+      "equipmentSolids": 18,
+      "sceneryPlacements": 8,
+      "sceneryColliders": 18,
+      "sceneryKinds": [
+        "box",
+        "signpost",
+        "barrel",
+        "box-large",
+        "fence"
+      ],
+      "sceneryRejected": 13
+    }
+  },
+  "runtimeCommit": "1054af807625bf9b6ebb2499eff8fa13d7929861",
+  "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 2070 (0x00001F14) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "browserVersion": "155.0.8059.40",
+  "result": "Journey check failed",
+  "failure": {
+    "phase": "walk:village_pump",
+    "message": "page.waitForFunction: SyntaxError: \"undefined\" is not valid JSON\n    at JSON.parse (<anonymous>)\n    at eval (eval at predicate (eval at evaluate (:370:30)), <anonymous>:1:19)\n    at predicate (eval at evaluate (:370:30), <anonymous>:7:27)\n    at next (eval at evaluate (:370:30), <anonymous>:29:33)\n    at eval (eval at evaluate (:370:30), <anonymous>:42:13)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at settled (C:\\dev\\fix-the-island\\tools\\clear-island-journey.mjs:113:37)\n    at walkPoint (C:\\dev\\fix-the-island\\tools\\clear-island-journey.mjs:128:11)\n    at async navigate (C:\\dev\\fix-the-island\\tools\\clear-island-journey.mjs:143:44)\n    at async file:///C:/dev/fix-the-island/tools/clear-island-journey.mjs:227:48",
+    "concurrentSourceChange": "Source changed during this run; a preview reload can interrupt input. This run is not stable-snapshot evidence. See changedRuntimeFiles and navigations."
+  },
+  "failureState": null,
+  "captureFailure": "TypeError: Cannot read properties of null (reading 'tick')",
+  "finished": "2026-10-17T09:54:48.944Z",
+  "errors": [
+    "\"undefined\" is not valid JSON"
+  ],
+  "actions": [
+    {
+      "time": "2026-10-17T09:54:07.155Z",
+      "kind": "pointer-click",
+      "target": "#start-practice"
+    },
+    {
+      "time": "2026-10-17T09:54:10.154Z",
+      "kind": "imported-walk-pulse",
+      "target": {
+        "x": -10.6,
+        "y": 0.43972905476888013,
+        "z": 18.200000000000003
+      },
+      "keys": [
+        "KeyW"
+      ],
+      "requestedMs": 180,
+      "before": {
+        "x": -10.2,
+        "y": 0.43739982446034753,
+        "z": 18.6
+      },
+      "after": {
+        "x": -10.523114725811082,
+        "y": 0.4402287757569812,
+        "z": 18.138544348383853
+      },
+      "events": [
+        {
+          "type": "keydown",
+          "code": "KeyW",
+          "time": 17024.80000001192
+        },
+        {
+          "type": "keyup",
+          "code": "KeyW",
+          "time": 17231.59999999404
+        }
+      ]
+    },
+    {
+      "time": "2026-10-17T09:54:10.434Z",
+      "kind": "key-press",
+      "key": "KeyE"
+    },
+    {
+      "time": "2026-10-17T09:54:10.980Z",
+      "kind": "pointer-click",
+      "target": "parts build step"
+    },
+    {
+      "time": "2026-10-17T09:54:11.645Z",
+      "kind": "pointer-click",
+      "target": "configure build step"
+    },
+    {
+      "time": "2026-10-17T09:54:12.288Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:12.613Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:12.985Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:13.272Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:13.566Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:13.812Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:14.126Z",
+      "kind": "key-press",
+      "key": "KeyF"
+    },
+    {
+      "time": "2026-10-17T09:54:14.431Z",
+      "kind": "pointer-click",
+      "target": "connect build step"
+    },
+    {
+      "time": "2026-10-17T09:54:15.147Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:15.441Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:15.725Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:16.040Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:16.585Z",
+      "kind": "keyboard-focus",
+      "target": "port rope/anchor"
+    },
+    {
+      "time": "2026-10-17T09:54:16.699Z",
+      "kind": "keyboard-activate",
+      "target": "port rope/anchor"
+    },
+    {
+      "time": "2026-10-17T09:54:16.854Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:17.165Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:17.493Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:17.760Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:18.063Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:18.348Z",
+      "kind": "key-press",
+      "key": "BracketRight"
+    },
+    {
+      "time": "2026-10-17T09:54:18.859Z",
+      "kind": "keyboard-focus",
+      "target": "port boom/anchor"
+    },
+    {
+      "time": "2026-10-17T09:54:18.975Z",
+      "kind": "keyboard-activate",
+      "target": "port boom/anchor"
+    },
+    {
+      "time": "2026-10-17T09:54:19.168Z",
+      "kind": "key-press",
+      "key": "KeyT"
+    },
+    {
+      "time": "2026-10-17T09:54:22.747Z",
+      "kind": "pointer-click",
+      "target": "[data-key=\"rationale\"]"
+    },
+    {
+      "time": "2026-10-17T09:54:33.444Z",
+      "kind": "typed-explanation",
+      "siteId": "pier_hoist",
+      "text": "Crews stay on the marked access path and lift slowly with the guarded pulley so loads never swing over the nests.",
+      "input": "real keyboard typing"
+    },
+    {
+      "time": "2026-10-17T09:54:33.557Z",
+      "kind": "pointer-click",
+      "target": "[data-key=\"review\"]"
+    },
+    {
+      "time": "2026-10-17T09:54:34.194Z",
+      "kind": "pointer-click",
+      "target": "[data-key=\"submit\"]"
+    },
+    {
+      "time": "2026-10-17T09:54:38.321Z",
+      "kind": "pointer-click",
+      "target": "#save"
+    },
+    {
+      "time": "2026-10-17T09:54:41.366Z",
+      "kind": "imported-walk-pulse",
+      "target": {
+        "x": -10.523114725811082,
+        "y": 0.726269360395529,
+        "z": 16.138544348383853
+      },
+      "keys": [
+        "ShiftLeft",
+        "KeyD",
+        "KeyW"
+      ],
+      "requestedMs": 230,
+      "before": {
+        "x": -10.523114725811082,
+        "y": 0.4402287757569812,
+        "z": 18.138544348383853
+      },
+      "after": {
+        "x": -10.309780490692956,
+        "y": 0.508793706480559,
+        "z": 16.94719722213216
+      },
+      "events": [
+        {
+          "type": "keydown",
+          "code": "ShiftLeft",
+          "time": 47909.59999999404
+        },
+        {
+          "type": "keydown",
+          "code": "KeyD",
+          "time": 47979.90000000596
+        },
+        {
+          "type": "keydown",
+          "code": "KeyW",
+          "time": 48054.59999999404
+        },
+        {
+          "type": "keyup",
+          "code": "ShiftLeft",
+          "time": 48335.80000001192
+        },
+        {
+          "type": "keyup",
+          "code": "KeyD",
+          "time": 48405.90000000596
+        },
+        {
+          "type": "keyup",
+          "code": "KeyW",
+          "time": 48461.90000000596
+        }
+      ]
+    },
+    {
+      "time": "2026-10-17T09:54:42.332Z",
+      "kind": "imported-walk-pulse",
+      "target": {
+        "x": -10.523114725811082,
+        "y": 0.726269360395529,
+        "z": 16.138544348383853
+      },
+      "keys": [
+        "KeyD",
+        "KeyW"
+      ],
+      "requestedMs": 230,
+      "before": {
+        "x": -10.309780490692956,
+        "y": 0.508793706480559,
+        "z": 16.94719722213216
+      },
+      "after": {
+        "x": -10.16368033909492,
+        "y": 0.774695018992632,
+        "z": 16.052309718751932
+      },
+      "events": [
+        {
+          "type": "keydown",
+          "code": "KeyD",
+          "time": 49015.5
+        },
+        {
+          "type": "keydown",
+          "code": "KeyW",
+          "time": 49071.30000001192
+        },
+        {
+          "type": "keyup",
+          "code": "KeyD",
+          "time": 49363.59999999404
+        },
+        {
+          "type": "keyup",
+          "code": "KeyW",
+          "time": 49415.30000001192
+        }
+      ]
+    },
+    {
+      "time": "2026-10-17T09:54:43.041Z",
+      "kind": "imported-walk-pulse",
+      "target": {
+        "x": -10.523114725811082,
+        "y": 0.726269360395529,
+        "z": 16.138544348383853
+      },
+      "keys": [
+        "KeyA"
+      ],
+      "requestedMs": 120,
+      "before": {
+        "x": -10.16368033909492,
+        "y": 0.774695018992632,
+        "z": 16.052309718751932
+      },
+      "after": {
+        "x": -10.554142813539334,
+        "y": 0.6625674574215951,
+        "z": 16.325714486745944
+      },
+      "events": [
+        {
+          "type": "keydown",
+          "code": "KeyA",
+          "time": 50000.59999999404
+        },
+        {
+          "type": "keyup",
+          "code": "KeyA",
+          "time": 50172.59999999404
+        }
+      ]
+    },
+    {
+      "time": "2026-10-17T09:54:44.211Z",
+      "kind": "imported-walk-pulse",
+      "target": {
+        "x": -10.523114725811082,
+        "y": 1.666027170003779,
+        "z": 14.138544348383853
+      },
+      "keys": [
+        "ShiftLeft",
+        "KeyD",
+        "KeyW"
+      ],
+      "requestedMs": 230,
+      "before": {
+        "x": -10.554142813539334,
+        "y": 0.6625674574215951,
+        "z": 16.325714486745944
+      },
+      "after": {
+        "x": -10.33502030583231,
+        "y": 1.1263861490430962,
+        "z": 15.169863949080234
+      },
+      "events": [
+        {
+          "type": "keydown",
+          "code": "ShiftLeft",
+          "time": 50886.19999998808
+        },
+        {
+          "type": "keydown",
+          "code": "KeyD",
+          "time": 50934.40000000596
+        },
+        {
+          "type": "keydown",
+          "code": "KeyW",
+          "time": 50990.19999998808
+        },
+        {
+          "type": "keyup",
+          "code": "ShiftLeft",
+          "time": 51269.40000000596
+        },
+        {
+          "type": "keyup",
+          "code": "KeyD",
+          "time": 51326.40000000596
+        },
+        {
+          "type": "keyup",
+          "code": "KeyW",
+          "time": 51385.19999998808
+        }
+      ]
+    },
+    {
+      "time": "2026-10-17T09:54:45.050Z",
+      "kind": "imported-walk-pulse",
+      "target": {
+        "x": -10.523114725811082,
+        "y": 1.666027170003779,
+        "z": 14.138544348383853
+      },
+      "keys": [
+        "KeyD",
+        "KeyW"
+      ],
+      "requestedMs": 230,
+      "before": {
+        "x": -10.33502030583231,
+        "y": 1.1263861490430962,
+        "z": 15.169863949080234
+      },
+      "after": {
+        "x": -10.20396966296541,
+        "y": 1.5428287375066772,
+        "z": 14.360326450961049
+      },
+      "events": [
+        {
+          "type": "keydown",
+          "code": "KeyD",
+          "time": 51842.69999998808
+        },
+        {
+          "type": "keydown",
+          "code": "KeyW",
+          "time": 51888.90000000596
+        },
+        {
+          "type": "keyup",
+          "code": "KeyD",
+          "time": 52165.19999998808
+        },
+        {
+          "type": "keyup",
+          "code": "KeyW",
+          "time": 52213.40000000596
+        }
+      ]
+    },
+    {
+      "time": "2026-10-17T09:54:45.694Z",
+      "kind": "imported-walk-pulse",
+      "target": {
+        "x": -10.523114725811082,
+        "y": 1.666027170003779,
+        "z": 14.138544348383853
+      },
+      "keys": [
+        "KeyW"
+      ],
+      "requestedMs": 120,
+      "before": {
+        "x": -10.20396966296541,
+        "y": 1.5428287375066772,
+        "z": 14.360326450961049
+      },
+      "after": {
+        "x": -10.427664473142313,
+        "y": 1.703480247134511,
+        "z": 14.045326450961
+      },
+      "events": [
+        {
+          "type": "keydown",
+          "code": "KeyW",
+          "time": 52720.69999998808
+        },
+        {
+          "type": "keyup",
+          "code": "KeyW",
+          "time": 52881.19999998808
+        }
+      ]
+    },
+    {
+      "time": "2026-10-17T09:54:46.840Z",
+      "kind": "imported-walk-pulse",
+      "target": {
+        "x": -10.523114725811082,
+        "y": 2.5366627083324067,
+        "z": 12.138544348383853
+      },
+      "keys": [
+        "ShiftLeft",
+        "KeyD",
+        "KeyW"
+      ],
+      "requestedMs": 230,
+      "before": {
+        "x": -10.427664473142313,
+        "y": 1.703480247134511,
+        "z": 14.045326450961
+      },
+      "after": {
+        "x": -10.199263388238647,
+        "y": 2.2073635119753536,
+        "z": 12.863557147346356
+      },
+      "events": [
+        {
+          "type": "keydown",
+          "code": "ShiftLeft",
+          "time": 53497.90000000596
+        },
+        {
+          "type": "keydown",
+          "code": "KeyD",
+          "time": 53564.90000000596
+        },
+        {
+          "type": "keydown",
+          "code": "KeyW",
+          "time": 53619
+        },
+        {
+          "type": "keyup",
+          "code": "ShiftLeft",
+          "time": 53873.90000000596
+        },
+        {
+          "type": "keyup",
+          "code": "KeyD",
+          "time": 53928.19999998808
+        },
+        {
+          "type": "keyup",
+          "code": "KeyW",
+          "time": 53983.30000001192
+        }
+      ]
+    },
+    {
+      "time": "2026-10-17T09:54:47.674Z",
+      "kind": "imported-walk-pulse",
+      "target": {
+        "x": -10.523114725811082,
+        "y": 2.5366627083324067,
+        "z": 12.138544348383853
+      },
+      "keys": [
+        "KeyW"
+      ],
+      "requestedMs": 230,
+      "before": {
+        "x": -10.199263388238647,
+        "y": 2.2073635119753536,
+        "z": 12.863557147346356
+      },
+      "after": {
+        "x": -10.596943050775364,
+        "y": 2.480160225889001,
+        "z": 12.295611729972663
+      },
+      "events": [
+        {
+          "type": "keydown",
+          "code": "KeyW",
+          "time": 54514.90000000596
+        },
+        {
+          "type": "keyup",
+          "code": "KeyW",
+          "time": 54777.69999998808
+        }
+      ]
+    }
+  ],
+  "sourceEnd": {
+    "commit": "9983520543b9c94afaeac0a669d2560a4bce4906",
+    "runtimeSourceSha256": "16e619f704abeb4b5064d22bac7417003c081e896f379b1eab7628b39fc9ee53",
+    "files": {
+      "assets/fonts/NOTICE.md": "4019280fce5ccda0f79dc75d5decd7b03e0ecf2ba45614f30ea4dd400726ec39",
+      "assets/fonts/Nunito-Variable.ttf": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+      "assets/hero/README.md": "d7fd4e4160c8a8a48b2d0cd48fffe5c35419e3b031d5e892d09fb8bb207552ac",
+      "assets/hero/restorer.glb": "c0fdba913057c656b3b9a1e46f590691a09a22a2932574f71147d6a98046c5bb",
+      "assets/hero/source/bone-bind.json": "0227b82541965a3d3d0f209cc1f72fa653721b9fb536bc2fe68566bb74d18ed4",
+      "assets/hero/source/build_restorer.py": "2a3b41be21cb901960b124efe63db102ed83da4f8969aeca06e1a97c5ace2bc1",
+      "assets/hero/source/glb-readback.json": "7868c8887765f01edb6bbea8e9933796b5dfa0efccacdc305731f3c9fdf751b8",
+      "assets/hero/source/restorer.blend": "01ebf48a15132c1cccac5c348688707ceb32164310f9a6ebbf897706ac649846",
+      "assets/hero/source/restorer_albedo.png": "c78a5c377d6d785c83589defce34b187a87bad77ba8a3182fa29ae71e0d50574",
+      "assets/hero/source/restorer_orm.png": "8644e4408bc040e6fa456d10098075701ace11319e2684bf15240675c66503e4",
+      "assets/hero/source/validation.json": "dd40d6d8449c754491ec62774d4f356dd5c236afc23ce562afef55af9b99679f",
+      "assets/hero/source/verify_restorer.py": "8f747ec1719ccec06610028c93dae31846371ebe94101f3c4c81bf090677169a",
+      "assets/island/README.md": "63b74d76d449b409f19c8dcb44a68aeb649ef235ad7e55751a91513e2ee227d3",
+      "assets/island/google-island.glb": "be58e0854603da189f8bbc4584e073589b5945c37cd243d4f410fb9175324f3b",
+      "assets/props/kenney-factory/Textures/colormap.png": "35d7bd6900dde0208429eeaec87fa17fbf024ed59f3f4eab54bc92802eba9dd7",
+      "assets/props/kenney-factory/hopper-round.glb": "8d4a49f1608b0cdb33d4506bed0ca0648df31437ae2b488a418fa15e5a65b278",
+      "assets/props/kenney-factory/lever-single.glb": "d7056a698ecb46c972d51848a77c8a9aca86f085cc5800347fce1c19c6c59477",
+      "assets/props/kenney-factory/machine.glb": "a39e3042bcb7789274428357383317d70e1c31906e5301c99e7d9e90ac584863",
+      "assets/props/kenney-factory/pipe-large-curve.glb": "5da8bbe6f74293df2cc57e743eeea0aee3e831531af1841aad0a49d47d1e1638",
+      "assets/props/kenney-factory/pipe-large-long.glb": "8e6650cc662695c28fffb1ffa10f190255f7d9c6c1d4a2a48d375e9bbb89b04f",
+      "assets/props/kenney-factory/pipe-large-valve.glb": "57126374dce5b172e06d5d6f8cbaab97c9cffe3e5e726060eb14c50a5bd519b6",
+      "assets/props/kenney-factory/piston-round.glb": "cd67c755d4ea6f53b5a5583447f45e9abb5d87f344d9f053820d1b09d719fcdd",
+      "assets/props/kenney-survival/Textures/colormap.png": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1",
+      "assets/props/kenney-survival/barrel.glb": "3a0d12f6bdd1badd361f64ce0fbbf878a4ccfc2de8ff1ac4ed4c1aea2a9ee04a",
+      "assets/props/kenney-survival/box-large.glb": "69b4052f32b7b27e5d2ee27041b091a07d4a2dd4d877168a701607a97609f0f6",
+      "assets/props/kenney-survival/box.glb": "346eebd23986793b992ca6e05e9f98d6f5db96a9bfa3aa7c8360ac8b7920def8",
+      "assets/props/kenney-survival/fence.glb": "5d8050e39c8b83b5835ea38b9b17429b4a03e289b566a1db771b7e1d9c6e4050",
+      "assets/props/kenney-survival/grass-large.glb": "68d23ba79b8b8c7a8fc5da6c4b688cce6d9a739720fbf9c3134e5388e91d6f07",
+      "assets/props/kenney-survival/patch-grass-large.glb": "458f467382babd3f0d075a8bef781119c8fead62f806366a274cbc0e7e65b3a1",
+      "assets/props/kenney-survival/resource-planks.glb": "d3804257474a3baab7ac067be91de5c3d6d18d5803775dc876cb6d9442c30873",
+      "assets/props/kenney-survival/signpost.glb": "6d33757888c4ec9249610266ca8d60532b1138ae28fd37e93fa843ec4856fd25",
+      "assets/props/kenney-survival/structure-canvas.glb": "f450f215599f8962b63737825c7d55d7be498742551ba21e5633d6459b194134",
+      "assets/props/kenney-survival/tent-canvas.glb": "efc4bca46a22e4cc4fe391aeafba161c24bc39bfa75e192c57eaacaf686f9717",
+      "assets/props/kenney-survival/tool-hammer.glb": "9b27f03c26dabd49a7ea358615e63fe65e1c3d0157887d4ee1ecdfa1f0e688f3",
+      "assets/props/kenney-survival/tree-log-small.glb": "5b416addc4cb01d9d6ad30ec282606a8fefb018043d3253d5e42c1e353aab3c8",
+      "assets/props/kenney-survival/workbench.glb": "bf72d2d535fa29127e5078a6c4c2023a74fa5cd7d02d91ad550e897e088e1dc8",
+      "assets/robot/README.md": "c2ba2abbd0faa39a3d19768941f173cf3354fd4585180695cd4949ae1bdaff4a",
+      "assets/robot/RobotExpressive.glb": "047f5e5fb3bb6d378bd1df16ca6137f2a596c99b3a1b5690b4020c05aaf6f319",
+      "assets/windmill/README.md": "5493ba3ee8c7b3a44c2d0e43efe63d60359a537cc066ac2b2e1023a1e1984327",
+      "assets/windmill/headland-windmill.glb": "d9eb34a14eec2784f7060372695281f59a6dfc091aadf061e7047ddbb291226a",
+      "assets/windmill/source/asset-metadata.json": "6b072797f1cce811c7f1dba71b44474cb74d0c091bde2b4ee312a8897784ee6c",
+      "assets/windmill/source/build_windmill.py": "be9ca938f7600788f06230446556a82b41f588123d883a69a478b18c7360df21",
+      "assets/windmill/source/check_glb.py": "90931392fb64dcf91c743ab2c14b9228b021aedb975c49bcd03e56f98dd7c947",
+      "assets/windmill/source/glb-import-check.json": "1a98362da5ae5fff61821a201e71edabe4fa29b6c46ca6f892bde7da957ede02",
+      "assets/windmill/source/headland-windmill.blend": "9802a5f1e19181d055a2741a2bb59e2c3e2e7b0d0f79f1e228b70a970f206172",
+      "assets/windmill/source/review_current_glb.py": "406ae5181547ea797055eb657879f173104b759c6db206cc2d40512554a30b38",
+      "assets/windmill/source/windmill_albedo_1024.png": "eba498d81b52e6aca231f07fb4ff2d1df716ef0917a75cf2fc2d03dd8aa8e56e",
+      "assets/windmill/source/windmill_normal_1024.png": "f6bce961a04bfd3f67961b004f289015efb4813f283d4fb5268f9539ab91451d",
+      "assets/windmill/source/windmill_roughness_1024.png": "d0ebcf3d6d0bb113e96ba0e0a110930e615011eef28b494f6f70cdc1a55faa57",
+      "index.html": "298fb13cb62afc702d19469c917f9d5da4641b04372d78631177ede47850ec2a",
+      "package-lock.json": "70c46d85508ee86fd8c3f87328ef32b928dca50c009cc47d076bb9bdb0f16b74",
+      "package.json": "1eb3e68766d59d778bba1c0598ba655e0bc1b8205b036f2f60012e2b2fec180f",
+      "src/application/recover-repairs.ts": "0c49907a1fcd044ca3f4fe09bd63b992b051ad9187b2aa4eba8525a2378b8021",
+      "src/application/submit-repair.ts": "d2a5f07ef257056a21f1082ae02cf3a5e66d9793c4c43236aab11f38a0761204",
+      "src/application/unknown-submission.ts": "d4b14f53c5875113397e7fbc776dd39c46f13c1a8bb5ce13f7b834019e4a9467",
+      "src/audio/game-audio.ts": "ae76a277107aa9666ae3eceb0b1a7613fb604a17ad913dd7c645e74803f941b7",
+      "src/content/assembly-layout.ts": "86c5e9dbe5e945ec3da5228d2de749ae6a37b0f05fe5a8288365b3a8eee33359",
+      "src/content/coherent-land.ts": "c50fb4036bbbe75e9b45a31d825f17705f6879f9fc6031a60d8d0133749de2c1",
+      "src/content/imported-scenery.ts": "0c69397454222aee1a8bf312a36166d2a24fe3d4aa2072901b8bfa018229467d",
+      "src/content/island-level.ts": "f41e934720926ac642837cb8b8d2732515628ce12ad087dcdd7551446ae53ed8",
+      "src/content/nature-layout.ts": "c4c1af17c59d7b304090eb59ffee5a4c36f20c2067d1834505604265f3ce1202",
+      "src/content/repair-dressing.ts": "f97bf6268638e3b4f6ecd843b9d5ed9978ccb4c19939dd8f6a731ed16de6baa4",
+      "src/content/route-contract.ts": "99256d757d0eaf483f81fe5b5e265ea5a49aef7e055e2731e43e607c3e20ecc9",
+      "src/content/service-layout.ts": "177362fcc753f4c422aca5f3cf20890d845c78196b7ecf89dc09a749290aede0",
+      "src/content/site-plan.ts": "7dfc8afb857b45daf14f5f754562045fcc07ec97b7a2d974e4e5495caee11826",
+      "src/content/smoke-level.ts": "c879dedc3f203b16bc362b67964f20fad6831dc9890adaa6b0a9634f7d092a71",
+      "src/content/stylized-island.ts": "2d2ee325d22f1ee8addf2f3d0cf0d17c2228af3dbfde9dc05a5bcbafd662b531",
+      "src/council-demo/main.ts": "da3ba1933dde812a009a23514f8754f2c5a6d841dab38c7301645e0ba3cb1f29",
+      "src/domain/feedback-text.ts": "ee4f72088ea1f063081ff50d313140d68f81d77f051010056f83b7bc9f05c93b",
+      "src/domain/fixed-tick.ts": "0a9e1538f62045389b09be3b1cb5c56ddf4bef63c30823562a411f183e794f78",
+      "src/domain/motion.ts": "8b07135b91cf5a8bfb8910c98a6127ded2ff2bd5f1774fcd9d3d073abdd5da36",
+      "src/domain/save.ts": "a585d808edcf4ba19fcd3f69ef8b4c4d014efe4ce2dc6ccce1c22e97741606f8",
+      "src/domain/terrain.ts": "7904f76d2b4af444697ab353b19e276300585f5395d1ede65fc1544bf99b27e9",
+      "src/domain/world.ts": "6d3e7ef6b8e3a58d3491d971729dff566fcce94868949a0a4842d79e5d85f317",
+      "src/game.css": "9add3d6493cef576f5fd06e87ecbc990de7e7e904c31cae125d1b722b0cc3279",
+      "src/genlayer/adapter.ts": "812c51e85904050854f256f45a12cd87bf9e0cc501fbd9cbafbf4087b585029c",
+      "src/genlayer/advisory.ts": "9d435b6186658cd8c0e9027af2783cc2bbe33e2e01fd87221b9df7672efe5401",
+      "src/genlayer/canonical.ts": "8434e96cc1c9666463e97ea35f1c70eb5d5bc1997c719eb82e25b24348b2de34",
+      "src/genlayer/catalog.ts": "eefd97522c355177b3958c8acbfbdb2651635569e41e6edc60f1b4a6fc4f0301",
+      "src/genlayer/config.ts": "8ac40bc79d24e6937095a1b97be637e328092d26dd608efe12531f920c8783d5",
+      "src/genlayer/contract-meta.ts": "068bea3981390807e5380d2979a0325759d12a7dd3b9cbbf378a8b4e8830b2a7",
+      "src/genlayer/council/contract-meta.ts": "b578530eed174c673c446b6e7781a06824b70347e2bb7da8ad5f5f0997793f43",
+      "src/genlayer/council/live-adapter.ts": "8963781fd3a2a0026b7c0fd97b3b624fc977c97ed5ea0717cb9fd9113c6c861f",
+      "src/genlayer/council/mock-fixtures.ts": "9418ff00dfc1fe826ed6225e9aa963b9fb67f59fb2b3c8a97ba6af698fb08da4",
+      "src/genlayer/council/types.ts": "a78288341d7ae9258a48fba06d8d1067d36abdc7bd8079136e6cc67bd95d3f00",
+      "src/genlayer/council/validator-votes.ts": "4ce7c8e8bb4aaebe0d97be2f414dd373375fef7ddfc191aaf0e6410b6536f308",
+      "src/genlayer/deployments.json": "48dd9ed13d32aa2b5724f2e18366440bc52a86ad3f5c957f55c4a1b908224b40",
+      "src/genlayer/deployments.studionet.json": "8acc78e6b6edcc4d440f8f03cac0cbd3cdf3a10649e1c37ff472ee021a8f39d3",
+      "src/genlayer/deployments.studionet.legacy.json": "f48381d11ed63fdf5c795b005909a044c6b4bd28db6be0e8fed6cf8963b68d37",
+      "src/genlayer/deployments.ts": "2748c8e6c2417880bce487a6b55fed6eeac1561ee3f1fd028279b4d7d1f80de8",
+      "src/genlayer/evidence.ts": "a252b5f6afa44a8c727fdaddf72eb3ca950e75414c2db7d3ae1e0f53159f8056",
+      "src/genlayer/examples.ts": "e383ee699ee6b432cef4d1a0e83026dd64c04a5d7330d257e9674b8606ac85cb",
+      "src/genlayer/expedition.ts": "b2ded6f30808db54d5673e1090b0a9fc1e3c4a6031ac4aac3f3b5088f34cbb6f",
+      "src/genlayer/index.ts": "4ff00d0966d9f86ebb68ff48d14c280d22a8d391d5753ae4196e50d46ba7a475",
+      "src/genlayer/injected-provider.ts": "1d831eda7ee5e27938a7778c98499dcc9297f80eb514332d544ce26aa25fe48f",
+      "src/genlayer/native-context.ts": "a35cf739593141b28e7757527778e50aa62bd218a5c18048674c5aea0f104766",
+      "src/genlayer/read-retry.ts": "9a25a08911c9055269aa27a7e2e44c6a7a69a9619f7fe188473163f9b7abbb56",
+      "src/genlayer/runtime-check.ts": "ef71cbe090b71913e5298e3ac4a54fa37034b64cc7819e22b213215593898f90",
+      "src/genlayer/schema.ts": "c10e63d29b7145ce1fa6dc5a12e1344ebc9ec50c10fbafa785f565df67262ae7",
+      "src/genlayer/site-contract-meta.ts": "c19c96dba823516fb3bda4e13e801059771caa24e64f9ec4645380e4d654fa7f",
+      "src/genlayer/studio-recovery.ts": "58fc924774f38177222d76db3a01d2e26a37c1f8a7fe25f12d85f7bb0c5045ed",
+      "src/genlayer/types.ts": "14d08b3aececf146d4bf3acb5a421983990eda4dabe0d57bd7dba2228b200eda",
+      "src/input/browser-input.ts": "f0c3c2289d8bed4e26bf5a7bc3aaf78420a0a505e477eed9e9432458ed9f4d9a",
+      "src/input/corridor-steering.ts": "8590f4a5862f54d2f1db5be6ab75134904d4f832dba5ee66fc0a98abc12fb771",
+      "src/input/route-matrix.ts": "1ac95a78c6830065264150d31716cd5dcf98991ebb0088899138fd87656c76e0",
+      "src/main.ts": "e943b20a98971a51aa4b1dbe24b2313eff8f1a85420c4f6258b1bf8d52eedf65",
+      "src/render/animated-hero.ts": "19cb3fddcc1fc5582da73238a1a6896d8ba12ae626fb362c1f211aaa563d5c24",
+      "src/render/contract.ts": "3fadc8094441eaf1ac93858ac403e540e7d069bd30d695989f9bf3ad5a076f08",
+      "src/render/council/campfire.ts": "c718732d34038cda9c48b682dfc033732aa09aadb28dec1cb2e68b5fde0d89c6",
+      "src/render/council/council-actor.ts": "8bbb11ed88b83573067bd5e3586dda977b8c31541ea7e914440f500f25604d88",
+      "src/render/council/council-scene.ts": "2d3c44ee900d894904aa5e30a8d357b97c69c76ceb295aca2e09e11a015f68c3",
+      "src/render/council/pump-site.ts": "709c5c0efa90b4a41e60a3fcec2ba61c165f64790c02b1049828bf062c2f588a",
+      "src/render/council/terrain.ts": "e3e900abe9a7d86635789b41762cc0abc8c97cb7d7193af46fccd173ea57fd48",
+      "src/render/environment/island-nature.ts": "18339b917bbc6707113c73ed1a55761cd04107b108ac5c0da675c2bff1b8e9f3",
+      "src/render/environment/repair-props.ts": "dab8b3edd41bb59ea86652132df174ffd3608420fe2fec52cdfe63dbd9b554e4",
+      "src/render/environment/scenery-instance.ts": "4c5a31364a5463ac455dea309e880bc4beed65bc55788142166af0110eedab74",
+      "src/render/environment/small-world-detail.ts": "fa8ab5414b20abb93df608a630000d636b435c6434055cd096cee6a9be822120",
+      "src/render/environment/surface-materials.ts": "ba89b5d11e90a072091d9ac102e951ede31ab02ddd3fbe5a03bdc500601bbe2c",
+      "src/render/hero-rig.ts": "4cb9a963e3f15a05da169dd6f97e58d6d1ca609ecf5ec50f2fb48c3e2abdc2a4",
+      "src/render/hit-test.ts": "5abf8d5df360e1804c204b3375ffebbed38460065a54c1661ea7beb2a186a925",
+      "src/render/imported-world.ts": "9254b1e4b201f819d3db879b3ba0b559ebd3c424eb716e40494ebece66f4727e",
+      "src/render/island-cutaway.ts": "6ad9bf489df6dd32137bf25a4ffac09ca00aaa104a59134cdfdbb17f6ef97cb4",
+      "src/render/island/council-circle.ts": "7148170ed2bf718fa710673ffbc0eea2e7cf3f6c6382ad0873e3bdc334f3eb11",
+      "src/render/island/machines/bridge.ts": "93c50b1f88333f4a135fcf4d8a18c410d05ab813f025907ea43c91f56413821f",
+      "src/render/island/machines/electric.ts": "06767f54121d0c43f804fb77e422cb87a977b8622581c46cff47dbf74e8efd2e",
+      "src/render/island/machines/hoist.ts": "da53a69c11dd02e5da8932ce3b3d225d68e02815e964adfdfee5a150f981eb8c",
+      "src/render/island/machines/sluice.ts": "729d4bc9a8c0605aeb385ae857b2677f1530572880172d5c0eb6f6e194f6a42d",
+      "src/render/island/machines/waterworks.ts": "d5a17e6aa8e5ddf846d5386573239902cacf7e76e5e6503920e5193e5a70375d",
+      "src/render/island/machines/windmill.ts": "d363a6b1cef19a6d5069193f656ecbe8248a7278c5e030376527c14bd469faa7",
+      "src/render/island/props.ts": "2540ba8db5bc6d7d553dbb780e5d68fc6fbdc8179e4cc6d0342655b09be3aa47",
+      "src/render/island/pump-machinery.ts": "7d2630b2121955d7a3de07c5d2b7b31a15d31e315aa48045f53df2a1c6ec344a",
+      "src/render/island/scaffold.ts": "8c7960ee15879fdd902def12b59c4f0f00e3e92d7b753253ccf65793f7994688",
+      "src/render/island/site-councils.ts": "65deff4a22b716ec4b4e34aa26bfc219cd83b0a5d3b3e3f6b0423de7bbe800d3",
+      "src/render/island/site-machinery.ts": "45e6390c4a4a322edabe206ec27372fd76f7446147787aab51bab228c3dc61b2",
+      "src/render/island/stylized-world.ts": "fd103e91d768cf7a218fa4e0052a712a0527ad7fd865fecf93e1cf6b1c6d457b",
+      "src/render/island/village-life.ts": "5db3531169e52ac4f5846b64663cc101604dbd08e00c1a99e05d46bb7c8a43f7",
+      "src/render/island/windmill-pads.ts": "4c25eb7dc548aad675ef5167ee5f772ec8e1819edc1048867e3697133cef1ac6",
+      "src/render/layout.ts": "1dbe8ce32e525648910d2166f65873a74c9ab2e0c0b836dbc443735b37253b12",
+      "src/render/lighting-rig.ts": "62e817ff5d48132e698f943efbae3d5eab15944bd6ba013102a2e059d731be5b",
+      "src/render/presets.ts": "cf6132ac33e5398db7a91bef92c493226c9a8775fb6656573f87439a6d59d44d",
+      "src/render/restoration-feedback.ts": "cc71d492a6c0aca5c73461150f0936ca904591eabae7f3e9a5c0def1fb512430",
+      "src/render/three-renderer.ts": "7e3c143c9c4b66ce6f36d4d5b3383281a495c11e4bc34e61eda8c0916e9367a0",
+      "src/render/windmill-asset.ts": "2dc7ab5b9f221fb8b212ba14af4c0467e6ad2366e3741bed9c78148d00d3188f",
+      "src/smoke.css": "d2b6e6e9a05548084846b52bd1fcc1b7d61c2798302eb8b130bbec254ae53a13",
+      "src/ui/build-view.css": "bdd5f990a8c5d76a38a3ec806d3947b184a32c5a47588d0ed6e8f408356c07d4",
+      "src/ui/build-view.ts": "187d4d9fd16991afc748bb0282c887634d1af1a2b2935ea7c6614247b902ac94",
+      "src/ui/council/council-copy.ts": "20fbeb676bb9263e28daed693fdc1e1cfcabb97479c875bf6c9bf99b7d6360db",
+      "src/ui/council/council-overlay.ts": "0e9ac7eecd3aca189f5eb9ae9e13bf70c1cf211bf8fa66041c17145faa6ab452",
+      "src/ui/council/council-reveal.ts": "4af0aa848c0126bb51eba983ac766658544e007657df430057ede75b37f87c9d",
+      "src/ui/council/council.css": "bed3687ad748e905bafc3439d621dbff79caf51386354455773360dcaa63794a",
+      "src/ui/council/site-council-model.ts": "8efc64286a5163c5ebf6db57c92a06ac2ffb82d2f8c19c14dcff49d6cddd4c4f",
+      "src/ui/field-journal.css": "db05dd1f22381ae7fba67021db97ca5eb04e4a16934086bb20c12c3d0dc37581",
+      "src/ui/game-hud.ts": "f711b67b1ead7ca95134086c654b93fc8da8a6849b3c9e67fa70f3072aa6b0b7",
+      "src/ui/player-copy.ts": "461e76c07c8be9cf34d4a7c5fa0cce600ad76049d81aa3ae4da9f4c8ecc3a7bb",
+      "src/ui/quest-guide.ts": "2e6227a4203686841ad65eabea3203fe360969a8ac35ff7621753a1b897a732b",
+      "src/ui/repair-learning.ts": "6a85aace304ef93c4f9f83d93acd61a88696cdc41bfbe370b2788ddf9dd04376",
+      "src/ui/repair-panel.css": "a9bf53f5227b1b97e9fbe85f412e04420d075afda0e4c7cd26a6cfaa3e0d0594",
+      "src/ui/repair-panel.ts": "9ad8eb57aca78d0d21b656a90a0f4ddfa45f7f71e22f5dfd6a5e85b90ff15129",
+      "src/ui/tutorial.css": "0557b521b9346e7fbb4e4bb1c39e16bbfe486ecd91b8faf8dbd7da30edabdea0",
+      "src/ui/tutorial.ts": "2314a591436f7efea8d570264e8446bed6c25f0dfd7986f1c5889a09145208e8",
+      "vite.config.ts": "5a1cd619d0014f8a935cbd5d0fefdc757e64c1ef3f77de11201f726b0fafb219"
+    },
+    "workingTree": "M src/genlayer/contract-meta.ts\n M src/render/lighting-rig.ts\n?? src/genlayer/runtime-check.ts"
+  },
+  "sourceChanged": true,
+  "changedRuntimeFiles": [
+    "src/render/lighting-rig.ts"
+  ],
+  "trustedKeyEvents": []
+}

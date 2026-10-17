@@ -1,0 +1,306 @@
+[
+  {
+    "binding": {
+      "chainId": 4221,
+      "contractAddress": "0x2222222222222222222222222222222222222222",
+      "caller": "0x1111111111111111111111111111111111111111",
+      "expeditionId": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "fixtureVersion": "island-2026-10-16-v5",
+      "siteId": "pier_hoist",
+      "nonce": "0"
+    },
+    "artifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "boom",
+          "optionId": "boom_standard",
+          "slotId": "boom",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "crank",
+          "optionId": "crank_standard",
+          "slotId": "crank",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "guard",
+          "optionId": "guard_standard",
+          "slotId": "guard",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "pulley",
+          "optionId": "pulley_standard",
+          "slotId": "pulley",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "rope",
+          "optionId": "rope_standard",
+          "slotId": "rope",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "weight_a",
+          "optionId": "weight_a_3",
+          "slotId": "weight_a",
+          "orientationQuarterTurns": 0,
+          "settingId": "rail_1000"
+        },
+        {
+          "id": "weight_b",
+          "optionId": "weight_b_2",
+          "slotId": "weight_b",
+          "orientationQuarterTurns": 0,
+          "settingId": "rail_1500"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "shore_workzone",
+        "outputModeId": "balanced_lift",
+        "routeId": "nest_safe_access"
+      },
+      "connections": [
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "crank",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "pulley",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "guard",
+            "portId": "cover"
+          },
+          "to": {
+            "partId": "pulley",
+            "portId": "guard"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "pulley",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "boom",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "rope",
+            "portId": "anchor"
+          },
+          "to": {
+            "partId": "boom",
+            "portId": "anchor"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "weight_a",
+            "portId": "force"
+          },
+          "to": {
+            "partId": "boom",
+            "portId": "weight_a"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "weight_b",
+            "portId": "force"
+          },
+          "to": {
+            "partId": "boom",
+            "portId": "weight_b"
+          }
+        }
+      ]
+    },
+    "rationale": "The guarded pulley and balanced lift keep loads steady. Crews will use the marked path, stay clear of shoreline nests, and inspect the rope before each shift.",
+    "canonical": "{\"artifact\":{\"configuration\":{\"mountZoneId\":\"shore_workzone\",\"outputModeId\":\"balanced_lift\",\"routeId\":\"nest_safe_access\"},\"connections\":[{\"channel\":\"mechanical\",\"from\":{\"partId\":\"crank\",\"portId\":\"out\"},\"to\":{\"partId\":\"pulley\",\"portId\":\"in\"}},{\"channel\":\"mechanical\",\"from\":{\"partId\":\"guard\",\"portId\":\"cover\"},\"to\":{\"partId\":\"pulley\",\"portId\":\"guard\"}},{\"channel\":\"mechanical\",\"from\":{\"partId\":\"pulley\",\"portId\":\"out\"},\"to\":{\"partId\":\"boom\",\"portId\":\"in\"}},{\"channel\":\"mechanical\",\"from\":{\"partId\":\"rope\",\"portId\":\"anchor\"},\"to\":{\"partId\":\"boom\",\"portId\":\"anchor\"}},{\"channel\":\"mechanical\",\"from\":{\"partId\":\"weight_a\",\"portId\":\"force\"},\"to\":{\"partId\":\"boom\",\"portId\":\"weight_a\"}},{\"channel\":\"mechanical\",\"from\":{\"partId\":\"weight_b\",\"portId\":\"force\"},\"to\":{\"partId\":\"boom\",\"portId\":\"weight_b\"}}],\"parts\":[{\"id\":\"boom\",\"optionId\":\"boom_standard\",\"orientationQuarterTurns\":0,\"settingId\":\"fixed\",\"slotId\":\"boom\"},{\"id\":\"crank\",\"optionId\":\"crank_standard\",\"orientationQuarterTurns\":0,\"settingId\":\"fixed\",\"slotId\":\"crank\"},{\"id\":\"guard\",\"optionId\":\"guard_standard\",\"orientationQuarterTurns\":0,\"settingId\":\"fixed\",\"slotId\":\"guard\"},{\"id\":\"pulley\",\"optionId\":\"pulley_standard\",\"orientationQuarterTurns\":0,\"settingId\":\"fixed\",\"slotId\":\"pulley\"},{\"id\":\"rope\",\"optionId\":\"rope_standard\",\"orientationQuarterTurns\":0,\"settingId\":\"fixed\",\"slotId\":\"rope\"},{\"id\":\"weight_a\",\"optionId\":\"weight_a_3\",\"orientationQuarterTurns\":0,\"settingId\":\"rail_1000\",\"slotId\":\"weight_a\"},{\"id\":\"weight_b\",\"optionId\":\"weight_b_2\",\"orientationQuarterTurns\":0,\"settingId\":\"rail_1500\",\"slotId\":\"weight_b\"}],\"schemaVersion\":\"repair-v1\"},\"caller\":\"0x1111111111111111111111111111111111111111\",\"chainId\":4221,\"contractAddress\":\"0x2222222222222222222222222222222222222222\",\"domain\":\"fix-island-repair-v1\",\"expeditionId\":\"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\",\"fixtureVersion\":\"island-2026-10-16-v5\",\"nonce\":\"0\",\"rationale\":\"The guarded pulley and balanced lift keep loads steady. Crews will use the marked path, stay clear of shoreline nests, and inspect the rope before each shift.\",\"siteId\":\"pier_hoist\"}",
+    "digest": "0x830cc628959cecec39222f13edc7354e5ad47da72fb22482817e2020c289aa54",
+    "calldataHex": "0x1604617267732d940430786565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656554706965725f686f6973748c637b22636f6e66696775726174696f6e223a7b226d6f756e745a6f6e654964223a2273686f72655f776f726b7a6f6e65222c226f75747075744d6f64654964223a2262616c616e6365645f6c696674222c22726f7574654964223a226e6573745f736166655f616363657373227d2c22636f6e6e656374696f6e73223a5b7b226368616e6e656c223a226d656368616e6963616c222c2266726f6d223a7b22706172744964223a226372616e6b222c22706f72744964223a226f7574227d2c22746f223a7b22706172744964223a2270756c6c6579222c22706f72744964223a22696e227d7d2c7b226368616e6e656c223a226d656368616e6963616c222c2266726f6d223a7b22706172744964223a226775617264222c22706f72744964223a22636f766572227d2c22746f223a7b22706172744964223a2270756c6c6579222c22706f72744964223a226775617264227d7d2c7b226368616e6e656c223a226d656368616e6963616c222c2266726f6d223a7b22706172744964223a2270756c6c6579222c22706f72744964223a226f7574227d2c22746f223a7b22706172744964223a22626f6f6d222c22706f72744964223a22696e227d7d2c7b226368616e6e656c223a226d656368616e6963616c222c2266726f6d223a7b22706172744964223a22726f7065222c22706f72744964223a22616e63686f72227d2c22746f223a7b22706172744964223a22626f6f6d222c22706f72744964223a22616e63686f72227d7d2c7b226368616e6e656c223a226d656368616e6963616c222c2266726f6d223a7b22706172744964223a227765696768745f61222c22706f72744964223a22666f726365227d2c22746f223a7b22706172744964223a22626f6f6d222c22706f72744964223a227765696768745f61227d7d2c7b226368616e6e656c223a226d656368616e6963616c222c2266726f6d223a7b22706172744964223a227765696768745f62222c22706f72744964223a22666f726365227d2c22746f223a7b22706172744964223a22626f6f6d222c22706f72744964223a227765696768745f62227d7d5d2c227061727473223a5b7b226964223a22626f6f6d222c226f7074696f6e4964223a22626f6f6d5f7374616e64617264222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a226669786564222c22736c6f744964223a22626f6f6d227d2c7b226964223a226372616e6b222c226f7074696f6e4964223a226372616e6b5f7374616e64617264222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a226669786564222c22736c6f744964223a226372616e6b227d2c7b226964223a226775617264222c226f7074696f6e4964223a2267756172645f7374616e64617264222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a226669786564222c22736c6f744964223a226775617264227d2c7b226964223a2270756c6c6579222c226f7074696f6e4964223a2270756c6c65795f7374616e64617264222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a226669786564222c22736c6f744964223a2270756c6c6579227d2c7b226964223a22726f7065222c226f7074696f6e4964223a22726f70655f7374616e64617264222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a226669786564222c22736c6f744964223a22726f7065227d2c7b226964223a227765696768745f61222c226f7074696f6e4964223a227765696768745f615f33222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a227261696c5f31303030222c22736c6f744964223a227765696768745f61227d2c7b226964223a227765696768745f62222c226f7074696f6e4964223a227765696768745f625f32222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a227261696c5f31353030222c22736c6f744964223a227765696768745f62227d5d2c22736368656d6156657273696f6e223a227265706169722d7631227df40954686520677561726465642070756c6c657920616e642062616c616e636564206c696674206b656570206c6f616473207374656164792e2043726577732077696c6c2075736520746865206d61726b656420706174682c207374617920636c656172206f662073686f72656c696e65206e657374732c20616e6420696e73706563742074686520726f7065206265666f726520656163682073686966742e01066d6574686f646c7375626d69745f726570616972",
+    "addressCalldataHex": "0x181111111111111111111111111111111111111111"
+  },
+  {
+    "binding": {
+      "chainId": 4221,
+      "contractAddress": "0x2222222222222222222222222222222222222222",
+      "caller": "0x1111111111111111111111111111111111111111",
+      "expeditionId": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "fixtureVersion": "island-2026-10-16-v5",
+      "siteId": "upland_waterworks",
+      "nonce": "42"
+    },
+    "artifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "cistern",
+          "optionId": "cistern_standard",
+          "slotId": "cistern",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "filter",
+          "optionId": "filter_standard",
+          "slotId": "filter",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "habitat",
+          "optionId": "habitat_standard",
+          "slotId": "habitat",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "habitat_valve",
+          "optionId": "habitat_valve_standard",
+          "slotId": "habitat_valve",
+          "orientationQuarterTurns": 0,
+          "settingId": "habitat_2"
+        },
+        {
+          "id": "overflow",
+          "optionId": "overflow_standard",
+          "slotId": "overflow",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "splitter",
+          "optionId": "splitter_standard",
+          "slotId": "splitter",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "village",
+          "optionId": "village_standard",
+          "slotId": "village",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "village_valve",
+          "optionId": "village_valve_standard",
+          "slotId": "village_valve",
+          "orientationQuarterTurns": 0,
+          "settingId": "village_4"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "cistern_pad",
+        "outputModeId": "filtered_split",
+        "routeId": "gravity_route"
+      },
+      "connections": [
+        {
+          "channel": "water",
+          "from": {
+            "partId": "cistern",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "filter",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "cistern",
+            "portId": "overflow"
+          },
+          "to": {
+            "partId": "overflow",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "filter",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "splitter",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "habitat_valve",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "habitat",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "splitter",
+            "portId": "habitat"
+          },
+          "to": {
+            "partId": "habitat_valve",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "splitter",
+            "portId": "village"
+          },
+          "to": {
+            "partId": "village_valve",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "village_valve",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "village",
+            "portId": "in"
+          }
+        }
+      ]
+    },
+    "rationale": "The village and habitat each keep their planned share through the filter. We will clean the filter before dry weather and keep the gravity-fed overflow clear. I preserve water for reeds and birds 🌿.",
+    "canonical": "{\"artifact\":{\"configuration\":{\"mountZoneId\":\"cistern_pad\",\"outputModeId\":\"filtered_split\",\"routeId\":\"gravity_route\"},\"connections\":[{\"channel\":\"water\",\"from\":{\"partId\":\"cistern\",\"portId\":\"out\"},\"to\":{\"partId\":\"filter\",\"portId\":\"in\"}},{\"channel\":\"water\",\"from\":{\"partId\":\"cistern\",\"portId\":\"overflow\"},\"to\":{\"partId\":\"overflow\",\"portId\":\"in\"}},{\"channel\":\"water\",\"from\":{\"partId\":\"filter\",\"portId\":\"out\"},\"to\":{\"partId\":\"splitter\",\"portId\":\"in\"}},{\"channel\":\"water\",\"from\":{\"partId\":\"habitat_valve\",\"portId\":\"out\"},\"to\":{\"partId\":\"habitat\",\"portId\":\"in\"}},{\"channel\":\"water\",\"from\":{\"partId\":\"splitter\",\"portId\":\"habitat\"},\"to\":{\"partId\":\"habitat_valve\",\"portId\":\"in\"}},{\"channel\":\"water\",\"from\":{\"partId\":\"splitter\",\"portId\":\"village\"},\"to\":{\"partId\":\"village_valve\",\"portId\":\"in\"}},{\"channel\":\"water\",\"from\":{\"partId\":\"village_valve\",\"portId\":\"out\"},\"to\":{\"partId\":\"village\",\"portId\":\"in\"}}],\"parts\":[{\"id\":\"cistern\",\"optionId\":\"cistern_standard\",\"orientationQuarterTurns\":0,\"settingId\":\"fixed\",\"slotId\":\"cistern\"},{\"id\":\"filter\",\"optionId\":\"filter_standard\",\"orientationQuarterTurns\":0,\"settingId\":\"fixed\",\"slotId\":\"filter\"},{\"id\":\"habitat\",\"optionId\":\"habitat_standard\",\"orientationQuarterTurns\":0,\"settingId\":\"fixed\",\"slotId\":\"habitat\"},{\"id\":\"habitat_valve\",\"optionId\":\"habitat_valve_standard\",\"orientationQuarterTurns\":0,\"settingId\":\"habitat_2\",\"slotId\":\"habitat_valve\"},{\"id\":\"overflow\",\"optionId\":\"overflow_standard\",\"orientationQuarterTurns\":0,\"settingId\":\"fixed\",\"slotId\":\"overflow\"},{\"id\":\"splitter\",\"optionId\":\"splitter_standard\",\"orientationQuarterTurns\":0,\"settingId\":\"fixed\",\"slotId\":\"splitter\"},{\"id\":\"village\",\"optionId\":\"village_standard\",\"orientationQuarterTurns\":0,\"settingId\":\"fixed\",\"slotId\":\"village\"},{\"id\":\"village_valve\",\"optionId\":\"village_valve_standard\",\"orientationQuarterTurns\":0,\"settingId\":\"village_4\",\"slotId\":\"village_valve\"}],\"schemaVersion\":\"repair-v1\"},\"caller\":\"0x1111111111111111111111111111111111111111\",\"chainId\":4221,\"contractAddress\":\"0x2222222222222222222222222222222222222222\",\"domain\":\"fix-island-repair-v1\",\"expeditionId\":\"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\",\"fixtureVersion\":\"island-2026-10-16-v5\",\"nonce\":\"42\",\"rationale\":\"The village and habitat each keep their planned share through the filter. We will clean the filter before dry weather and keep the gravity-fed overflow clear. I preserve water for reeds and birds 🌿.\",\"siteId\":\"upland_waterworks\"}",
+    "digest": "0x96a8cca771bfa3b33cd6fea82f931ac0e6134b1195d92ea58cac1f884b87be33",
+    "calldataHex": "0x1604617267732d94043078656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565658c0175706c616e645f7761746572776f726b73b4757b22636f6e66696775726174696f6e223a7b226d6f756e745a6f6e654964223a226369737465726e5f706164222c226f75747075744d6f64654964223a2266696c74657265645f73706c6974222c22726f7574654964223a22677261766974795f726f757465227d2c22636f6e6e656374696f6e73223a5b7b226368616e6e656c223a227761746572222c2266726f6d223a7b22706172744964223a226369737465726e222c22706f72744964223a226f7574227d2c22746f223a7b22706172744964223a2266696c746572222c22706f72744964223a22696e227d7d2c7b226368616e6e656c223a227761746572222c2266726f6d223a7b22706172744964223a226369737465726e222c22706f72744964223a226f766572666c6f77227d2c22746f223a7b22706172744964223a226f766572666c6f77222c22706f72744964223a22696e227d7d2c7b226368616e6e656c223a227761746572222c2266726f6d223a7b22706172744964223a2266696c746572222c22706f72744964223a226f7574227d2c22746f223a7b22706172744964223a2273706c6974746572222c22706f72744964223a22696e227d7d2c7b226368616e6e656c223a227761746572222c2266726f6d223a7b22706172744964223a22686162697461745f76616c7665222c22706f72744964223a226f7574227d2c22746f223a7b22706172744964223a2268616269746174222c22706f72744964223a22696e227d7d2c7b226368616e6e656c223a227761746572222c2266726f6d223a7b22706172744964223a2273706c6974746572222c22706f72744964223a2268616269746174227d2c22746f223a7b22706172744964223a22686162697461745f76616c7665222c22706f72744964223a22696e227d7d2c7b226368616e6e656c223a227761746572222c2266726f6d223a7b22706172744964223a2273706c6974746572222c22706f72744964223a2276696c6c616765227d2c22746f223a7b22706172744964223a2276696c6c6167655f76616c7665222c22706f72744964223a22696e227d7d2c7b226368616e6e656c223a227761746572222c2266726f6d223a7b22706172744964223a2276696c6c6167655f76616c7665222c22706f72744964223a226f7574227d2c22746f223a7b22706172744964223a2276696c6c616765222c22706f72744964223a22696e227d7d5d2c227061727473223a5b7b226964223a226369737465726e222c226f7074696f6e4964223a226369737465726e5f7374616e64617264222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a226669786564222c22736c6f744964223a226369737465726e227d2c7b226964223a2266696c746572222c226f7074696f6e4964223a2266696c7465725f7374616e64617264222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a226669786564222c22736c6f744964223a2266696c746572227d2c7b226964223a2268616269746174222c226f7074696f6e4964223a22686162697461745f7374616e64617264222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a226669786564222c22736c6f744964223a2268616269746174227d2c7b226964223a22686162697461745f76616c7665222c226f7074696f6e4964223a22686162697461745f76616c76655f7374616e64617264222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a22686162697461745f32222c22736c6f744964223a22686162697461745f76616c7665227d2c7b226964223a226f766572666c6f77222c226f7074696f6e4964223a226f766572666c6f775f7374616e64617264222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a226669786564222c22736c6f744964223a226f766572666c6f77227d2c7b226964223a2273706c6974746572222c226f7074696f6e4964223a2273706c69747465725f7374616e64617264222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a226669786564222c22736c6f744964223a2273706c6974746572227d2c7b226964223a2276696c6c616765222c226f7074696f6e4964223a2276696c6c6167655f7374616e64617264222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a226669786564222c22736c6f744964223a2276696c6c616765227d2c7b226964223a2276696c6c6167655f76616c7665222c226f7074696f6e4964223a2276696c6c6167655f76616c76655f7374616e64617264222c226f7269656e746174696f6e517561727465725475726e73223a302c2273657474696e674964223a2276696c6c6167655f34222c22736c6f744964223a2276696c6c6167655f76616c7665227d5d2c22736368656d6156657273696f6e223a227265706169722d7631227dcc0c5468652076696c6c61676520616e6420686162697461742065616368206b65657020746865697220706c616e6e6564207368617265207468726f756768207468652066696c7465722e2057652077696c6c20636c65616e207468652066696c746572206265666f726520647279207765617468657220616e64206b6565702074686520677261766974792d666564206f766572666c6f7720636c6561722e204920707265736572766520776174657220666f7220726565647320616e6420626972647320f09f8cbf2ed102066d6574686f646c7375626d69745f726570616972",
+    "addressCalldataHex": "0x181111111111111111111111111111111111111111"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "scope": "Real Chrome browser, existing Rabby connection, read-only automatic wallet progress recovery and gameplay; no fresh Bridge submission",
+  "checkedDate": "2026-10-15",
+  "url": "https://fix-the-island.vercel.app/",
+  "deploymentId": "dpl_86w9rPZnvEZmBCYyPTdK81LXF7sa",
+  "runtimeSourceCommit": "b79965973c7d2a8ca4b38e01a08ba178d9c62577",
+  "automaticRecovery": {
+    "trigger": "Connect GenLayer after reload",
+    "manualRecoveryButtonClicks": 0,
+    "restoredSiteIds": ["pier_hoist", "village_pump", "tidal_sluice"],
+    "pendingSiteIds": [],
+    "savedPositionRetained": true
+  },
+  "keyboardMovement": "passed from landing to village and Bridge interaction range",
+  "pauseResume": "passed; connected world, position and 3 approvals retained",
+  "bridge": {
+    "phase": "revision",
+    "pendingTicket": false,
+    "parts": 8,
+    "connections": 8,
+    "localTest": "passed",
+    "capacity": 8,
+    "originalRationaleRetained": true,
+    "reviewScreen": "Submit for review enabled",
+    "newTransactionSubmitted": false
+  },
+  "screenshots": ["wallet-auto-recovery-browser.png", "bridge-ready-for-review.png"],
+  "visualFollowUp": "docs/CLAUDE-BRIDGE-CLEARANCE.md",
+  "localChecks": { "unitTests": 220, "genlayerAdapterTests": 87, "typecheck": "passed", "productionBuild": "passed" }
+}

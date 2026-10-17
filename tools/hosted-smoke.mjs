@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import { mkdir, writeFile } from 'node:fs/promises';
+import { chromium } from '@playwright/test';
+import { fileURLToPath } from 'node:url';
+const url = process.argv[2];
+assert.ok(url?.startsWith('https://'));
+const out = new URL('../artifacts/deployment/', import.meta.url);
+await mkdir(out, { recursive: true });
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 });
+const errors = [];
+page.on('pageerror', error => errors.push(error.message));
+page.on('response', response => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
+try {
+  const response = await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
+  assert.equal(response.status(), 200);
+  await page.locator('#start-practice').click();
+  await page.waitForFunction(() => Number(document.querySelector('#world')?.dataset.frames ?? 0) > 8);
+  const state = () => page.locator('#world').evaluate(el => JSON.parse(el.dataset.domainState));
+  const before = await state();
+  await page.keyboard.down('KeyS'); await page.waitForTimeout(250); await page.keyboard.up('KeyS');
+  await page.waitForTimeout(300);
+  const after = await state();
+  assert.ok(Math.hypot(after.player.position.x - before.player.position.x, after.player.position.z - before.player.position.z) > .05, 'Hosted player must move from ordinary keyboard input');
+  await page.locator('#save').click();
+  await page.screenshot({ path: fileURLToPath(new URL('hosted-desktop.png', out)) });
+  const diagnostics = await page.locator('#world').evaluate(el => ({ ...el.dataset }));
+  await page.setViewportSize({ width: 667, height: 375 });
+  await page.waitForTimeout(300);
+  await page.screenshot({ path: fileURLToPath(new URL('hosted-landscape.png', out)) });
+  assert.deepEqual(errors, []);
+  const report = { url, passed: true, before: before.player.position, after: after.player.position, errors, diagnostics };
+  await writeFile(new URL('hosted-smoke.json', out), JSON.stringify(report, null, 2));
+  console.log(JSON.stringify({ url, passed: true, moved: true, errors }));
+} finally { await browser.close(); }

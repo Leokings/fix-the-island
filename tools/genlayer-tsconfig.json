@@ -1,0 +1,5 @@
+{
+  "extends": "../tsconfig.json",
+  "include": ["../src/genlayer/**/*.ts", "../tests/direct/genlayer-*.test.ts", "genlayer*.test.ts", "genlayer-vitest.config.ts"],
+  "exclude": ["../node_modules", "../dist"]
+}

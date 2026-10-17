@@ -1,0 +1,3664 @@
+[
+  {
+    "file": "ref-01-1920x1080-closed.png",
+    "ref": "ref-01",
+    "name": "workshop junction",
+    "time": "2026-10-08T15:28:02.042Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": false,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "pier_hoist",
+    "hero": {
+      "x": 932.1451398012739,
+      "y": 528.1655460168968,
+      "width": 55.71198028918752,
+      "height": 153.82489033675347
+    },
+    "heroFeet": {
+      "x": 960.0011299458677,
+      "y": 671.5694305204437,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": 1138.7167534719238,
+        "y": 216.22365254247026,
+        "width": 394.02403541594003,
+        "height": 364.90556518010817
+      },
+      "village_pump": {
+        "x": 4590.0177337666855,
+        "y": -121.0287772445753,
+        "width": 419.38921881178703,
+        "height": 268.1442682315815
+      },
+      "tidal_sluice": {
+        "x": 8399.581912983636,
+        "y": 4149.200824355635,
+        "width": 523.195284987738,
+        "height": 252.81500377867997
+      },
+      "creek_bridge": {
+        "x": 7818.03037906623,
+        "y": -1551.7189361776184,
+        "width": 1274.4321111838844,
+        "height": 900.2272633164083
+      },
+      "coast_windmill": {
+        "x": 13354.867060450266,
+        "y": -145.74933498730365,
+        "width": 419.8087475070133,
+        "height": 269.6268207779483
+      },
+      "woodland_pathlight": {
+        "x": 11784.348360035634,
+        "y": -2500.7395412409983,
+        "width": 378.1037370257545,
+        "height": 275.3772140891583
+      },
+      "upland_waterworks": {
+        "x": 7819.057591263974,
+        "y": -6381.571132216523,
+        "width": 518.6332390469452,
+        "height": 442.81592337654456
+      },
+      "ridge_beacon": {
+        "x": 13217.30623959075,
+        "y": -5930.227384370596,
+        "width": 321.7588714108697,
+        "height": 189.86046755042025
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": 567.3729643844601,
+        "y": 22.075853020187978,
+        "width": 658.4143021490966,
+        "height": 561.2665093770977
+      },
+      "tidal_sluice": {
+        "x": 8611.335403825813,
+        "y": 3932.1423985148185,
+        "width": 490.82844687231045,
+        "height": 359.63407558655854
+      },
+      "creek_bridge": {
+        "x": 7851.745750541389,
+        "y": -1419.8707128215146,
+        "width": 1207.0013682335657,
+        "height": 765.879482397498
+      },
+      "coast_windmill": {
+        "x": 13627.965884357991,
+        "y": -294.9810485380113,
+        "width": 511.4334963484889,
+        "height": 514.7807223974494
+      },
+      "upland_waterworks": {
+        "x": 8164.693115734861,
+        "y": -6447.45305898117,
+        "width": 658.4143021490945,
+        "height": 561.2665093770975
+      },
+      "ridge_beacon": {
+        "x": 13437.805566964755,
+        "y": -6221.766892867987,
+        "width": 202.5890328173664,
+        "height": 390.92576023190486
+      }
+    },
+    "visibleCrowns": 5,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 41.07142857142866,
+      "foliage": 6.845238095238093,
+      "structure": 8.928571428571425,
+      "ground": 35.11904761904764,
+      "assembly": 5.952380952380951,
+      "banks": 2.0833333333333335
+    },
+    "protectedRegion": {
+      "x": 560,
+      "y": 140,
+      "width": 820,
+      "height": 720
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 1392,
+        "y": 744,
+        "width": 0,
+        "height": 0
+      },
+      "protectedScene": {
+        "x": 560,
+        "y": 140,
+        "width": 820,
+        "height": 720
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 1392,
+          "y": 612,
+          "width": 504,
+          "height": 444
+        },
+        "dock": {
+          "x": 24,
+          "y": 888,
+          "width": 1344,
+          "height": 168
+        },
+        "scene": {
+          "x": 560,
+          "y": 140,
+          "width": 820,
+          "height": 720
+        },
+        "drawer": {
+          "x": 24,
+          "y": 624,
+          "width": 504,
+          "height": 432
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 1392,
+          "y": 744,
+          "width": 0,
+          "height": 0
+        },
+        "protectedScene": {
+          "x": 560,
+          "y": 140,
+          "width": 820,
+          "height": 720
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-01-1920x1080-open.png",
+    "ref": "ref-01",
+    "name": "workshop junction",
+    "time": "2026-10-08T15:28:03.904Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": true,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "pier_hoist",
+    "hero": {
+      "x": 784.3785427387429,
+      "y": 569.4713131173186,
+      "width": 55.71198028918741,
+      "height": 153.82489033675347
+    },
+    "heroFeet": {
+      "x": 812.2345328833366,
+      "y": 712.8751976208656,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": 990.9501564093928,
+        "y": 257.5294196428921,
+        "width": 394.0240354159398,
+        "height": 364.90556518010817
+      },
+      "village_pump": {
+        "x": 4442.251136704153,
+        "y": -79.72301014415358,
+        "width": 419.38921881178794,
+        "height": 268.1442682315815
+      },
+      "tidal_sluice": {
+        "x": 8251.815315921105,
+        "y": 4190.5065914560555,
+        "width": 523.195284987738,
+        "height": 252.81500377867997
+      },
+      "creek_bridge": {
+        "x": 7670.263782003698,
+        "y": -1510.4131690771965,
+        "width": 1274.4321111838854,
+        "height": 900.2272633164082
+      },
+      "coast_windmill": {
+        "x": 13207.100463387738,
+        "y": -104.44356788688194,
+        "width": 419.8087475070097,
+        "height": 269.6268207779484
+      },
+      "woodland_pathlight": {
+        "x": 11636.581762973103,
+        "y": -2459.4337741405766,
+        "width": 378.10373702575635,
+        "height": 275.37721408915786
+      },
+      "upland_waterworks": {
+        "x": 7671.290994201443,
+        "y": -6340.265365116103,
+        "width": 518.6332390469433,
+        "height": 442.81592337654547
+      },
+      "ridge_beacon": {
+        "x": 13069.539642528216,
+        "y": -5888.921617270175,
+        "width": 321.7588714108715,
+        "height": 189.86046755042116
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": 419.60636732192904,
+        "y": 63.38162012060982,
+        "width": 658.4143021490962,
+        "height": 561.2665093770977
+      },
+      "tidal_sluice": {
+        "x": 8463.568806763282,
+        "y": 3973.4481656152398,
+        "width": 490.82844687231045,
+        "height": 359.6340755865581
+      },
+      "creek_bridge": {
+        "x": 7703.979153478858,
+        "y": -1378.5649457210927,
+        "width": 1207.0013682335648,
+        "height": 765.8794823974979
+      },
+      "coast_windmill": {
+        "x": 13480.199287295463,
+        "y": -253.6752814375895,
+        "width": 511.4334963484871,
+        "height": 514.7807223974494
+      },
+      "upland_waterworks": {
+        "x": 8016.926518672328,
+        "y": -6406.147291880749,
+        "width": 658.4143021490963,
+        "height": 561.2665093770984
+      },
+      "ridge_beacon": {
+        "x": 13290.038969902223,
+        "y": -6180.461125767565,
+        "width": 202.58903281736457,
+        "height": 390.92576023190486
+      }
+    },
+    "visibleCrowns": 5,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 38.3928571428572,
+      "foliage": 9.52380952380952,
+      "structure": 9.226190476190473,
+      "ground": 33.63095238095239,
+      "assembly": 5.952380952380951,
+      "hero": 0.2976190476190476,
+      "banks": 2.976190476190476
+    },
+    "protectedRegion": {
+      "x": 560,
+      "y": 140,
+      "width": 820,
+      "height": 720
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 1392,
+        "y": 744,
+        "width": 504,
+        "height": 312
+      },
+      "protectedScene": {
+        "x": 560,
+        "y": 140,
+        "width": 820,
+        "height": 720
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 1392,
+          "y": 612,
+          "width": 504,
+          "height": 444
+        },
+        "dock": {
+          "x": 24,
+          "y": 888,
+          "width": 1344,
+          "height": 168
+        },
+        "scene": {
+          "x": 560,
+          "y": 140,
+          "width": 820,
+          "height": 720
+        },
+        "drawer": {
+          "x": 24,
+          "y": 624,
+          "width": 504,
+          "height": 432
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 1392,
+          "y": 744,
+          "width": 504,
+          "height": 312
+        },
+        "protectedScene": {
+          "x": 560,
+          "y": 140,
+          "width": 820,
+          "height": 720
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-01-844x390-closed.png",
+    "ref": "ref-01",
+    "name": "workshop junction",
+    "time": "2026-10-08T15:28:05.816Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": false,
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "pier_hoist",
+    "hero": {
+      "x": 411.9384575967068,
+      "y": 190.7268706493469,
+      "width": 20.11821510442877,
+      "height": 55.547877066049836
+    },
+    "heroFeet": {
+      "x": 421.9975651489212,
+      "y": 242.5116067200722,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": 486.5337625333304,
+        "y": 78.08118689469288,
+        "width": 142.28645723353378,
+        "height": 131.77145409281687
+      },
+      "village_pump": {
+        "x": 1732.8368943064384,
+        "y": -43.70441275062915,
+        "width": 151.44610679314565,
+        "height": 96.82987463918224
+      },
+      "tidal_sluice": {
+        "x": 3108.512847912559,
+        "y": 1498.3229433827798,
+        "width": 188.9316306900164,
+        "height": 91.29430692007918
+      },
+      "creek_bridge": {
+        "x": 2898.5081273312735,
+        "y": -560.3425256986725,
+        "width": 460.211595705292,
+        "height": 325.082067308703
+      },
+      "coast_windmill": {
+        "x": 4897.92137338662,
+        "y": -52.63128082439217,
+        "width": 151.59760326642117,
+        "height": 97.36524083648136
+      },
+      "woodland_pathlight": {
+        "x": 4330.789620459114,
+        "y": -903.0444108604486,
+        "width": 136.53746059263358,
+        "height": 99.44177175441814
+      },
+      "upland_waterworks": {
+        "x": 2898.8790650693477,
+        "y": -2304.455818712722,
+        "width": 187.28422521139692,
+        "height": 159.90575010819657
+      },
+      "ridge_beacon": {
+        "x": 4848.246632520683,
+        "y": -2141.470576435026,
+        "width": 116.19070356503744,
+        "height": 68.56072439320769
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": 280.21517202952407,
+        "y": 7.972259289424274,
+        "width": 237.76072022050698,
+        "height": 202.67957283061858
+      },
+      "tidal_sluice": {
+        "x": 3184.9793862722345,
+        "y": 1419.940734051374,
+        "width": 177.2436058150006,
+        "height": 129.86786062847955
+      },
+      "creek_bridge": {
+        "x": 2910.6831225861924,
+        "y": -512.7306672645238,
+        "width": 435.8616051954541,
+        "height": 276.5675908657631
+      },
+      "coast_windmill": {
+        "x": 4996.540393131076,
+        "y": -106.52051071770327,
+        "width": 184.68431812584367,
+        "height": 185.8930386435234
+      },
+      "upland_waterworks": {
+        "x": 3023.6918933505012,
+        "y": -2328.2465144888442,
+        "width": 237.7607202205072,
+        "height": 202.67957283061878
+      },
+      "ridge_beacon": {
+        "x": 4927.871389627962,
+        "y": -2246.7487322813054,
+        "width": 73.15715073960473,
+        "height": 141.16763563929908
+      }
+    },
+    "visibleCrowns": 5,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 48.214285714285886,
+      "foliage": 5.952380952380951,
+      "structure": 7.142857142857141,
+      "ground": 30.65476190476189,
+      "assembly": 5.059523809523808,
+      "banks": 2.976190476190476
+    },
+    "protectedRegion": {
+      "x": 220,
+      "y": 64,
+      "width": 460,
+      "height": 240
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 8,
+        "y": 196,
+        "width": 0,
+        "height": 0
+      },
+      "protectedScene": {
+        "x": 220,
+        "y": 64,
+        "width": 460,
+        "height": 240
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 8,
+          "y": 64,
+          "width": 196,
+          "height": 240
+        },
+        "dock": {
+          "x": 8,
+          "y": 318,
+          "width": 828,
+          "height": 64
+        },
+        "scene": {
+          "x": 220,
+          "y": 64,
+          "width": 460,
+          "height": 240
+        },
+        "drawer": {
+          "x": 8,
+          "y": 64,
+          "width": 196,
+          "height": 240
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 8,
+          "y": 196,
+          "width": 0,
+          "height": 0
+        },
+        "protectedScene": {
+          "x": 220,
+          "y": 64,
+          "width": 460,
+          "height": 240
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-01-844x390-open.png",
+    "ref": "ref-01",
+    "name": "workshop junction",
+    "time": "2026-10-08T15:28:06.888Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": true,
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "pier_hoist",
+    "hero": {
+      "x": 382.9457095871246,
+      "y": 207.44185929684738,
+      "width": 20.11821510442877,
+      "height": 55.54787706604981
+    },
+    "heroFeet": {
+      "x": 393.004817139339,
+      "y": 259.22659536757266,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": 457.5410145237481,
+        "y": 94.79617554219335,
+        "width": 142.28645723353384,
+        "height": 131.7714540928169
+      },
+      "village_pump": {
+        "x": 1703.8441462968563,
+        "y": -26.989424103128673,
+        "width": 151.44610679314565,
+        "height": 96.82987463918221
+      },
+      "tidal_sluice": {
+        "x": 3079.520099902977,
+        "y": 1515.0379320302802,
+        "width": 188.9316306900164,
+        "height": 91.29430692007895
+      },
+      "creek_bridge": {
+        "x": 2869.5153793216914,
+        "y": -543.627537051172,
+        "width": 460.211595705292,
+        "height": 325.082067308703
+      },
+      "coast_windmill": {
+        "x": 4868.928625377039,
+        "y": -35.916292176891695,
+        "width": 151.59760326642026,
+        "height": 97.36524083648135
+      },
+      "woodland_pathlight": {
+        "x": 4301.796872449531,
+        "y": -886.3294222129481,
+        "width": 136.53746059263358,
+        "height": 99.44177175441803
+      },
+      "upland_waterworks": {
+        "x": 2869.8863170597656,
+        "y": -2287.7408300652214,
+        "width": 187.28422521139692,
+        "height": 159.90575010819657
+      },
+      "ridge_beacon": {
+        "x": 4819.2538845111,
+        "y": -2124.755587787525,
+        "width": 116.19070356503653,
+        "height": 68.56072439320724
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": 251.22242401994185,
+        "y": 24.687247936924752,
+        "width": 237.76072022050698,
+        "height": 202.67957283061855
+      },
+      "tidal_sluice": {
+        "x": 3155.9866382626524,
+        "y": 1436.6557226988746,
+        "width": 177.2436058150006,
+        "height": 129.86786062847955
+      },
+      "creek_bridge": {
+        "x": 2881.6903745766103,
+        "y": -496.01567861702335,
+        "width": 435.8616051954541,
+        "height": 276.5675908657631
+      },
+      "coast_windmill": {
+        "x": 4967.547645121495,
+        "y": -89.80552207020276,
+        "width": 184.68431812584186,
+        "height": 185.89303864352337
+      },
+      "upland_waterworks": {
+        "x": 2994.699145340919,
+        "y": -2311.531525841344,
+        "width": 237.7607202205072,
+        "height": 202.67957283061878
+      },
+      "ridge_beacon": {
+        "x": 4898.87864161838,
+        "y": -2230.033743633805,
+        "width": 73.15715073960473,
+        "height": 141.16763563929862
+      }
+    },
+    "visibleCrowns": 5,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 46.72619047619063,
+      "foliage": 7.142857142857141,
+      "structure": 7.142857142857141,
+      "ground": 29.76190476190475,
+      "assembly": 5.654761904761903,
+      "banks": 3.5714285714285707
+    },
+    "protectedRegion": {
+      "x": 220,
+      "y": 64,
+      "width": 460,
+      "height": 240
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 8,
+        "y": 196,
+        "width": 196,
+        "height": 108
+      },
+      "protectedScene": {
+        "x": 220,
+        "y": 64,
+        "width": 460,
+        "height": 240
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 8,
+          "y": 64,
+          "width": 196,
+          "height": 240
+        },
+        "dock": {
+          "x": 8,
+          "y": 318,
+          "width": 828,
+          "height": 64
+        },
+        "scene": {
+          "x": 220,
+          "y": 64,
+          "width": 460,
+          "height": 240
+        },
+        "drawer": {
+          "x": 8,
+          "y": 64,
+          "width": 196,
+          "height": 240
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 8,
+          "y": 196,
+          "width": 196,
+          "height": 108
+        },
+        "protectedScene": {
+          "x": 220,
+          "y": 64,
+          "width": 460,
+          "height": 240
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-01-667x375-closed.png",
+    "ref": "ref-01",
+    "name": "workshop junction",
+    "time": "2026-10-08T15:28:08.683Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": false,
+    "viewport": {
+      "width": 667,
+      "height": 375
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "pier_hoist",
+    "hero": {
+      "x": 323.82650911326886,
+      "y": 183.39130067198352,
+      "width": 19.344437600412277,
+      "height": 53.41142025581712
+    },
+    "heroFeet": {
+      "x": 333.49872791347497,
+      "y": 233.18431612460398,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": 395.5527638600223,
+        "y": 75.07814321558541,
+        "width": 136.81390118609022,
+        "height": 126.70332124309311
+      },
+      "village_pump": {
+        "x": 1593.921159795703,
+        "y": -42.02339490491652,
+        "width": 145.6212565318708,
+        "height": 93.10564869152134
+      },
+      "tidal_sluice": {
+        "x": 2916.686499801589,
+        "y": 1440.695216761823,
+        "width": 181.66502950963059,
+        "height": 87.78298742315292
+      },
+      "creek_bridge": {
+        "x": 2714.758883858044,
+        "y": -538.790811201112,
+        "width": 442.51114971662764,
+        "height": 312.57891087375276
+      },
+      "coast_windmill": {
+        "x": 4637.271620449725,
+        "y": -50.606921898919424,
+        "width": 145.76692621771144,
+        "height": 93.62042388123206
+      },
+      "woodland_pathlight": {
+        "x": 4091.952627250199,
+        "y": -868.3118546258967,
+        "width": 131.2860198006092,
+        "height": 95.61708822540209
+      },
+      "upland_waterworks": {
+        "x": 2715.1155547600392,
+        "y": -2215.822823714621,
+        "width": 180.08098578018917,
+        "height": 153.75552895018927
+      },
+      "ridge_beacon": {
+        "x": 4589.5074465401685,
+        "y": -2059.1062446014516,
+        "width": 111.72183035099715,
+        "height": 65.92377345500722
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": 197.1695037602085,
+        "y": 7.665712825904059,
+        "width": 228.6160771351029,
+        "height": 194.8842046448256
+      },
+      "tidal_sluice": {
+        "x": 2990.2120174551223,
+        "y": 1365.3277077893174,
+        "width": 170.42654405288522,
+        "height": 124.87294291199964
+      },
+      "creek_bridge": {
+        "x": 2726.4656100646976,
+        "y": -493.01017809135374,
+        "width": 419.0976973033212,
+        "height": 265.93037583246456
+      },
+      "coast_windmill": {
+        "x": 4732.09760097324,
+        "y": -102.42348910402625,
+        "width": 177.58107512100287,
+        "height": 178.74330638800325
+      },
+      "upland_waterworks": {
+        "x": 2835.1278896457634,
+        "y": -2238.6984927301232,
+        "width": 228.6160771351033,
+        "height": 194.88420464482556
+      },
+      "ridge_beacon": {
+        "x": 4666.069712989477,
+        "y": -2160.3352406074896,
+        "width": 70.34341417269661,
+        "height": 135.73811119163338
+      }
+    },
+    "visibleCrowns": 5,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 41.07142857142866,
+      "foliage": 6.845238095238093,
+      "structure": 8.928571428571425,
+      "ground": 35.11904761904764,
+      "assembly": 5.952380952380951,
+      "banks": 2.0833333333333335
+    },
+    "protectedRegion": {
+      "x": 216,
+      "y": 60,
+      "width": 390,
+      "height": 235
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 8,
+        "y": 192,
+        "width": 0,
+        "height": 0
+      },
+      "protectedScene": {
+        "x": 216,
+        "y": 60,
+        "width": 390,
+        "height": 235
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 8,
+          "y": 60,
+          "width": 196,
+          "height": 235
+        },
+        "dock": {
+          "x": 8,
+          "y": 303,
+          "width": 651,
+          "height": 64
+        },
+        "scene": {
+          "x": 216,
+          "y": 60,
+          "width": 390,
+          "height": 235
+        },
+        "drawer": {
+          "x": 8,
+          "y": 60,
+          "width": 196,
+          "height": 235
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 8,
+          "y": 192,
+          "width": 0,
+          "height": 0
+        },
+        "protectedScene": {
+          "x": 216,
+          "y": 60,
+          "width": 390,
+          "height": 235
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-01-667x375-open.png",
+    "ref": "ref-01",
+    "name": "workshop junction",
+    "time": "2026-10-08T15:28:09.835Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": true,
+    "viewport": {
+      "width": 667,
+      "height": 375
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "pier_hoist",
+    "hero": {
+      "x": 346.2373214157865,
+      "y": 200.38466064993227,
+      "width": 19.344437600412334,
+      "height": 53.41142025581718
+    },
+    "heroFeet": {
+      "x": 355.9095402159926,
+      "y": 250.17767610255277,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": 417.9635761625399,
+        "y": 92.0715031935342,
+        "width": 136.81390118609022,
+        "height": 126.70332124309309
+      },
+      "village_pump": {
+        "x": 1616.3319720982206,
+        "y": -25.03003492696776,
+        "width": 145.6212565318708,
+        "height": 93.10564869152135
+      },
+      "tidal_sluice": {
+        "x": 2939.0973121041065,
+        "y": 1457.6885767397719,
+        "width": 181.66502950963059,
+        "height": 87.78298742315269
+      },
+      "creek_bridge": {
+        "x": 2737.169696160562,
+        "y": -521.7974512231632,
+        "width": 442.5111497166272,
+        "height": 312.5789108737529
+      },
+      "coast_windmill": {
+        "x": 4659.682432752241,
+        "y": -33.61356192097066,
+        "width": 145.76692621771326,
+        "height": 93.62042388123206
+      },
+      "woodland_pathlight": {
+        "x": 4114.363439552717,
+        "y": -851.3184946479478,
+        "width": 131.2860198006083,
+        "height": 95.61708822540197
+      },
+      "upland_waterworks": {
+        "x": 2737.526367062557,
+        "y": -2198.829463736672,
+        "width": 180.08098578018917,
+        "height": 153.75552895018905
+      },
+      "ridge_beacon": {
+        "x": 4611.918258842687,
+        "y": -2042.1128846235026,
+        "width": 111.72183035099715,
+        "height": 65.923773455007
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": 219.58031606272615,
+        "y": 24.659072803852844,
+        "width": 228.61607713510293,
+        "height": 194.88420464482556
+      },
+      "tidal_sluice": {
+        "x": 3012.62282975764,
+        "y": 1382.3210677672662,
+        "width": 170.42654405288567,
+        "height": 124.87294291199964
+      },
+      "creek_bridge": {
+        "x": 2748.876422367215,
+        "y": -476.01681811340495,
+        "width": 419.0976973033212,
+        "height": 265.9303758324645
+      },
+      "coast_windmill": {
+        "x": 4754.508413275757,
+        "y": -85.43012912607749,
+        "width": 177.58107512100287,
+        "height": 178.74330638800325
+      },
+      "upland_waterworks": {
+        "x": 2857.538701948281,
+        "y": -2221.7051327521744,
+        "width": 228.6160771351033,
+        "height": 194.8842046448258
+      },
+      "ridge_beacon": {
+        "x": 4688.480525291994,
+        "y": -2143.341880629541,
+        "width": 70.34341417269661,
+        "height": 135.73811119163338
+      }
+    },
+    "visibleCrowns": 5,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 45.53571428571443,
+      "foliage": 7.7380952380952355,
+      "structure": 8.33333333333333,
+      "ground": 31.249999999999986,
+      "assembly": 5.357142857142856,
+      "hero": 0.2976190476190476,
+      "banks": 1.4880952380952381
+    },
+    "protectedRegion": {
+      "x": 216,
+      "y": 60,
+      "width": 390,
+      "height": 235
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 8,
+        "y": 192,
+        "width": 196,
+        "height": 103
+      },
+      "protectedScene": {
+        "x": 216,
+        "y": 60,
+        "width": 390,
+        "height": 235
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 8,
+          "y": 60,
+          "width": 196,
+          "height": 235
+        },
+        "dock": {
+          "x": 8,
+          "y": 303,
+          "width": 651,
+          "height": 64
+        },
+        "scene": {
+          "x": 216,
+          "y": 60,
+          "width": 390,
+          "height": 235
+        },
+        "drawer": {
+          "x": 8,
+          "y": 60,
+          "width": 196,
+          "height": 235
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 8,
+          "y": 192,
+          "width": 196,
+          "height": 103
+        },
+        "protectedScene": {
+          "x": 216,
+          "y": 60,
+          "width": 390,
+          "height": 235
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-06-1920x1080-closed.png",
+    "ref": "ref-06",
+    "name": "pier workshop",
+    "time": "2026-10-08T15:28:13.695Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": false,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "pier_hoist",
+    "hero": {
+      "x": 932.1439739892246,
+      "y": 528.1647788269327,
+      "width": 55.711980289188205,
+      "height": 153.8248903367529
+    },
+    "heroFeet": {
+      "x": 959.9999641338181,
+      "y": 671.5686633304801,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": 1115.9419073803697,
+        "y": 185.52424599463185,
+        "width": 394.02403541594003,
+        "height": 364.90556518010817
+      },
+      "village_pump": {
+        "x": 4567.242887675131,
+        "y": -151.72818379241377,
+        "width": 419.38921881178794,
+        "height": 268.1442682315815
+      },
+      "tidal_sluice": {
+        "x": 8376.807066892083,
+        "y": 4118.501417807795,
+        "width": 523.1952849877362,
+        "height": 252.81500377867997
+      },
+      "creek_bridge": {
+        "x": 7795.255532974676,
+        "y": -1582.4183427254568,
+        "width": 1274.4321111838854,
+        "height": 900.2272633164082
+      },
+      "coast_windmill": {
+        "x": 13332.092214358712,
+        "y": -176.44874153514212,
+        "width": 419.8087475070115,
+        "height": 269.6268207779483
+      },
+      "woodland_pathlight": {
+        "x": 11761.573513944079,
+        "y": -2531.438947788837,
+        "width": 378.10373702575635,
+        "height": 275.3772140891583
+      },
+      "upland_waterworks": {
+        "x": 7796.282745172421,
+        "y": -6412.270538764363,
+        "width": 518.6332390469452,
+        "height": 442.81592337654547
+      },
+      "ridge_beacon": {
+        "x": 13194.531393499194,
+        "y": -5960.9267909184355,
+        "width": 321.7588714108697,
+        "height": 189.86046755042116
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": 544.5981182929062,
+        "y": -8.623553527650492,
+        "width": 658.4143021490964,
+        "height": 561.2665093770977
+      },
+      "tidal_sluice": {
+        "x": 8588.56055773426,
+        "y": 3901.4429919669797,
+        "width": 490.82844687231045,
+        "height": 359.634075586559
+      },
+      "creek_bridge": {
+        "x": 7828.970904449835,
+        "y": -1450.5701193693528,
+        "width": 1207.0013682335657,
+        "height": 765.8794823974978
+      },
+      "coast_windmill": {
+        "x": 13605.19103826644,
+        "y": -325.6804550858498,
+        "width": 511.4334963484871,
+        "height": 514.7807223974494
+      },
+      "upland_waterworks": {
+        "x": 8141.918269643306,
+        "y": -6478.1524655290095,
+        "width": 658.4143021490954,
+        "height": 561.2665093770984
+      },
+      "ridge_beacon": {
+        "x": 13415.0307208732,
+        "y": -6252.466299415825,
+        "width": 202.5890328173664,
+        "height": 390.92576023190486
+      }
+    },
+    "visibleCrowns": 5,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 39.58333333333341,
+      "foliage": 5.952380952380951,
+      "structure": 8.928571428571425,
+      "ground": 36.90476190476195,
+      "assembly": 5.952380952380951,
+      "banks": 2.6785714285714284
+    },
+    "protectedRegion": {
+      "x": 560,
+      "y": 140,
+      "width": 820,
+      "height": 720
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 1392,
+        "y": 744,
+        "width": 0,
+        "height": 0
+      },
+      "protectedScene": {
+        "x": 560,
+        "y": 140,
+        "width": 820,
+        "height": 720
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 1392,
+          "y": 612,
+          "width": 504,
+          "height": 444
+        },
+        "dock": {
+          "x": 24,
+          "y": 888,
+          "width": 1344,
+          "height": 168
+        },
+        "scene": {
+          "x": 560,
+          "y": 140,
+          "width": 820,
+          "height": 720
+        },
+        "drawer": {
+          "x": 24,
+          "y": 624,
+          "width": 504,
+          "height": 432
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 1392,
+          "y": 744,
+          "width": 0,
+          "height": 0
+        },
+        "protectedScene": {
+          "x": 560,
+          "y": 140,
+          "width": 820,
+          "height": 720
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-06-1920x1080-open.png",
+    "ref": "ref-06",
+    "name": "pier workshop",
+    "time": "2026-10-08T15:28:15.219Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": true,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "pier_hoist",
+    "hero": {
+      "x": 793.6775413999202,
+      "y": 581.6189823129531,
+      "width": 55.71198028918832,
+      "height": 153.82489033675301
+    },
+    "heroFeet": {
+      "x": 821.533531544514,
+      "y": 725.0228668165005,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": 977.4754747910654,
+        "y": 238.9784494806523,
+        "width": 394.02403541594003,
+        "height": 364.90556518010817
+      },
+      "village_pump": {
+        "x": 4428.7764550858265,
+        "y": -98.27398030639338,
+        "width": 419.38921881178794,
+        "height": 268.14426823158146
+      },
+      "tidal_sluice": {
+        "x": 8238.340634302778,
+        "y": 4171.955621293817,
+        "width": 523.195284987738,
+        "height": 252.81500377867997
+      },
+      "creek_bridge": {
+        "x": 7656.78910038537,
+        "y": -1528.9641392394362,
+        "width": 1274.4321111838863,
+        "height": 900.2272633164081
+      },
+      "coast_windmill": {
+        "x": 13193.62578176941,
+        "y": -122.99453804912174,
+        "width": 419.8087475070115,
+        "height": 269.62682077794835
+      },
+      "woodland_pathlight": {
+        "x": 11623.107081354776,
+        "y": -2477.984744302816,
+        "width": 378.1037370257545,
+        "height": 275.3772140891583
+      },
+      "upland_waterworks": {
+        "x": 7657.816312583115,
+        "y": -6358.816335278342,
+        "width": 518.6332390469461,
+        "height": 442.81592337654456
+      },
+      "ridge_beacon": {
+        "x": 13056.06496090989,
+        "y": -5907.472587432414,
+        "width": 321.7588714108697,
+        "height": 189.86046755042025
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": 406.13168570360176,
+        "y": 44.83064995836995,
+        "width": 658.4143021490966,
+        "height": 561.2665093770976
+      },
+      "tidal_sluice": {
+        "x": 8450.094125144955,
+        "y": 3954.8971954530007,
+        "width": 490.82844687230863,
+        "height": 359.63407558655854
+      },
+      "creek_bridge": {
+        "x": 7690.50447186053,
+        "y": -1397.1159158833325,
+        "width": 1207.0013682335657,
+        "height": 765.879482397498
+      },
+      "coast_windmill": {
+        "x": 13466.724605677135,
+        "y": -272.2262515998293,
+        "width": 511.4334963484889,
+        "height": 514.7807223974494
+      },
+      "upland_waterworks": {
+        "x": 8003.451837054003,
+        "y": -6424.698262042988,
+        "width": 658.4143021490945,
+        "height": 561.2665093770975
+      },
+      "ridge_beacon": {
+        "x": 13276.564288283897,
+        "y": -6199.012095929804,
+        "width": 202.58903281736457,
+        "height": 390.92576023190395
+      }
+    },
+    "visibleCrowns": 5,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 37.202380952381,
+      "foliage": 8.33333333333333,
+      "structure": 9.226190476190473,
+      "assembly": 6.547619047619046,
+      "ground": 35.11904761904764,
+      "hero": 0.2976190476190476,
+      "banks": 3.2738095238095233
+    },
+    "protectedRegion": {
+      "x": 560,
+      "y": 140,
+      "width": 820,
+      "height": 720
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 1392,
+        "y": 744,
+        "width": 504,
+        "height": 312
+      },
+      "protectedScene": {
+        "x": 560,
+        "y": 140,
+        "width": 820,
+        "height": 720
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 1392,
+          "y": 612,
+          "width": 504,
+          "height": 444
+        },
+        "dock": {
+          "x": 24,
+          "y": 888,
+          "width": 1344,
+          "height": 168
+        },
+        "scene": {
+          "x": 560,
+          "y": 140,
+          "width": 820,
+          "height": 720
+        },
+        "drawer": {
+          "x": 24,
+          "y": 624,
+          "width": 504,
+          "height": 432
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 1392,
+          "y": 744,
+          "width": 504,
+          "height": 312
+        },
+        "protectedScene": {
+          "x": 560,
+          "y": 140,
+          "width": 820,
+          "height": 720
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-06-844x390-closed.png",
+    "ref": "ref-06",
+    "name": "pier workshop",
+    "time": "2026-10-08T15:28:17.133Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": false,
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "pier_hoist",
+    "hero": {
+      "x": 411.9388684988017,
+      "y": 190.72697134243995,
+      "width": 20.118215104429055,
+      "height": 55.547877066049665
+    },
+    "heroFeet": {
+      "x": 421.9979760510161,
+      "y": 242.51170741316545,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": 478.3103444456041,
+        "y": 66.99566781966467,
+        "width": 142.28645723353384,
+        "height": 131.77145409281684
+      },
+      "village_pump": {
+        "x": 1724.613476218712,
+        "y": -54.789931825657355,
+        "width": 151.44610679314542,
+        "height": 96.82987463918221
+      },
+      "tidal_sluice": {
+        "x": 3100.289429824833,
+        "y": 1487.2374243077516,
+        "width": 188.9316306900164,
+        "height": 91.29430692007872
+      },
+      "creek_bridge": {
+        "x": 2890.2847092435472,
+        "y": -571.4280447737007,
+        "width": 460.21159570529244,
+        "height": 325.082067308703
+      },
+      "coast_windmill": {
+        "x": 4889.697955298894,
+        "y": -63.71679989942037,
+        "width": 151.59760326642026,
+        "height": 97.36524083648135
+      },
+      "woodland_pathlight": {
+        "x": 4322.566202371388,
+        "y": -914.1299299354769,
+        "width": 136.53746059263358,
+        "height": 99.44177175441826
+      },
+      "upland_waterworks": {
+        "x": 2890.6556469816214,
+        "y": -2315.54133778775,
+        "width": 187.28422521139692,
+        "height": 159.90575010819657
+      },
+      "ridge_beacon": {
+        "x": 4840.023214432956,
+        "y": -2152.5560955100536,
+        "width": 116.19070356503744,
+        "height": 68.56072439320724
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": 271.9917539417978,
+        "y": -3.1132597856039492,
+        "width": 237.76072022050704,
+        "height": 202.6795728306186
+      },
+      "tidal_sluice": {
+        "x": 3176.755968184508,
+        "y": 1408.855214976346,
+        "width": 177.2436058150006,
+        "height": 129.86786062847932
+      },
+      "creek_bridge": {
+        "x": 2902.459704498466,
+        "y": -523.816186339552,
+        "width": 435.8616051954541,
+        "height": 276.56759086576307
+      },
+      "coast_windmill": {
+        "x": 4988.316975043351,
+        "y": -117.60602979273148,
+        "width": 184.68431812584276,
+        "height": 185.89303864352337
+      },
+      "upland_waterworks": {
+        "x": 3015.468475262775,
+        "y": -2339.3320335638723,
+        "width": 237.7607202205072,
+        "height": 202.67957283061878
+      },
+      "ridge_beacon": {
+        "x": 4919.6479715402365,
+        "y": -2257.834251356334,
+        "width": 73.15715073960382,
+        "height": 141.16763563929908
+      }
+    },
+    "visibleCrowns": 5,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 46.13095238095253,
+      "structure": 7.142857142857141,
+      "foliage": 5.654761904761903,
+      "ground": 33.333333333333336,
+      "assembly": 4.761904761904761,
+      "banks": 2.976190476190476
+    },
+    "protectedRegion": {
+      "x": 220,
+      "y": 64,
+      "width": 460,
+      "height": 240
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 8,
+        "y": 196,
+        "width": 0,
+        "height": 0
+      },
+      "protectedScene": {
+        "x": 220,
+        "y": 64,
+        "width": 460,
+        "height": 240
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 8,
+          "y": 64,
+          "width": 196,
+          "height": 240
+        },
+        "dock": {
+          "x": 8,
+          "y": 318,
+          "width": 828,
+          "height": 64
+        },
+        "scene": {
+          "x": 220,
+          "y": 64,
+          "width": 460,
+          "height": 240
+        },
+        "drawer": {
+          "x": 8,
+          "y": 64,
+          "width": 196,
+          "height": 240
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 8,
+          "y": 196,
+          "width": 0,
+          "height": 0
+        },
+        "protectedScene": {
+          "x": 220,
+          "y": 64,
+          "width": 460,
+          "height": 240
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-06-844x390-open.png",
+    "ref": "ref-06",
+    "name": "pier workshop",
+    "time": "2026-10-08T15:28:18.343Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": true,
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "pier_hoist",
+    "hero": {
+      "x": 386.2353022378238,
+      "y": 211.83338622760928,
+      "width": 20.11821510442911,
+      "height": 55.547877066049665
+    },
+    "heroFeet": {
+      "x": 396.29440979003823,
+      "y": 263.61812229833475,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": 452.6067781846263,
+        "y": 88.10208270483399,
+        "width": 142.28645723353378,
+        "height": 131.77145409281684
+      },
+      "village_pump": {
+        "x": 1698.9099099577345,
+        "y": -33.683516940488026,
+        "width": 151.44610679314542,
+        "height": 96.82987463918218
+      },
+      "tidal_sluice": {
+        "x": 3074.5858635638556,
+        "y": 1508.343839192921,
+        "width": 188.93163069001594,
+        "height": 91.29430692007895
+      },
+      "creek_bridge": {
+        "x": 2864.5811429825694,
+        "y": -550.3216298885313,
+        "width": 460.211595705292,
+        "height": 325.0820673087029
+      },
+      "coast_windmill": {
+        "x": 4863.994389037916,
+        "y": -42.610385014251044,
+        "width": 151.59760326642026,
+        "height": 97.36524083648135
+      },
+      "woodland_pathlight": {
+        "x": 4296.86263611041,
+        "y": -893.0235150503075,
+        "width": 136.53746059263358,
+        "height": 99.44177175441826
+      },
+      "upland_waterworks": {
+        "x": 2864.952080720644,
+        "y": -2294.4349229025806,
+        "width": 187.28422521139646,
+        "height": 159.90575010819657
+      },
+      "ridge_beacon": {
+        "x": 4814.319648171978,
+        "y": -2131.4496806248844,
+        "width": 116.19070356503744,
+        "height": 68.56072439320724
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": 246.28818768081996,
+        "y": 17.99315509956538,
+        "width": 237.760720220507,
+        "height": 202.6795728306186
+      },
+      "tidal_sluice": {
+        "x": 3151.0524019235304,
+        "y": 1429.9616298615151,
+        "width": 177.24360581500105,
+        "height": 129.86786062847955
+      },
+      "creek_bridge": {
+        "x": 2876.7561382374884,
+        "y": -502.7097714543827,
+        "width": 435.8616051954541,
+        "height": 276.5675908657631
+      },
+      "coast_windmill": {
+        "x": 4962.613408782373,
+        "y": -96.49961490756215,
+        "width": 184.68431812584276,
+        "height": 185.89303864352337
+      },
+      "upland_waterworks": {
+        "x": 2989.764909001797,
+        "y": -2318.2256186787035,
+        "width": 237.7607202205072,
+        "height": 202.67957283061924
+      },
+      "ridge_beacon": {
+        "x": 4893.944405279259,
+        "y": -2236.727836471164,
+        "width": 73.15715073960473,
+        "height": 141.16763563929862
+      }
+    },
+    "visibleCrowns": 5,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 45.53571428571443,
+      "foliage": 7.7380952380952355,
+      "structure": 7.440476190476188,
+      "ground": 30.059523809523796,
+      "assembly": 5.357142857142856,
+      "hero": 0.2976190476190476,
+      "banks": 3.5714285714285707
+    },
+    "protectedRegion": {
+      "x": 220,
+      "y": 64,
+      "width": 460,
+      "height": 240
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 8,
+        "y": 196,
+        "width": 196,
+        "height": 108
+      },
+      "protectedScene": {
+        "x": 220,
+        "y": 64,
+        "width": 460,
+        "height": 240
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 8,
+          "y": 64,
+          "width": 196,
+          "height": 240
+        },
+        "dock": {
+          "x": 8,
+          "y": 318,
+          "width": 828,
+          "height": 64
+        },
+        "scene": {
+          "x": 220,
+          "y": 64,
+          "width": 460,
+          "height": 240
+        },
+        "drawer": {
+          "x": 8,
+          "y": 64,
+          "width": 196,
+          "height": 240
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 8,
+          "y": 196,
+          "width": 196,
+          "height": 108
+        },
+        "protectedScene": {
+          "x": 220,
+          "y": 64,
+          "width": 460,
+          "height": 240
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-06-667x375-closed.png",
+    "ref": "ref-06",
+    "name": "pier workshop",
+    "time": "2026-10-08T15:28:20.287Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": false,
+    "viewport": {
+      "width": 667,
+      "height": 375
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "pier_hoist",
+    "hero": {
+      "x": 323.8266515217757,
+      "y": 183.39149490984644,
+      "width": 19.344437600412675,
+      "height": 53.41142025581698
+    },
+    "heroFeet": {
+      "x": 333.4988703219819,
+      "y": 233.1845103624671,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": 387.64537839370115,
+        "y": 64.41908767640865,
+        "width": 136.81390118609028,
+        "height": 126.70332124309311
+      },
+      "village_pump": {
+        "x": 1586.0137743293817,
+        "y": -52.682450444093284,
+        "width": 145.62125653187104,
+        "height": 93.10564869152135
+      },
+      "tidal_sluice": {
+        "x": 2908.7791143352674,
+        "y": 1430.0361612226461,
+        "width": 181.6650295096315,
+        "height": 87.78298742315292
+      },
+      "creek_bridge": {
+        "x": 2706.8514983917235,
+        "y": -549.4498667402887,
+        "width": 442.51114971662673,
+        "height": 312.57891087375276
+      },
+      "coast_windmill": {
+        "x": 4629.364234983403,
+        "y": -61.265977438096186,
+        "width": 145.76692621771326,
+        "height": 93.62042388123206
+      },
+      "woodland_pathlight": {
+        "x": 4084.0452417838774,
+        "y": -878.9709101650735,
+        "width": 131.28601980060967,
+        "height": 95.61708822540209
+      },
+      "upland_waterworks": {
+        "x": 2707.208169293718,
+        "y": -2226.4818792537976,
+        "width": 180.08098578018962,
+        "height": 153.75552895018882
+      },
+      "ridge_beacon": {
+        "x": 4581.600061073848,
+        "y": -2069.7653001406284,
+        "width": 111.72183035099715,
+        "height": 65.923773455007
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": 189.2621182938874,
+        "y": -2.9933427132727006,
+        "width": 228.6160771351029,
+        "height": 194.8842046448256
+      },
+      "tidal_sluice": {
+        "x": 2982.304631988801,
+        "y": 1354.6686522501404,
+        "width": 170.42654405288567,
+        "height": 124.87294291199964
+      },
+      "creek_bridge": {
+        "x": 2718.558224598376,
+        "y": -503.66923363053047,
+        "width": 419.09769730332164,
+        "height": 265.9303758324645
+      },
+      "coast_windmill": {
+        "x": 4724.190215506919,
+        "y": -113.08254464320301,
+        "width": 177.58107512100287,
+        "height": 178.74330638800325
+      },
+      "upland_waterworks": {
+        "x": 2827.2205041794427,
+        "y": -2249.3575482693004,
+        "width": 228.61607713510284,
+        "height": 194.88420464482624
+      },
+      "ridge_beacon": {
+        "x": 4658.162327523155,
+        "y": -2170.994296146667,
+        "width": 70.34341417269752,
+        "height": 135.7381111916336
+      }
+    },
+    "visibleCrowns": 5,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 39.58333333333341,
+      "foliage": 5.952380952380951,
+      "structure": 8.928571428571425,
+      "ground": 36.90476190476195,
+      "assembly": 5.952380952380951,
+      "banks": 2.6785714285714284
+    },
+    "protectedRegion": {
+      "x": 216,
+      "y": 60,
+      "width": 390,
+      "height": 235
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 8,
+        "y": 192,
+        "width": 0,
+        "height": 0
+      },
+      "protectedScene": {
+        "x": 216,
+        "y": 60,
+        "width": 390,
+        "height": 235
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 8,
+          "y": 60,
+          "width": 196,
+          "height": 235
+        },
+        "dock": {
+          "x": 8,
+          "y": 303,
+          "width": 651,
+          "height": 64
+        },
+        "scene": {
+          "x": 216,
+          "y": 60,
+          "width": 390,
+          "height": 235
+        },
+        "drawer": {
+          "x": 8,
+          "y": 60,
+          "width": 196,
+          "height": 235
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 8,
+          "y": 192,
+          "width": 0,
+          "height": 0
+        },
+        "protectedScene": {
+          "x": 216,
+          "y": 60,
+          "width": 390,
+          "height": 235
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-06-667x375-open.png",
+    "ref": "ref-06",
+    "name": "pier workshop",
+    "time": "2026-10-08T15:28:21.509Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": true,
+    "viewport": {
+      "width": 667,
+      "height": 375
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "pier_hoist",
+    "hero": {
+      "x": 349.3835320226745,
+      "y": 204.62571344001384,
+      "width": 19.34443760041256,
+      "height": 53.411420255817006
+    },
+    "heroFeet": {
+      "x": 359.05575082288067,
+      "y": 254.4187288926345,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": 413.2022588945999,
+        "y": 85.65330620657608,
+        "width": 136.81390118609028,
+        "height": 126.70332124309311
+      },
+      "village_pump": {
+        "x": 1611.5706548302808,
+        "y": -31.44823191392586,
+        "width": 145.6212565318708,
+        "height": 93.10564869152134
+      },
+      "tidal_sluice": {
+        "x": 2934.335994836166,
+        "y": 1451.2703797528136,
+        "width": 181.66502950963195,
+        "height": 87.78298742315246
+      },
+      "creek_bridge": {
+        "x": 2732.4083788926223,
+        "y": -528.2156482101213,
+        "width": 442.5111497166272,
+        "height": 312.5789108737529
+      },
+      "coast_windmill": {
+        "x": 4654.9211154843015,
+        "y": -40.03175890792876,
+        "width": 145.76692621771326,
+        "height": 93.62042388123203
+      },
+      "woodland_pathlight": {
+        "x": 4109.602122284776,
+        "y": -857.7366916349062,
+        "width": 131.28601980061103,
+        "height": 95.61708822540209
+      },
+      "upland_waterworks": {
+        "x": 2732.765049794617,
+        "y": -2205.2476607236304,
+        "width": 180.08098578018917,
+        "height": 153.75552895018927
+      },
+      "ridge_beacon": {
+        "x": 4607.156941574746,
+        "y": -2048.531081610461,
+        "width": 111.72183035099715,
+        "height": 65.92377345500722
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": 214.81899879478615,
+        "y": 18.24087581689472,
+        "width": 228.61607713510293,
+        "height": 194.8842046448256
+      },
+      "tidal_sluice": {
+        "x": 3007.8615124897,
+        "y": 1375.902870780308,
+        "width": 170.42654405288567,
+        "height": 124.87294291199942
+      },
+      "creek_bridge": {
+        "x": 2744.1151050992753,
+        "y": -482.4350151003631,
+        "width": 419.0976973033212,
+        "height": 265.9303758324645
+      },
+      "coast_windmill": {
+        "x": 4749.747096007817,
+        "y": -91.84832611303558,
+        "width": 177.58107512100287,
+        "height": 178.74330638800325
+      },
+      "upland_waterworks": {
+        "x": 2852.777384680341,
+        "y": -2228.1233297391327,
+        "width": 228.61607713510284,
+        "height": 194.8842046448258
+      },
+      "ridge_beacon": {
+        "x": 4683.719208024055,
+        "y": -2149.7600776164995,
+        "width": 70.34341417269661,
+        "height": 135.73811119163383
+      }
+    },
+    "visibleCrowns": 5,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 44.04761904761917,
+      "foliage": 7.440476190476188,
+      "structure": 8.630952380952378,
+      "ground": 31.547619047619033,
+      "assembly": 6.845238095238093,
+      "banks": 1.4880952380952381
+    },
+    "protectedRegion": {
+      "x": 216,
+      "y": 60,
+      "width": 390,
+      "height": 235
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 8,
+        "y": 192,
+        "width": 196,
+        "height": 103
+      },
+      "protectedScene": {
+        "x": 216,
+        "y": 60,
+        "width": 390,
+        "height": 235
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 8,
+          "y": 60,
+          "width": 196,
+          "height": 235
+        },
+        "dock": {
+          "x": 8,
+          "y": 303,
+          "width": 651,
+          "height": 64
+        },
+        "scene": {
+          "x": 216,
+          "y": 60,
+          "width": 390,
+          "height": 235
+        },
+        "drawer": {
+          "x": 8,
+          "y": 60,
+          "width": 196,
+          "height": 235
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 8,
+          "y": 192,
+          "width": 196,
+          "height": 103
+        },
+        "protectedScene": {
+          "x": 216,
+          "y": 60,
+          "width": 390,
+          "height": 235
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-04-1920x1080-closed.png",
+    "ref": "ref-04",
+    "name": "reedbed shore",
+    "time": "2026-10-08T15:30:26.097Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": false,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "tidal_sluice",
+    "hero": {
+      "x": 624.9439611708672,
+      "y": 502.45039634091654,
+      "width": 55.71198028918684,
+      "height": 153.82489033675427
+    },
+    "heroFeet": {
+      "x": 652.7999513154605,
+      "y": 645.8542808444649,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": -6631.195478366099,
+        "y": -3690.4581544048115,
+        "width": 441.41783226409007,
+        "height": 364.9055651801086
+      },
+      "village_pump": {
+        "x": -3179.894498071339,
+        "y": -4027.710584191857,
+        "width": 419.38921881178794,
+        "height": 268.1442682315819
+      },
+      "tidal_sluice": {
+        "x": 629.6696811456128,
+        "y": 242.51901740835294,
+        "width": 523.1952849877374,
+        "height": 252.81500377868005
+      },
+      "creek_bridge": {
+        "x": 48.11814722820511,
+        "y": -5458.400743124901,
+        "width": 1274.4321111838858,
+        "height": 900.2272633164093
+      },
+      "coast_windmill": {
+        "x": 5584.954828612244,
+        "y": -4052.431141934585,
+        "width": 419.8087475070124,
+        "height": 269.62682077794807
+      },
+      "woodland_pathlight": {
+        "x": 4014.4361281976103,
+        "y": -6407.42134818828,
+        "width": 378.10373702575407,
+        "height": 275.37721408915786
+      },
+      "upland_waterworks": {
+        "x": 49.145359425950126,
+        "y": -10288.252939163805,
+        "width": 518.6332390469452,
+        "height": 442.81592337654365
+      },
+      "ridge_beacon": {
+        "x": 5447.394007752723,
+        "y": -9836.90919131788,
+        "width": 321.75887141087424,
+        "height": 189.86046755042298
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": -7202.539267453563,
+        "y": -3884.6059539270937,
+        "width": 658.4143021490963,
+        "height": 561.2665093770979
+      },
+      "tidal_sluice": {
+        "x": 841.4231719877897,
+        "y": 25.460591567536962,
+        "width": 490.82844687230966,
+        "height": 359.6340755865587
+      },
+      "creek_bridge": {
+        "x": 81.8335187033654,
+        "y": -5326.552519768797,
+        "width": 1207.0013682335652,
+        "height": 765.8794823974986
+      },
+      "coast_windmill": {
+        "x": 5858.0536525199705,
+        "y": -4201.662855485293,
+        "width": 511.433496348488,
+        "height": 514.7807223974501
+      },
+      "upland_waterworks": {
+        "x": 394.78088389683626,
+        "y": -10354.134865928454,
+        "width": 658.4143021490963,
+        "height": 561.2665093770993
+      },
+      "ridge_beacon": {
+        "x": 5667.8933351267315,
+        "y": -10128.448699815268,
+        "width": 202.5890328173664,
+        "height": 390.92576023190304
+      }
+    },
+    "visibleCrowns": 15,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "foliage": 35.11904761904764,
+      "water": 33.92857142857144,
+      "ground": 18.749999999999993,
+      "structure": 3.869047619047618,
+      "assembly": 4.4642857142857135,
+      "banks": 3.5714285714285707,
+      "hero": 0.2976190476190476
+    },
+    "protectedRegion": {
+      "x": 560,
+      "y": 140,
+      "width": 820,
+      "height": 720
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 1392,
+        "y": 744,
+        "width": 0,
+        "height": 0
+      },
+      "protectedScene": {
+        "x": 560,
+        "y": 140,
+        "width": 820,
+        "height": 720
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 1392,
+          "y": 612,
+          "width": 504,
+          "height": 444
+        },
+        "dock": {
+          "x": 24,
+          "y": 888,
+          "width": 1344,
+          "height": 168
+        },
+        "scene": {
+          "x": 560,
+          "y": 140,
+          "width": 820,
+          "height": 720
+        },
+        "drawer": {
+          "x": 24,
+          "y": 624,
+          "width": 504,
+          "height": 432
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 1392,
+          "y": 744,
+          "width": 0,
+          "height": 0
+        },
+        "protectedScene": {
+          "x": 560,
+          "y": 140,
+          "width": 820,
+          "height": 720
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-04-1920x1080-open.png",
+    "ref": "ref-04",
+    "name": "reedbed shore",
+    "time": "2026-10-08T15:30:27.892Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": true,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "tidal_sluice",
+    "hero": {
+      "x": 844.0543485188441,
+      "y": 607.1928502131857,
+      "width": 55.71198028918741,
+      "height": 153.82489033675438
+    },
+    "heroFeet": {
+      "x": 871.9103386634373,
+      "y": 750.5967347167341,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": -6412.085091018124,
+        "y": -3585.715700532545,
+        "width": 441.41783226409007,
+        "height": 364.90556518010817
+      },
+      "village_pump": {
+        "x": -2960.784110723361,
+        "y": -3922.9681303195903,
+        "width": 419.38921881178794,
+        "height": 268.1442682315819
+      },
+      "tidal_sluice": {
+        "x": 848.7800684935902,
+        "y": 347.261471280622,
+        "width": 523.1952849877379,
+        "height": 252.8150037786802
+      },
+      "creek_bridge": {
+        "x": 267.22853457618424,
+        "y": -5353.658289252633,
+        "width": 1274.4321111838863,
+        "height": 900.2272633164093
+      },
+      "coast_windmill": {
+        "x": 5804.065215960224,
+        "y": -3947.688688062317,
+        "width": 419.8087475070115,
+        "height": 269.6268207779476
+      },
+      "woodland_pathlight": {
+        "x": 4233.54651554559,
+        "y": -6302.678894316013,
+        "width": 378.10373702575544,
+        "height": 275.37721408915786
+      },
+      "upland_waterworks": {
+        "x": 268.2557467739304,
+        "y": -10183.51048529154,
+        "width": 518.6332390469454,
+        "height": 442.81592337654365
+      },
+      "ridge_beacon": {
+        "x": 5666.504395100706,
+        "y": -9732.166737445614,
+        "width": 321.7588714108733,
+        "height": 189.86046755042116
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": -6983.428880105588,
+        "y": -3779.8635000548275,
+        "width": 658.4143021490972,
+        "height": 561.2665093770984
+      },
+      "tidal_sluice": {
+        "x": 1060.5335593357677,
+        "y": 130.20304543980583,
+        "width": 490.82844687230886,
+        "height": 359.634075586559
+      },
+      "creek_bridge": {
+        "x": 300.9439060513445,
+        "y": -5221.8100658965295,
+        "width": 1207.0013682335652,
+        "height": 765.8794823974995
+      },
+      "coast_windmill": {
+        "x": 6077.16403986795,
+        "y": -4096.920401613024,
+        "width": 511.4334963484889,
+        "height": 514.7807223974482
+      },
+      "upland_waterworks": {
+        "x": 613.8912712448164,
+        "y": -10249.392412056188,
+        "width": 658.4143021490977,
+        "height": 561.2665093770975
+      },
+      "ridge_beacon": {
+        "x": 5887.003722474712,
+        "y": -10023.706245943,
+        "width": 202.5890328173682,
+        "height": 390.92576023190304
+      }
+    },
+    "visibleCrowns": 16,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 29.4642857142857,
+      "foliage": 33.92857142857144,
+      "structure": 3.869047619047618,
+      "ground": 22.916666666666657,
+      "assembly": 5.059523809523808,
+      "banks": 4.761904761904761
+    },
+    "protectedRegion": {
+      "x": 560,
+      "y": 140,
+      "width": 820,
+      "height": 720
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 1392,
+        "y": 744,
+        "width": 504,
+        "height": 312
+      },
+      "protectedScene": {
+        "x": 560,
+        "y": 140,
+        "width": 820,
+        "height": 720
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 1392,
+          "y": 612,
+          "width": 504,
+          "height": 444
+        },
+        "dock": {
+          "x": 24,
+          "y": 888,
+          "width": 1344,
+          "height": 168
+        },
+        "scene": {
+          "x": 560,
+          "y": 140,
+          "width": 820,
+          "height": 720
+        },
+        "drawer": {
+          "x": 24,
+          "y": 624,
+          "width": 504,
+          "height": 432
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 1392,
+          "y": 744,
+          "width": 504,
+          "height": 312
+        },
+        "protectedScene": {
+          "x": 560,
+          "y": 140,
+          "width": 820,
+          "height": 720
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-04-844x390-closed.png",
+    "ref": "ref-04",
+    "name": "reedbed shore",
+    "time": "2026-10-08T15:30:29.954Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": false,
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "tidal_sluice",
+    "hero": {
+      "x": 276.90649194096716,
+      "y": 181.4422032540263,
+      "width": 20.11821510442877,
+      "height": 55.547877066050205
+    },
+    "heroFeet": {
+      "x": 286.9655994931814,
+      "y": 233.22693932475212,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": -2343.366083447382,
+        "y": -1332.663662293043,
+        "width": 159.4008838731438,
+        "height": 131.77145409281684
+      },
+      "village_pump": {
+        "x": -1097.0629516742736,
+        "y": -1454.449261938365,
+        "width": 151.44610679314576,
+        "height": 96.82987463918221
+      },
+      "tidal_sluice": {
+        "x": 278.6130019318477,
+        "y": 87.57809419504498,
+        "width": 188.9316306900164,
+        "height": 91.29430692007894
+      },
+      "creek_bridge": {
+        "x": 68.60828135056217,
+        "y": -1971.0873748864083,
+        "width": 460.2115957052923,
+        "height": 325.08206730870324
+      },
+      "coast_windmill": {
+        "x": 2068.0215274059096,
+        "y": -1463.3761300121275,
+        "width": 151.59760326642117,
+        "height": 97.36524083648146
+      },
+      "woodland_pathlight": {
+        "x": 1500.889774478403,
+        "y": -2313.7892600481846,
+        "width": 136.5374605926338,
+        "height": 99.44177175441791
+      },
+      "upland_waterworks": {
+        "x": 68.97921908863728,
+        "y": -3715.200667900458,
+        "width": 187.28422521139683,
+        "height": 159.90575010819657
+      },
+      "ridge_beacon": {
+        "x": 2018.3467865399723,
+        "y": -3552.2154256227623,
+        "width": 116.19070356503767,
+        "height": 68.56072439320769
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": -2549.684673951189,
+        "y": -1402.7725898983115,
+        "width": 237.76072022050766,
+        "height": 202.67957283061855
+      },
+      "tidal_sluice": {
+        "x": 355.0795402915229,
+        "y": 9.195884863639186,
+        "width": 177.24360581500036,
+        "height": 129.8678606284796
+      },
+      "creek_bridge": {
+        "x": 80.7832766054812,
+        "y": -1923.4755164522594,
+        "width": 435.8616051954541,
+        "height": 276.5675908657631
+      },
+      "coast_windmill": {
+        "x": 2166.6405471503663,
+        "y": -1517.2653599054386,
+        "width": 184.68431812584322,
+        "height": 185.8930386435236
+      },
+      "upland_waterworks": {
+        "x": 193.79204736979048,
+        "y": -3738.9913636765805,
+        "width": 237.76072022050735,
+        "height": 202.67957283061878
+      },
+      "ridge_beacon": {
+        "x": 2097.971543647253,
+        "y": -3657.4935814690416,
+        "width": 73.15715073960519,
+        "height": 141.16763563929953
+      }
+    },
+    "visibleCrowns": 15,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 42.55952380952392,
+      "foliage": 28.27380952380951,
+      "structure": 3.5714285714285707,
+      "ground": 18.452380952380945,
+      "assembly": 3.5714285714285707,
+      "banks": 3.5714285714285707
+    },
+    "protectedRegion": {
+      "x": 220,
+      "y": 64,
+      "width": 460,
+      "height": 240
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 8,
+        "y": 196,
+        "width": 0,
+        "height": 0
+      },
+      "protectedScene": {
+        "x": 220,
+        "y": 64,
+        "width": 460,
+        "height": 240
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 8,
+          "y": 64,
+          "width": 196,
+          "height": 240
+        },
+        "dock": {
+          "x": 8,
+          "y": 318,
+          "width": 828,
+          "height": 64
+        },
+        "scene": {
+          "x": 220,
+          "y": 64,
+          "width": 460,
+          "height": 240
+        },
+        "drawer": {
+          "x": 8,
+          "y": 64,
+          "width": 196,
+          "height": 240
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 8,
+          "y": 196,
+          "width": 0,
+          "height": 0
+        },
+        "protectedScene": {
+          "x": 220,
+          "y": 64,
+          "width": 460,
+          "height": 240
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-04-844x390-open.png",
+    "ref": "ref-04",
+    "name": "reedbed shore",
+    "time": "2026-10-08T15:30:31.322Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": true,
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "tidal_sluice",
+    "hero": {
+      "x": 404.2620386681093,
+      "y": 221.09873320232677,
+      "width": 20.1182151044286,
+      "height": 55.54787706605018
+    },
+    "heroFeet": {
+      "x": 414.3211462203235,
+      "y": 272.8834692730526,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": -2216.010536720239,
+        "y": -1293.0071323447414,
+        "width": 159.4008838731429,
+        "height": 131.7714540928166
+      },
+      "village_pump": {
+        "x": -969.7074049471314,
+        "y": -1414.7927319900634,
+        "width": 151.44610679314542,
+        "height": 96.82987463918221
+      },
+      "tidal_sluice": {
+        "x": 405.9685486589896,
+        "y": 127.23462414334547,
+        "width": 188.93163069001633,
+        "height": 91.29430692007891
+      },
+      "creek_bridge": {
+        "x": 195.96382807770354,
+        "y": -1931.4308449381072,
+        "width": 460.211595705292,
+        "height": 325.0820673087035
+      },
+      "coast_windmill": {
+        "x": 2195.377074133051,
+        "y": -1423.7196000638264,
+        "width": 151.59760326642117,
+        "height": 97.36524083648123
+      },
+      "woodland_pathlight": {
+        "x": 1628.2453212055439,
+        "y": -2274.132730099883,
+        "width": 136.53746059263335,
+        "height": 99.44177175441791
+      },
+      "upland_waterworks": {
+        "x": 196.33476581577813,
+        "y": -3675.544137952157,
+        "width": 187.28422521139683,
+        "height": 159.90575010819748
+      },
+      "ridge_beacon": {
+        "x": 2145.702333267113,
+        "y": -3512.55889567446,
+        "width": 116.19070356503744,
+        "height": 68.56072439320724
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": -2422.329127224046,
+        "y": -1363.1160599500104,
+        "width": 237.7607202205072,
+        "height": 202.67957283061878
+      },
+      "tidal_sluice": {
+        "x": 482.4350870186646,
+        "y": 48.852414811939695,
+        "width": 177.2436058150007,
+        "height": 129.86786062847952
+      },
+      "creek_bridge": {
+        "x": 208.13882333262254,
+        "y": -1883.8189865039583,
+        "width": 435.8616051954541,
+        "height": 276.5675908657631
+      },
+      "coast_windmill": {
+        "x": 2293.996093877507,
+        "y": -1477.6088299571377,
+        "width": 184.68431812584322,
+        "height": 185.89303864352337
+      },
+      "upland_waterworks": {
+        "x": 321.1475940969314,
+        "y": -3699.3348337282787,
+        "width": 237.76072022050693,
+        "height": 202.67957283061833
+      },
+      "ridge_beacon": {
+        "x": 2225.3270903743933,
+        "y": -3617.8370515207407,
+        "width": 73.15715073960428,
+        "height": 141.16763563929908
+      }
+    },
+    "visibleCrowns": 16,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 33.92857142857144,
+      "foliage": 30.357142857142843,
+      "structure": 3.2738095238095233,
+      "ground": 22.61904761904761,
+      "assembly": 4.166666666666666,
+      "banks": 5.059523809523808,
+      "hero": 0.5952380952380952
+    },
+    "protectedRegion": {
+      "x": 220,
+      "y": 64,
+      "width": 460,
+      "height": 240
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 8,
+        "y": 196,
+        "width": 196,
+        "height": 108
+      },
+      "protectedScene": {
+        "x": 220,
+        "y": 64,
+        "width": 460,
+        "height": 240
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 8,
+          "y": 64,
+          "width": 196,
+          "height": 240
+        },
+        "dock": {
+          "x": 8,
+          "y": 318,
+          "width": 828,
+          "height": 64
+        },
+        "scene": {
+          "x": 220,
+          "y": 64,
+          "width": 460,
+          "height": 240
+        },
+        "drawer": {
+          "x": 8,
+          "y": 64,
+          "width": 196,
+          "height": 240
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 8,
+          "y": 196,
+          "width": 196,
+          "height": 108
+        },
+        "protectedScene": {
+          "x": 220,
+          "y": 64,
+          "width": 460,
+          "height": 240
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-04-667x375-closed.png",
+    "ref": "ref-04",
+    "name": "reedbed shore",
+    "time": "2026-10-08T15:30:33.605Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": false,
+    "viewport": {
+      "width": 667,
+      "height": 375
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "tidal_sluice",
+    "hero": {
+      "x": 217.11124622748878,
+      "y": 174.46354210494647,
+      "width": 19.344437600412277,
+      "height": 53.41142025581749
+    },
+    "heroFeet": {
+      "x": 226.78346502769477,
+      "y": 224.25655755756745,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": -2302.381614722847,
+        "y": -1281.4074824595432,
+        "width": 153.2700806472535,
+        "height": 126.70332124309311
+      },
+      "village_pump": {
+        "x": -1104.013218787166,
+        "y": -1398.5090205800452,
+        "width": 145.62125653187104,
+        "height": 93.10564869152154
+      },
+      "tidal_sluice": {
+        "x": 218.75212121872002,
+        "y": 84.20959108669517,
+        "width": 181.66502950963113,
+        "height": 87.78298742315285
+      },
+      "creek_bridge": {
+        "x": 16.824505275176246,
+        "y": -1895.2764368762405,
+        "width": 442.51114971662713,
+        "height": 312.5789108737531
+      },
+      "coast_windmill": {
+        "x": 1939.3372418668566,
+        "y": -1407.0925475740476,
+        "width": 145.76692621771258,
+        "height": 93.620423881232
+      },
+      "woodland_pathlight": {
+        "x": 1394.0182486673307,
+        "y": -2224.797480301025,
+        "width": 131.28601980060967,
+        "height": 95.61708822540186
+      },
+      "upland_waterworks": {
+        "x": 17.181176177171512,
+        "y": -3572.30844938975,
+        "width": 180.0809857801893,
+        "height": 153.75552895018882
+      },
+      "ridge_beacon": {
+        "x": 1891.5730679573014,
+        "y": -3415.591870276581,
+        "width": 111.72183035099783,
+        "height": 65.92377345500745
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": -2500.764874822661,
+        "y": -1348.8199128492245,
+        "width": 228.6160771351033,
+        "height": 194.88420464482556
+      },
+      "tidal_sluice": {
+        "x": 292.2776388722539,
+        "y": 8.842082114189603,
+        "width": 170.426544052885,
+        "height": 124.87294291199957
+      },
+      "creek_bridge": {
+        "x": 28.531231481829177,
+        "y": -1849.4958037664826,
+        "width": 419.09769730332124,
+        "height": 265.9303758324652
+      },
+      "coast_windmill": {
+        "x": 2034.1632223903725,
+        "y": -1458.9091147791544,
+        "width": 177.58107512100332,
+        "height": 178.74330638800302
+      },
+      "upland_waterworks": {
+        "x": 137.19351106289577,
+        "y": -3595.1841184052523,
+        "width": 228.6160771351033,
+        "height": 194.88420464482533
+      },
+      "ridge_beacon": {
+        "x": 1968.1353344066094,
+        "y": -3516.8208662826187,
+        "width": 70.3434141726973,
+        "height": 135.73811119163338
+      }
+    },
+    "visibleCrowns": 15,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "foliage": 35.11904761904764,
+      "water": 33.92857142857144,
+      "ground": 18.749999999999993,
+      "structure": 3.869047619047618,
+      "assembly": 4.4642857142857135,
+      "banks": 3.5714285714285707,
+      "hero": 0.2976190476190476
+    },
+    "protectedRegion": {
+      "x": 216,
+      "y": 60,
+      "width": 390,
+      "height": 235
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 8,
+        "y": 192,
+        "width": 0,
+        "height": 0
+      },
+      "protectedScene": {
+        "x": 216,
+        "y": 60,
+        "width": 390,
+        "height": 235
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 8,
+          "y": 60,
+          "width": 196,
+          "height": 235
+        },
+        "dock": {
+          "x": 8,
+          "y": 303,
+          "width": 651,
+          "height": 64
+        },
+        "scene": {
+          "x": 216,
+          "y": 60,
+          "width": 390,
+          "height": 235
+        },
+        "drawer": {
+          "x": 8,
+          "y": 60,
+          "width": 196,
+          "height": 235
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 8,
+          "y": 192,
+          "width": 0,
+          "height": 0
+        },
+        "protectedScene": {
+          "x": 216,
+          "y": 60,
+          "width": 390,
+          "height": 235
+        },
+        "keyboardOpen": false
+      }
+    }
+  },
+  {
+    "file": "ref-04-667x375-open.png",
+    "ref": "ref-04",
+    "name": "reedbed shore",
+    "time": "2026-10-08T15:30:35.200Z",
+    "commit": "05959cdaa097de9e75283de3ae2c4212f1f3f1af",
+    "open": true,
+    "viewport": {
+      "width": 667,
+      "height": 375
+    },
+    "camera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 52,
+      "span": 8.4,
+      "distance": 32,
+      "targetHeight": 0.85,
+      "followSeconds": 0.14
+    },
+    "inspectionCamera": {
+      "yawDegrees": 35,
+      "pitchDegrees": 58,
+      "span": 5.8,
+      "distance": 32,
+      "targetHeight": 1.1,
+      "followSeconds": 0.14
+    },
+    "selected": "tidal_sluice",
+    "hero": {
+      "x": 366.875952048339,
+      "y": 213.50560668638212,
+      "width": 19.34443760041222,
+      "height": 53.41142025581752
+    },
+    "heroFeet": {
+      "x": 376.54817084854494,
+      "y": 263.29862213900316,
+      "visible": true
+    },
+    "assemblies": {
+      "pier_hoist": {
+        "x": -2152.616908901997,
+        "y": -1242.3654178781076,
+        "width": 153.27008064725328,
+        "height": 126.70332124309311
+      },
+      "village_pump": {
+        "x": -954.2485129663156,
+        "y": -1359.4669559986094,
+        "width": 145.62125653187093,
+        "height": 93.10564869152131
+      },
+      "tidal_sluice": {
+        "x": 368.5168270395703,
+        "y": 123.25165566813087,
+        "width": 181.6650295096311,
+        "height": 87.7829874231528
+      },
+      "creek_bridge": {
+        "x": 166.58921109602647,
+        "y": -1856.2343722948049,
+        "width": 442.5111497166272,
+        "height": 312.5789108737529
+      },
+      "coast_windmill": {
+        "x": 2089.101947687707,
+        "y": -1368.0504829926122,
+        "width": 145.76692621771235,
+        "height": 93.62042388123223
+      },
+      "woodland_pathlight": {
+        "x": 1543.7829544881813,
+        "y": -2185.7554157195896,
+        "width": 131.2860198006092,
+        "height": 95.61708822540231
+      },
+      "upland_waterworks": {
+        "x": 166.94588199802175,
+        "y": -3533.266384808314,
+        "width": 180.0809857801893,
+        "height": 153.75552895018882
+      },
+      "ridge_beacon": {
+        "x": 2041.3377737781516,
+        "y": -3376.549805695145,
+        "width": 111.72183035099806,
+        "height": 65.923773455007
+      }
+    },
+    "structures": {
+      "pier_hoist": {
+        "x": -2351.000169001811,
+        "y": -1309.7778482677888,
+        "width": 228.6160771351033,
+        "height": 194.88420464482556
+      },
+      "tidal_sluice": {
+        "x": 442.0423446931041,
+        "y": 47.884146695625276,
+        "width": 170.42654405288505,
+        "height": 124.87294291199962
+      },
+      "creek_bridge": {
+        "x": 178.29593730267942,
+        "y": -1810.4537391850467,
+        "width": 419.09769730332124,
+        "height": 265.93037583246473
+      },
+      "coast_windmill": {
+        "x": 2183.927928211223,
+        "y": -1419.8670501977188,
+        "width": 177.58107512100287,
+        "height": 178.74330638800325
+      },
+      "upland_waterworks": {
+        "x": 286.958216883746,
+        "y": -3556.1420538238167,
+        "width": 228.6160771351033,
+        "height": 194.88420464482533
+      },
+      "ridge_beacon": {
+        "x": 2117.9000402274596,
+        "y": -3477.778801701183,
+        "width": 70.34341417269707,
+        "height": 135.73811119163383
+      }
+    },
+    "visibleCrowns": 15,
+    "coverageMethod": "24x14 nearest-visible-geometry ray samples before HUD occlusion",
+    "coverage": {
+      "water": 29.76190476190475,
+      "foliage": 28.57142857142856,
+      "structure": 4.166666666666666,
+      "ground": 25.89285714285713,
+      "assembly": 5.357142857142856,
+      "banks": 5.654761904761903,
+      "hero": 0.5952380952380952
+    },
+    "protectedRegion": {
+      "x": 216,
+      "y": 60,
+      "width": 390,
+      "height": 235
+    },
+    "actualLayout": {
+      "inset": {
+        "x": 8,
+        "y": 192,
+        "width": 196,
+        "height": 103
+      },
+      "protectedScene": {
+        "x": 216,
+        "y": 60,
+        "width": 390,
+        "height": 235
+      },
+      "keyboardOpen": false
+    },
+    "placeholder": true,
+    "layout": {
+      "planned": {
+        "inset": {
+          "x": 8,
+          "y": 60,
+          "width": 196,
+          "height": 235
+        },
+        "dock": {
+          "x": 8,
+          "y": 303,
+          "width": 651,
+          "height": 64
+        },
+        "scene": {
+          "x": 216,
+          "y": 60,
+          "width": 390,
+          "height": 235
+        },
+        "drawer": {
+          "x": 8,
+          "y": 60,
+          "width": 196,
+          "height": 235
+        }
+      },
+      "actual": {
+        "inset": {
+          "x": 8,
+          "y": 192,
+          "width": 196,
+          "height": 103
+        },
+        "protectedScene": {
+          "x": 216,
+          "y": 60,
+          "width": 390,
+          "height": 235
+        },
+        "keyboardOpen": false
+      }
+    }
+  }
+]

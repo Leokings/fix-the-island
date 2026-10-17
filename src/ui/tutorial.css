@@ -1,0 +1,27 @@
+/* First-visit tutorial coach card. */
+.coach {
+  position: fixed; z-index: 45; left: 50%; top: 96px; transform: translateX(-50%); pointer-events: auto;
+  width: min(440px, calc(100vw - 32px)); padding: 14px 16px 12px; border-radius: 16px;
+  background: #fff8ea; color: #2b2620; border: 2px solid #c7743a;
+  box-shadow: 0 3px 0 rgb(0 0 0 / 14%), 0 14px 30px rgb(43 26 12 / 22%);
+  font-family: 'Nunito', system-ui, sans-serif; animation: coach-in .35s cubic-bezier(.2,.9,.25,1.15);
+}
+.coach[hidden] { display: none; }
+/* While building, sit on the right so the checklist, tray and machine stay clear. */
+.coach.building { left: auto; right: 16px; top: 140px; transform: none; width: min(340px, calc(100vw - 32px)); }
+.coach h2 { margin: 0 0 6px; font-size: 19px; font-weight: 900; line-height: 1.2; }
+.coach p { margin: 0 0 8px; font-size: 15px; line-height: 1.4; font-weight: 600; }
+.coach .coach-hint { color: #6b6155; font-size: 13.5px; }
+.coach-dots { display: flex; gap: 5px; margin: 6px 0 10px; }
+.coach-dots span { width: 18px; height: 5px; border-radius: 3px; background: #e2d2b2; }
+.coach-dots span.on { background: #c7743a; }
+.coach-actions { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; }
+.coach-actions button { font: 800 15px 'Nunito', system-ui, sans-serif; border-radius: 12px; padding: 8px 14px; cursor: pointer; border: 2px solid transparent; }
+.coach-actions .primary { background: #e0703a; color: #fff; box-shadow: 0 3px 0 #a94c22; }
+.coach-actions .quiet { background: transparent; color: #6b6155; border-color: #e2d2b2; }
+@keyframes coach-in { from { opacity: 0; translate: 0 -10px; } }
+@media (max-width: 760px) {
+  .coach, .coach.building { left: 8px; right: 8px; top: auto; bottom: 150px; transform: none; width: auto; padding: 10px 12px; }
+  .coach h2 { font-size: 16px; } .coach p { font-size: 13.5px; } .coach .coach-hint { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .coach { animation: none; } }

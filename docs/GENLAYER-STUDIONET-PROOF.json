@@ -1,0 +1,84 @@
+{
+  "protocol": "repair-v2 / async-notify-v1",
+  "network": "StudioNet",
+  "chainId": 61999,
+  "verifiedAt": "2026-10-15T14:38:24Z",
+  "contractSourceCommit": "e502a4d",
+  "account": "0x797d3b25fb2cca0ff93f60df1910267f3822d655",
+  "explorerBaseUrl": "https://explorer-studio.genlayer.com/tx/",
+  "verification": {
+    "allDeploymentsFinalizedWithSuccessfulExecution": true,
+    "allSourceHashesMatchRepository": true,
+    "constructorDependencyBindingsMatchGraph": true,
+    "allDependentMapsFinalizedAndVerified": true,
+    "freshExpeditionProgressReadVerified": true,
+    "newSetReviewSubmitted": false,
+    "positiveNegativeTimeoutRecoveryAndAdversarialReviewCasesTested": false
+  },
+  "contracts": {
+    "pier_hoist": {
+      "address": "0xDA85Cc00Ab3dB4dF853B5CdA31E332840b3C3518",
+      "sourceHash": "0x402184fe226df5bc43318166633d05297d96b261b50ef37d3890c51aed170b21",
+      "deploymentTx": "0x0d439fa6be2278c7cad0ceb225003613bc9c706e297f332201a5edb03250035b",
+      "configurationTx": "0x444ff9248bc966d8ead8d24d8a89fb88d2fb5c31d70d3df9e4c8a633231be1cd"
+    },
+    "village_pump": {
+      "address": "0x72FebD7b3D13f547B809D385Bf91673EBacB2F82",
+      "sourceHash": "0x70936be873f041a38c47774e15a037df38abbc4e95407b554b08757c013fb214",
+      "deploymentTx": "0x00c1e228c7438e2b9e563e0f689675a04ea4e2f222a25f555890bb726fd5bbb3",
+      "configurationTx": "0x08f58d42dc57100ad7d915bad58a2c12503de7a8d91565778919c5ba4b14d424"
+    },
+    "tidal_sluice": {
+      "address": "0x9603eF50D15C12F0fa5562649AF30e9b248aede0",
+      "sourceHash": "0x155cb5ade692ae13912a21a811fb85e9c54a3204d6ef6e8e97f85eea9a1e69e3",
+      "deploymentTx": "0xcb286dcd02717c81f836d69ab048ab499a24fc8fd5253ad7fbd55297274f5a05",
+      "configurationTx": "0x795fc5294009537a56bd1853fefb230bc38f84b31edd3e1720fe888cba45cf9f"
+    },
+    "creek_bridge": {
+      "address": "0x35a4A9cB615fD1FdA0D3FC77Aeb1DBBa7F968e59",
+      "sourceHash": "0xdd30118b0e0f2e491b11f53d7d049842e1c9bfdecf1ed67c9c95ab86a54c52d5",
+      "deploymentTx": "0xce413855a1401aed60be0f018d33c6ea9e98dcd37fe83d09b137d7b26e5f2ec9",
+      "configurationTx": "0x4b78e3e96dbb770c8a4b6d02cb2092594ad8d0e3e2ddc7e7c1880c69af40eb33"
+    },
+    "coast_windmill": {
+      "address": "0xf612FC5f608c2c661eece38bEDa19576E8AAE5A9",
+      "sourceHash": "0x2886089b1e5d733679293f491fa6581db7dff46ef266b1fd9aa06745959c4403",
+      "deploymentTx": "0xaf451dd135c03efc194a34bab78b8106b0901a80b812dbad68e14fd034e7ca06",
+      "configurationTx": "0xe38d1cca868f5ec562aab5465f970ed3f0af2b73051166c034b8a0fbda50a3fa"
+    },
+    "woodland_pathlight": {
+      "address": "0x94e5a2973c5227b37aE18B6BB1FaDF2Ae2783510",
+      "sourceHash": "0x01f7a61f72c3b92889ade83bbe881bcd9fb46e1dacef7b295bd0fe163ec2684d",
+      "deploymentTx": "0x1340a090717b8e122ff8213b74fc266993404b74fe389ca63b9ed0dde95234c7",
+      "configurationTx": "0xbfaffb317bfe0552211ab3a4991890dfb980cab390971c14443a9a03a23a66a5"
+    },
+    "upland_waterworks": {
+      "address": "0xa9e3B9d0699f2cB3EdD08ccA839b35A1412aee7F",
+      "sourceHash": "0x9f8663f86cd697faa5c8705447efb5b30d206cd0162c9609f3b32ec60ad26a77",
+      "deploymentTx": "0xc430e2b076b94be13c41c1d8b7f3a6330bbd0420c348f1767ad285686b6de253",
+      "configurationTx": "0x79d560ab6a5d0e678a4c0e9c8ac7cbdb05f575709b5beda7942453334ece2a9f"
+    },
+    "ridge_beacon": {
+      "address": "0xdb37Dcce9F185486A90C0ef73fe82211193dcBE3",
+      "sourceHash": "0x6f2a46a9fe4f5aca47ce57bfbfac20ecd855dd52ae09cd5ac27e84785b52d3e5",
+      "deploymentTx": "0x3c2c9cdbc033773067f7035b5ce21007caf3c85a362fc0af41835e846e2634f4",
+      "configurationTx": "0x94490920774c3a63cceb9a445d6b81a19880327ac7565022a08c83b4292cad10"
+    }
+  },
+  "app": {
+    "vercelProject": "fix-the-island",
+    "productionRedeployed": true,
+    "productionUrl": "https://fix-the-island.vercel.app",
+    "deploymentUrl": "https://fix-the-island-8q1vry7im-leokings588-5902s-projects.vercel.app",
+    "deploymentId": "dpl_4fkh9m7iYgyW2Csmf3Nxh2dHqD7d",
+    "appSourceCommit": "fca8edea962a52e74a9bb203702977530216ed88",
+    "publicHttpSmokeStatus": 200,
+    "browserSmoke": {
+      "title": "Fix the Island",
+      "renderer": "webgl2",
+      "canvasCount": 1,
+      "pageErrors": 0,
+      "walletConnected": false
+    }
+  }
+}

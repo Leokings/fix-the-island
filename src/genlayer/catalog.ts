@@ -1,0 +1,4468 @@
+import type { IslandSiteFixture } from './types';
+
+function freeze<T>(value: T): T {
+  if (value && typeof value === 'object') {
+    for (const child of Object.values(value)) freeze(child);
+    Object.freeze(value);
+  }
+  return value;
+}
+
+export const FIXTURE_VERSION = 'island-2026-10-16-v5';
+export const REPAIR_SCENARIOS: readonly IslandSiteFixture[] = freeze([
+  {
+    "id": "pier_hoist",
+    "version": "island-2026-10-16-v5",
+    "title": "Landing Hoist",
+    "councilQuestion": "Nesting starts tomorrow on the shore. How will your crew keep the landing work from disturbing the nests?",
+    "councilFacts": [
+      "Shoreline nests sit beside the work area.",
+      "A marked access route runs clear of them.",
+      "A guarded pulley and a balanced lift keep loads from swinging."
+    ],
+    "requires": [],
+    "budget": 16,
+    "family": "pier_hoist",
+    "options": [
+      {
+        "id": "crank_standard",
+        "label": "crank standard",
+        "kind": "crank",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "crank"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "out",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "pulley_standard",
+        "label": "pulley standard",
+        "kind": "pulley",
+        "facts": {
+          "cost": 3
+        },
+        "allowedSlots": [
+          "pulley"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "mechanical",
+            "direction": "out"
+          },
+          {
+            "id": "guard",
+            "channel": "mechanical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "boom_standard",
+        "label": "boom standard",
+        "kind": "boom",
+        "facts": {
+          "cost": 3
+        },
+        "allowedSlots": [
+          "boom"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "anchor",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "weight_a",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "weight_b",
+            "channel": "mechanical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "rope_standard",
+        "label": "rope standard",
+        "kind": "rope",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "rope"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "anchor",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "guard_standard",
+        "label": "guard standard",
+        "kind": "guard",
+        "facts": {
+          "cost": 1
+        },
+        "allowedSlots": [
+          "guard"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "cover",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "weight_a_2",
+        "label": "weight a 2",
+        "kind": "counterweight",
+        "facts": {
+          "cost": 2,
+          "mass": 2
+        },
+        "allowedSlots": [
+          "weight_a"
+        ],
+        "allowedSettings": [
+          "rail_1000",
+          "rail_1500"
+        ],
+        "ports": [
+          {
+            "id": "force",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "weight_a_3",
+        "label": "weight a 3",
+        "kind": "counterweight",
+        "facts": {
+          "cost": 3,
+          "mass": 3
+        },
+        "allowedSlots": [
+          "weight_a"
+        ],
+        "allowedSettings": [
+          "rail_1000",
+          "rail_1500"
+        ],
+        "ports": [
+          {
+            "id": "force",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "weight_b_2",
+        "label": "weight b 2",
+        "kind": "counterweight",
+        "facts": {
+          "cost": 2,
+          "mass": 2
+        },
+        "allowedSlots": [
+          "weight_b"
+        ],
+        "allowedSettings": [
+          "rail_1000",
+          "rail_1500"
+        ],
+        "ports": [
+          {
+            "id": "force",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "weight_b_3",
+        "label": "weight b 3",
+        "kind": "counterweight",
+        "facts": {
+          "cost": 3,
+          "mass": 3
+        },
+        "allowedSlots": [
+          "weight_b"
+        ],
+        "allowedSettings": [
+          "rail_1000",
+          "rail_1500"
+        ],
+        "ports": [
+          {
+            "id": "force",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      }
+    ],
+    "slotIds": [
+      "crank",
+      "pulley",
+      "boom",
+      "rope",
+      "guard",
+      "weight_a",
+      "weight_b"
+    ],
+    "configurationOptions": {
+      "mountZoneIds": [
+        "shore_workzone"
+      ],
+      "outputModeIds": [
+        "balanced_lift"
+      ],
+      "routeIds": [
+        "nest_safe_access"
+      ],
+      "settingIds": [
+        "fixed",
+        "rail_1000",
+        "rail_1500"
+      ]
+    },
+    "requirements": [
+      {
+        "id": "stock",
+        "description": "Use the site's fixed stock and sockets within its material budget."
+      },
+      {
+        "id": "paths",
+        "description": "Connect every required route without a bypass, short circuit or missing protection."
+      },
+      {
+        "id": "operation",
+        "description": "Balance the load while guarding the pulley and leaving shoreline nests and access undisturbed."
+      }
+    ],
+    "rubric": [
+      {
+        "id": "groundedInArtifact",
+        "passCriterion": "Explain this actual artifact using only these site facts.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "explainsTradeoff",
+        "passCriterion": "Balance the load while guarding the pulley and leaving shoreline nests and access undisturbed.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "protectsHabitat",
+        "passCriterion": "Explain the specified habitat constraint and a compatible mitigation.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "safeUseAndMaintenance",
+        "passCriterion": "Explain the site's protection and practical maintenance access.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      }
+    ],
+    "technical": {
+      "requiredEdges": [
+        [
+          "crank",
+          "out",
+          "pulley",
+          "in"
+        ],
+        [
+          "pulley",
+          "out",
+          "boom",
+          "in"
+        ],
+        [
+          "rope",
+          "anchor",
+          "boom",
+          "anchor"
+        ],
+        [
+          "guard",
+          "cover",
+          "pulley",
+          "guard"
+        ],
+        [
+          "weight_a",
+          "force",
+          "boom",
+          "weight_a"
+        ],
+        [
+          "weight_b",
+          "force",
+          "boom",
+          "weight_b"
+        ]
+      ],
+      "loadMoment": 6000,
+      "momentTolerance": 250,
+      "rails": {
+        "rail_1000": 1000,
+        "rail_1500": 1500
+      }
+    },
+    "initialArtifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "crank",
+          "optionId": "crank_standard",
+          "slotId": "crank",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "pulley",
+          "optionId": "pulley_standard",
+          "slotId": "pulley",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "boom",
+          "optionId": "boom_standard",
+          "slotId": "boom",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "rope",
+          "optionId": "rope_standard",
+          "slotId": "rope",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "guard",
+          "optionId": "guard_standard",
+          "slotId": "guard",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "weight_a",
+          "optionId": "weight_a_3",
+          "slotId": "weight_a",
+          "orientationQuarterTurns": 0,
+          "settingId": "rail_1000"
+        },
+        {
+          "id": "weight_b",
+          "optionId": "weight_b_2",
+          "slotId": "weight_b",
+          "orientationQuarterTurns": 0,
+          "settingId": "rail_1000"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "shore_workzone",
+        "outputModeId": "balanced_lift",
+        "routeId": "nest_safe_access"
+      },
+      "connections": [
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "crank",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "pulley",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "pulley",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "boom",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "guard",
+            "portId": "cover"
+          },
+          "to": {
+            "partId": "pulley",
+            "portId": "guard"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "weight_a",
+            "portId": "force"
+          },
+          "to": {
+            "partId": "boom",
+            "portId": "weight_a"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "weight_b",
+            "portId": "force"
+          },
+          "to": {
+            "partId": "boom",
+            "portId": "weight_b"
+          }
+        }
+      ]
+    },
+    "labels": {
+      "options": {
+        "crank_standard": "Crank",
+        "pulley_standard": "Pulley",
+        "boom_standard": "Lift arm",
+        "rope_standard": "Anchor rope",
+        "guard_standard": "Pulley guard",
+        "weight_a_2": "Weight A · lighter",
+        "weight_a_3": "Weight A · heavier",
+        "weight_b_2": "Weight B · lighter",
+        "weight_b_3": "Weight B · heavier"
+      },
+      "settings": {
+        "fixed": "Fixed",
+        "rail_1000": "Near the pivot",
+        "rail_1500": "Farther from the pivot"
+      },
+      "configuration": {
+        "shore_workzone": "Shore work area",
+        "balanced_lift": "Balanced lift",
+        "nest_safe_access": "Access clear of nests"
+      }
+    }
+  },
+  {
+    "id": "village_pump",
+    "version": "island-2026-10-16-v5",
+    "title": "Spring Pump",
+    "councilQuestion": "Why does your design suit the village in nesting season, and how will you handle its main downside?",
+    "councilFacts": [
+      "Village water shortage in nesting season beside a sensitive creek; supply, habitat and upkeep must all be weighed.",
+      "Direct pump: fast, high supply; draws more creek water and is louder. The screen and the relief-to-soakaway route limit harm.",
+      "Quiet pump: moderate supply; screened, isolating mount and serviceable housing cut noise; more upkeep.",
+      "Rain cistern: stored roof rain, no creek draw; lower supply; tank and filter need cleaning.",
+      "All three designs are acceptable when the plan handles the chosen design's downside."
+    ],
+    "requires": [],
+    "budget": 20,
+    "family": "village_pump",
+    "options": [
+      {
+        "id": "screen_standard",
+        "label": "screen standard",
+        "kind": "screen",
+        "facts": {
+          "cost": 2,
+          "elevation": 4000
+        },
+        "allowedSlots": [
+          "screen"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "inlet_standard",
+        "label": "inlet standard",
+        "kind": "valve",
+        "facts": {
+          "cost": 1,
+          "elevation": 3800
+        },
+        "allowedSlots": [
+          "inlet"
+        ],
+        "allowedSettings": [
+          "inlet_2",
+          "inlet_3",
+          "inlet_4"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "pump_standard",
+        "label": "pump standard",
+        "kind": "pump",
+        "facts": {
+          "cost": 4,
+          "elevation": 3600
+        },
+        "allowedSlots": [
+          "pump"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          },
+          {
+            "id": "mount",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "housing",
+            "channel": "mechanical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "relief_standard",
+        "label": "relief standard",
+        "kind": "relief",
+        "facts": {
+          "cost": 2,
+          "elevation": 3400
+        },
+        "allowedSlots": [
+          "relief"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          },
+          {
+            "id": "bypass",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "outlet_standard",
+        "label": "outlet standard",
+        "kind": "valve",
+        "facts": {
+          "cost": 1,
+          "elevation": 3200
+        },
+        "allowedSlots": [
+          "outlet"
+        ],
+        "allowedSettings": [
+          "outlet_1",
+          "outlet_2",
+          "outlet_3"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "trunk_standard",
+        "label": "trunk standard",
+        "kind": "trunk",
+        "facts": {
+          "cost": 2,
+          "elevation": 3000
+        },
+        "allowedSlots": [
+          "trunk"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "bypass_standard",
+        "label": "bypass standard",
+        "kind": "drain",
+        "facts": {
+          "cost": 2,
+          "elevation": 3000
+        },
+        "allowedSlots": [
+          "bypass"
+        ],
+        "allowedSettings": [
+          "bypass_0",
+          "bypass_1",
+          "bypass_2"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "vibration_mount_standard",
+        "label": "vibration-isolating mount",
+        "kind": "mount",
+        "facts": {
+          "cost": 2,
+          "isolation": 2
+        },
+        "allowedSlots": [
+          "mount"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "out",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "service_housing_standard",
+        "label": "serviceable acoustic housing",
+        "kind": "housing",
+        "facts": {
+          "cost": 3,
+          "attenuation": 2
+        },
+        "allowedSlots": [
+          "housing"
+        ],
+        "allowedSettings": [
+          "hatch_serviceable"
+        ],
+        "ports": [
+          {
+            "id": "cover",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "catchment_roof_standard",
+        "label": "roof catchment",
+        "kind": "catchment",
+        "facts": {
+          "cost": 3,
+          "yield": 10
+        },
+        "allowedSlots": [
+          "roof"
+        ],
+        "allowedSettings": [
+          "yield_10"
+        ],
+        "ports": [
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "gutter_standard",
+        "label": "gutter",
+        "kind": "gutter",
+        "facts": {
+          "cost": 1
+        },
+        "allowedSlots": [
+          "gutter"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "leaf_screen_standard",
+        "label": "leaf screen",
+        "kind": "screen",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "leaf_screen"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "first_flush_standard",
+        "label": "first-flush diverter",
+        "kind": "diverter",
+        "facts": {
+          "cost": 2,
+          "discard": 2
+        },
+        "allowedSlots": [
+          "first_flush"
+        ],
+        "allowedSettings": [
+          "discard_2"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "rain_cistern_standard",
+        "label": "covered cistern",
+        "kind": "cistern",
+        "facts": {
+          "cost": 4,
+          "capacity": 8
+        },
+        "allowedSlots": [
+          "cistern"
+        ],
+        "allowedSettings": [
+          "capacity_8"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          },
+          {
+            "id": "overflow",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "rain_filter_standard",
+        "label": "cistern filter",
+        "kind": "filter",
+        "facts": {
+          "cost": 2,
+          "capacity": 6
+        },
+        "allowedSlots": [
+          "filter"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "rain_outlet_standard",
+        "label": "delivery valve",
+        "kind": "valve",
+        "facts": {
+          "cost": 1,
+          "capacity": 6
+        },
+        "allowedSlots": [
+          "delivery_valve"
+        ],
+        "allowedSettings": [
+          "deliver_6"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "rain_trunk_standard",
+        "label": "village trunk",
+        "kind": "trunk",
+        "facts": {
+          "cost": 2,
+          "capacity": 6
+        },
+        "allowedSlots": [
+          "village_trunk"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "overflow_pipe_standard",
+        "label": "overflow pipe",
+        "kind": "overflow",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "overflow_pipe"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "soakaway_standard",
+        "label": "safe soakaway",
+        "kind": "soakaway",
+        "facts": {
+          "cost": 1
+        },
+        "allowedSlots": [
+          "soakaway"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          }
+        ]
+      }
+    ],
+    "slotIds": [
+      "screen",
+      "inlet",
+      "pump",
+      "relief",
+      "outlet",
+      "trunk",
+      "bypass",
+      "mount",
+      "housing",
+      "roof",
+      "gutter",
+      "leaf_screen",
+      "first_flush",
+      "cistern",
+      "filter",
+      "delivery_valve",
+      "village_trunk",
+      "overflow_pipe",
+      "soakaway"
+    ],
+    "configurationOptions": {
+      "mountZoneIds": [
+        "pump_pad",
+        "quiet_pump_pad",
+        "roof_catchment"
+      ],
+      "outputModeIds": [
+        "relieved_delivery",
+        "quiet_relieved_delivery",
+        "stored_rain_delivery"
+      ],
+      "routeIds": [
+        "clean_drain",
+        "quiet_clean_drain",
+        "safe_soakaway"
+      ],
+      "settingIds": [
+        "fixed",
+        "inlet_2",
+        "inlet_3",
+        "inlet_4",
+        "outlet_1",
+        "outlet_2",
+        "outlet_3",
+        "bypass_0",
+        "bypass_1",
+        "bypass_2",
+        "hatch_serviceable",
+        "yield_10",
+        "discard_2",
+        "capacity_8",
+        "deliver_6"
+      ]
+    },
+    "requirements": [
+      {
+        "id": "stock",
+        "description": "Use the site's fixed stock and sockets within its material budget."
+      },
+      {
+        "id": "paths",
+        "description": "Connect every required route without a bypass, short circuit or missing protection."
+      },
+      {
+        "id": "operation",
+        "description": "Explain relief versus trunk delivery and keeping dirty overflow out of the reedbed."
+      }
+    ],
+    "rubric": [
+      {
+        "id": "groundedInArtifact",
+        "passCriterion": "Explain this actual artifact using only these site facts.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "explainsTradeoff",
+        "passCriterion": "Explain relief versus trunk delivery and keeping dirty overflow out of the reedbed.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "protectsHabitat",
+        "passCriterion": "Explain the specified habitat constraint and a compatible mitigation.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "safeUseAndMaintenance",
+        "passCriterion": "Explain the site's protection and practical maintenance access.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      }
+    ],
+    "technical": {
+      "requiredEdges": [
+        [
+          "screen",
+          "out",
+          "inlet",
+          "in"
+        ],
+        [
+          "inlet",
+          "out",
+          "pump",
+          "in"
+        ],
+        [
+          "pump",
+          "out",
+          "relief",
+          "in"
+        ],
+        [
+          "relief",
+          "out",
+          "outlet",
+          "in"
+        ],
+        [
+          "outlet",
+          "out",
+          "trunk",
+          "in"
+        ],
+        [
+          "relief",
+          "bypass",
+          "bypass",
+          "in"
+        ]
+      ],
+      "pressureMin": 3,
+      "pressureMax": 5,
+      "trunkMin": 6,
+      "designs": [
+        {
+          "id": "direct_pump",
+          "budget": 14,
+          "slotIds": [
+            "screen",
+            "inlet",
+            "pump",
+            "relief",
+            "outlet",
+            "trunk",
+            "bypass"
+          ],
+          "mountZoneId": "pump_pad",
+          "outputModeId": "relieved_delivery",
+          "routeId": "clean_drain",
+          "requiredEdges": [
+            [
+              "screen",
+              "out",
+              "inlet",
+              "in"
+            ],
+            [
+              "inlet",
+              "out",
+              "pump",
+              "in"
+            ],
+            [
+              "pump",
+              "out",
+              "relief",
+              "in"
+            ],
+            [
+              "relief",
+              "out",
+              "outlet",
+              "in"
+            ],
+            [
+              "outlet",
+              "out",
+              "trunk",
+              "in"
+            ],
+            [
+              "relief",
+              "bypass",
+              "bypass",
+              "in"
+            ]
+          ],
+          "operation": "pressure_flow",
+          "pressureMin": 3,
+          "pressureMax": 5,
+          "trunkMin": 6,
+          "settings": {
+            "inlet_2": 6,
+            "inlet_3": 9,
+            "inlet_4": 12,
+            "bypass_0": 0,
+            "bypass_1": 2,
+            "bypass_2": 4,
+            "outlet_1": 2,
+            "outlet_2": 4,
+            "outlet_3": 6
+          }
+        },
+        {
+          "id": "quiet_pump",
+          "budget": 19,
+          "slotIds": [
+            "screen",
+            "inlet",
+            "pump",
+            "relief",
+            "outlet",
+            "trunk",
+            "bypass",
+            "mount",
+            "housing"
+          ],
+          "mountZoneId": "quiet_pump_pad",
+          "outputModeId": "quiet_relieved_delivery",
+          "routeId": "quiet_clean_drain",
+          "requiredEdges": [
+            [
+              "screen",
+              "out",
+              "inlet",
+              "in"
+            ],
+            [
+              "inlet",
+              "out",
+              "pump",
+              "in"
+            ],
+            [
+              "pump",
+              "out",
+              "relief",
+              "in"
+            ],
+            [
+              "relief",
+              "out",
+              "outlet",
+              "in"
+            ],
+            [
+              "outlet",
+              "out",
+              "trunk",
+              "in"
+            ],
+            [
+              "relief",
+              "bypass",
+              "bypass",
+              "in"
+            ],
+            [
+              "mount",
+              "out",
+              "pump",
+              "mount"
+            ],
+            [
+              "housing",
+              "cover",
+              "pump",
+              "housing"
+            ]
+          ],
+          "operation": "quiet_pressure_flow",
+          "pressureMin": 3,
+          "pressureMax": 5,
+          "trunkMin": 6,
+          "disturbanceBase": 3,
+          "disturbanceMax": 1,
+          "settings": {
+            "inlet_2": 6,
+            "inlet_3": 9,
+            "inlet_4": 12,
+            "bypass_0": 0,
+            "bypass_1": 2,
+            "bypass_2": 4,
+            "outlet_1": 2,
+            "outlet_2": 4,
+            "outlet_3": 6
+          }
+        },
+        {
+          "id": "rain_cistern",
+          "budget": 20,
+          "slotIds": [
+            "roof",
+            "gutter",
+            "leaf_screen",
+            "first_flush",
+            "cistern",
+            "filter",
+            "delivery_valve",
+            "village_trunk",
+            "overflow_pipe",
+            "soakaway"
+          ],
+          "mountZoneId": "roof_catchment",
+          "outputModeId": "stored_rain_delivery",
+          "routeId": "safe_soakaway",
+          "requiredEdges": [
+            [
+              "roof",
+              "out",
+              "gutter",
+              "in"
+            ],
+            [
+              "gutter",
+              "out",
+              "leaf_screen",
+              "in"
+            ],
+            [
+              "leaf_screen",
+              "out",
+              "first_flush",
+              "in"
+            ],
+            [
+              "first_flush",
+              "out",
+              "cistern",
+              "in"
+            ],
+            [
+              "cistern",
+              "out",
+              "filter",
+              "in"
+            ],
+            [
+              "filter",
+              "out",
+              "delivery_valve",
+              "in"
+            ],
+            [
+              "delivery_valve",
+              "out",
+              "village_trunk",
+              "in"
+            ],
+            [
+              "cistern",
+              "overflow",
+              "overflow_pipe",
+              "in"
+            ],
+            [
+              "overflow_pipe",
+              "out",
+              "soakaway",
+              "in"
+            ]
+          ],
+          "operation": "rain_storage",
+          "rainInput": 10,
+          "firstFlushDiscard": 2,
+          "minimumDelivery": 6,
+          "minimumReserve": 2,
+          "overflowRequired": true
+        }
+      ],
+      "settings": {
+        "inlet_2": 6,
+        "inlet_3": 9,
+        "inlet_4": 12,
+        "bypass_0": 0,
+        "bypass_1": 2,
+        "bypass_2": 4,
+        "outlet_1": 2,
+        "outlet_2": 4,
+        "outlet_3": 6
+      }
+    },
+    "initialArtifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "screen",
+          "optionId": "screen_standard",
+          "slotId": "screen",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "inlet",
+          "optionId": "inlet_standard",
+          "slotId": "inlet",
+          "orientationQuarterTurns": 0,
+          "settingId": "inlet_4"
+        },
+        {
+          "id": "pump",
+          "optionId": "pump_standard",
+          "slotId": "pump",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "relief",
+          "optionId": "relief_standard",
+          "slotId": "relief",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "outlet",
+          "optionId": "outlet_standard",
+          "slotId": "outlet",
+          "orientationQuarterTurns": 0,
+          "settingId": "outlet_1"
+        },
+        {
+          "id": "trunk",
+          "optionId": "trunk_standard",
+          "slotId": "trunk",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "bypass",
+          "optionId": "bypass_standard",
+          "slotId": "bypass",
+          "orientationQuarterTurns": 0,
+          "settingId": "bypass_0"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "pump_pad",
+        "outputModeId": "relieved_delivery",
+        "routeId": "clean_drain"
+      },
+      "connections": [
+        {
+          "channel": "water",
+          "from": {
+            "partId": "screen",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "inlet",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "inlet",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "pump",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "pump",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "relief",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "relief",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "outlet",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "outlet",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "trunk",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "relief",
+            "portId": "bypass"
+          },
+          "to": {
+            "partId": "bypass",
+            "portId": "in"
+          }
+        }
+      ]
+    },
+    "labels": {
+      "options": {
+        "screen_standard": "Screen",
+        "inlet_standard": "Inlet valve",
+        "pump_standard": "Pump",
+        "relief_standard": "Relief valve",
+        "outlet_standard": "Outlet valve",
+        "trunk_standard": "Supply pipe",
+        "bypass_standard": "Relief drain",
+        "vibration_mount_standard": "Vibration mount",
+        "service_housing_standard": "Service housing",
+        "catchment_roof_standard": "Catchment roof",
+        "gutter_standard": "Gutter",
+        "leaf_screen_standard": "Leaf screen",
+        "first_flush_standard": "First flush",
+        "rain_cistern_standard": "Rain cistern",
+        "rain_filter_standard": "Rain filter",
+        "rain_outlet_standard": "Rain outlet",
+        "rain_trunk_standard": "Rain trunk",
+        "overflow_pipe_standard": "Overflow pipe",
+        "soakaway_standard": "Soakaway"
+      },
+      "settings": {
+        "fixed": "Fixed",
+        "inlet_2": "Low inlet",
+        "inlet_3": "Medium inlet",
+        "inlet_4": "High inlet",
+        "outlet_1": "Low village supply",
+        "outlet_2": "Medium village supply",
+        "outlet_3": "High village supply",
+        "bypass_0": "Relief drain closed",
+        "bypass_1": "Some relief",
+        "bypass_2": "More relief",
+        "hatch_serviceable": "Hatch serviceable",
+        "yield_10": "Yield 10",
+        "discard_2": "Discard 2",
+        "capacity_8": "Capacity 8",
+        "deliver_6": "Deliver 6"
+      },
+      "configuration": {
+        "pump_pad": "Pump pad",
+        "quiet_pump_pad": "Quiet pump pad",
+        "roof_catchment": "Roof catchment",
+        "relieved_delivery": "Delivery with relief",
+        "quiet_relieved_delivery": "Quiet relieved delivery",
+        "stored_rain_delivery": "Stored rain delivery",
+        "clean_drain": "Clear drain route",
+        "quiet_clean_drain": "Quiet clean drain",
+        "safe_soakaway": "Safe soakaway"
+      }
+    }
+  },
+  {
+    "id": "tidal_sluice",
+    "version": "island-2026-10-16-v5",
+    "title": "Reedbed Sluice",
+    "councilQuestion": "The reed pools and the creek share one supply. How does your setup keep the nursery healthy without starving the creek, and where does the debris go?",
+    "councilFacts": [
+      "One creek supply is shared by the reed nursery pools and the downstream creek.",
+      "The bank erodes easily.",
+      "Removed debris must stay on site."
+    ],
+    "requires": [],
+    "budget": 14,
+    "family": "tidal_sluice",
+    "options": [
+      {
+        "id": "source_standard",
+        "label": "source standard",
+        "kind": "source",
+        "facts": {
+          "cost": 1
+        },
+        "allowedSlots": [
+          "source"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "creek",
+            "channel": "water",
+            "direction": "out"
+          },
+          {
+            "id": "nursery",
+            "channel": "water",
+            "direction": "out"
+          },
+          {
+            "id": "bank",
+            "channel": "water",
+            "direction": "out"
+          },
+          {
+            "id": "rack",
+            "channel": "mechanical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "bank_baffle_standard",
+        "label": "bank baffle standard",
+        "kind": "baffle",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "bank_baffle"
+        ],
+        "allowedSettings": [
+          "bank_open",
+          "bank_shield"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "creek_baffle_standard",
+        "label": "creek baffle standard",
+        "kind": "baffle",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "creek_baffle"
+        ],
+        "allowedSettings": [
+          "creek_closed",
+          "creek_open"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "nursery_gate_standard",
+        "label": "nursery gate standard",
+        "kind": "gate",
+        "facts": {
+          "cost": 3
+        },
+        "allowedSlots": [
+          "nursery_gate"
+        ],
+        "allowedSettings": [
+          "nursery_1",
+          "nursery_2",
+          "nursery_3",
+          "nursery_4"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "creek_standard",
+        "label": "creek standard",
+        "kind": "outlet",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "creek"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "nursery_standard",
+        "label": "nursery standard",
+        "kind": "pool",
+        "facts": {
+          "cost": 1
+        },
+        "allowedSlots": [
+          "nursery"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "rack_standard",
+        "label": "rack standard",
+        "kind": "rack",
+        "facts": {
+          "cost": 3
+        },
+        "allowedSlots": [
+          "rack"
+        ],
+        "allowedSettings": [
+          "obstructing",
+          "stored"
+        ],
+        "ports": [
+          {
+            "id": "mount",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      }
+    ],
+    "slotIds": [
+      "source",
+      "bank_baffle",
+      "creek_baffle",
+      "nursery_gate",
+      "creek",
+      "nursery",
+      "rack"
+    ],
+    "configurationOptions": {
+      "mountZoneIds": [
+        "reedbed_edge"
+      ],
+      "outputModeIds": [
+        "retained_split"
+      ],
+      "routeIds": [
+        "onsite_rack"
+      ],
+      "settingIds": [
+        "fixed",
+        "bank_open",
+        "bank_shield",
+        "creek_closed",
+        "creek_open",
+        "nursery_1",
+        "nursery_2",
+        "nursery_3",
+        "nursery_4",
+        "obstructing",
+        "stored"
+      ]
+    },
+    "requirements": [
+      {
+        "id": "stock",
+        "description": "Use the site's fixed stock and sockets within its material budget."
+      },
+      {
+        "id": "paths",
+        "description": "Connect every required route without a bypass, short circuit or missing protection."
+      },
+      {
+        "id": "operation",
+        "description": "Retain nursery water while draining the creek and storing removed debris on site."
+      }
+    ],
+    "rubric": [
+      {
+        "id": "groundedInArtifact",
+        "passCriterion": "Explain this actual artifact using only these site facts.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "explainsTradeoff",
+        "passCriterion": "Retain nursery water while draining the creek and storing removed debris on site.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "protectsHabitat",
+        "passCriterion": "Explain the specified habitat constraint and a compatible mitigation.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "safeUseAndMaintenance",
+        "passCriterion": "Explain the site's protection and practical maintenance access.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      }
+    ],
+    "technical": {
+      "requiredEdges": [
+        [
+          "source",
+          "creek",
+          "creek_baffle",
+          "in"
+        ],
+        [
+          "creek_baffle",
+          "out",
+          "creek",
+          "in"
+        ],
+        [
+          "source",
+          "nursery",
+          "nursery_gate",
+          "in"
+        ],
+        [
+          "nursery_gate",
+          "out",
+          "nursery",
+          "in"
+        ],
+        [
+          "source",
+          "bank",
+          "bank_baffle",
+          "in"
+        ],
+        [
+          "rack",
+          "mount",
+          "source",
+          "rack"
+        ]
+      ],
+      "sourceFlow": 8,
+      "nurseryMin": 2,
+      "nurseryMax": 3,
+      "creekMin": 5,
+      "settings": {
+        "nursery_1": 1,
+        "nursery_2": 2,
+        "nursery_3": 3,
+        "nursery_4": 4
+      },
+      "bankOpenFlow": 2
+    },
+    "initialArtifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "source",
+          "optionId": "source_standard",
+          "slotId": "source",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "bank_baffle",
+          "optionId": "bank_baffle_standard",
+          "slotId": "bank_baffle",
+          "orientationQuarterTurns": 0,
+          "settingId": "bank_open"
+        },
+        {
+          "id": "creek_baffle",
+          "optionId": "creek_baffle_standard",
+          "slotId": "creek_baffle",
+          "orientationQuarterTurns": 0,
+          "settingId": "creek_closed"
+        },
+        {
+          "id": "nursery_gate",
+          "optionId": "nursery_gate_standard",
+          "slotId": "nursery_gate",
+          "orientationQuarterTurns": 0,
+          "settingId": "nursery_1"
+        },
+        {
+          "id": "creek",
+          "optionId": "creek_standard",
+          "slotId": "creek",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "nursery",
+          "optionId": "nursery_standard",
+          "slotId": "nursery",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "rack",
+          "optionId": "rack_standard",
+          "slotId": "rack",
+          "orientationQuarterTurns": 0,
+          "settingId": "obstructing"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "reedbed_edge",
+        "outputModeId": "retained_split",
+        "routeId": "onsite_rack"
+      },
+      "connections": [
+        {
+          "channel": "water",
+          "from": {
+            "partId": "source",
+            "portId": "creek"
+          },
+          "to": {
+            "partId": "creek_baffle",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "creek_baffle",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "creek",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "source",
+            "portId": "nursery"
+          },
+          "to": {
+            "partId": "nursery_gate",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "nursery_gate",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "nursery",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "source",
+            "portId": "bank"
+          },
+          "to": {
+            "partId": "bank_baffle",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "rack",
+            "portId": "mount"
+          },
+          "to": {
+            "partId": "source",
+            "portId": "rack"
+          }
+        }
+      ]
+    },
+    "labels": {
+      "options": {
+        "source_standard": "Water source",
+        "bank_baffle_standard": "Bank baffle",
+        "creek_baffle_standard": "Creek baffle",
+        "nursery_gate_standard": "Nursery gate",
+        "creek_standard": "Creek outlet",
+        "nursery_standard": "Nursery pool",
+        "rack_standard": "Debris rack"
+      },
+      "settings": {
+        "fixed": "Fixed",
+        "bank_open": "Bank exposed",
+        "bank_shield": "Bank shielded",
+        "creek_closed": "Creek closed",
+        "creek_open": "Creek open",
+        "nursery_1": "Nursery trickle",
+        "nursery_2": "Gentle nursery flow",
+        "nursery_3": "Steady nursery flow",
+        "nursery_4": "Strong nursery flow",
+        "obstructing": "Debris obstructing",
+        "stored": "Debris stored"
+      },
+      "configuration": {
+        "reedbed_edge": "Reedbed edge",
+        "retained_split": "Shared flow",
+        "onsite_rack": "Debris rack on site"
+      }
+    }
+  },
+  {
+    "id": "creek_bridge",
+    "version": "island-2026-10-16-v5",
+    "title": "Splitbank Bridge",
+    "councilQuestion": "Floods come through this channel. How does your bridge stay strong without putting anything in the riverbed?",
+    "councilFacts": [
+      "The channel must stay clear for floods and fish.",
+      "No new supports may stand in the riverbed.",
+      "Walkers cross daily."
+    ],
+    "requires": [
+      "pier_hoist",
+      "village_pump",
+      "tidal_sluice"
+    ],
+    "budget": 18,
+    "family": "creek_bridge",
+    "options": [
+      {
+        "id": "shoe_left_standard",
+        "label": "shoe left standard",
+        "kind": "shoe",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "shoe_left"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "deck",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "brace",
+            "channel": "mechanical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "shoe_right_standard",
+        "label": "shoe right standard",
+        "kind": "shoe",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "shoe_right"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "deck",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "brace",
+            "channel": "mechanical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "deck_left_standard",
+        "label": "deck left standard",
+        "kind": "deck",
+        "facts": {
+          "cost": 3
+        },
+        "allowedSlots": [
+          "deck_left"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "shoe",
+            "channel": "mechanical",
+            "direction": "out"
+          },
+          {
+            "id": "join",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "deck_right_standard",
+        "label": "deck right standard",
+        "kind": "deck",
+        "facts": {
+          "cost": 3
+        },
+        "allowedSlots": [
+          "deck_right"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "shoe",
+            "channel": "mechanical",
+            "direction": "out"
+          },
+          {
+            "id": "join",
+            "channel": "mechanical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "beam_standard",
+        "label": "beam standard",
+        "kind": "beam",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "beam"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "left",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "right",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "rail",
+            "channel": "mechanical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "brace_left_standard",
+        "label": "brace left standard",
+        "kind": "brace",
+        "facts": {
+          "cost": 2,
+          "capacity": 4
+        },
+        "allowedSlots": [
+          "brace_left"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "shoe",
+            "channel": "mechanical",
+            "direction": "out"
+          },
+          {
+            "id": "beam",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "brace_right_standard",
+        "label": "brace right standard",
+        "kind": "brace",
+        "facts": {
+          "cost": 2,
+          "capacity": 4
+        },
+        "allowedSlots": [
+          "brace_right"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "shoe",
+            "channel": "mechanical",
+            "direction": "out"
+          },
+          {
+            "id": "beam",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "rail_standard",
+        "label": "rail standard",
+        "kind": "rail",
+        "facts": {
+          "cost": 2,
+          "clearance": 600
+        },
+        "allowedSlots": [
+          "rail"
+        ],
+        "allowedSettings": [
+          "tensioned",
+          "loose"
+        ],
+        "ports": [
+          {
+            "id": "mount",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      }
+    ],
+    "slotIds": [
+      "shoe_left",
+      "shoe_right",
+      "deck_left",
+      "deck_right",
+      "beam",
+      "brace_left",
+      "brace_right",
+      "rail"
+    ],
+    "configurationOptions": {
+      "mountZoneIds": [
+        "bank_shoes"
+      ],
+      "outputModeIds": [
+        "opposing_truss"
+      ],
+      "routeIds": [
+        "clear_channel"
+      ],
+      "settingIds": [
+        "fixed",
+        "tensioned",
+        "loose"
+      ]
+    },
+    "requirements": [
+      {
+        "id": "stock",
+        "description": "Use the site's fixed stock and sockets within its material budget."
+      },
+      {
+        "id": "paths",
+        "description": "Connect every required route without a bypass, short circuit or missing protection."
+      },
+      {
+        "id": "operation",
+        "description": "Explain opposing braces and channel clearance without new riverbed supports."
+      }
+    ],
+    "rubric": [
+      {
+        "id": "groundedInArtifact",
+        "passCriterion": "Explain this actual artifact using only these site facts.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "explainsTradeoff",
+        "passCriterion": "Explain opposing braces and channel clearance without new riverbed supports.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "protectsHabitat",
+        "passCriterion": "Explain the specified habitat constraint and a compatible mitigation.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "safeUseAndMaintenance",
+        "passCriterion": "Explain the site's protection and practical maintenance access.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      }
+    ],
+    "technical": {
+      "requiredEdges": [
+        [
+          "deck_left",
+          "shoe",
+          "shoe_left",
+          "deck"
+        ],
+        [
+          "deck_right",
+          "shoe",
+          "shoe_right",
+          "deck"
+        ],
+        [
+          "deck_left",
+          "join",
+          "deck_right",
+          "join"
+        ],
+        [
+          "brace_left",
+          "shoe",
+          "shoe_left",
+          "brace"
+        ],
+        [
+          "brace_right",
+          "shoe",
+          "shoe_right",
+          "brace"
+        ],
+        [
+          "brace_left",
+          "beam",
+          "beam",
+          "left"
+        ],
+        [
+          "brace_right",
+          "beam",
+          "beam",
+          "right"
+        ],
+        [
+          "rail",
+          "mount",
+          "beam",
+          "rail"
+        ]
+      ],
+      "fixedLoad": 8,
+      "minRailClearance": 600
+    },
+    "initialArtifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "shoe_left",
+          "optionId": "shoe_left_standard",
+          "slotId": "shoe_left",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "shoe_right",
+          "optionId": "shoe_right_standard",
+          "slotId": "shoe_right",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "deck_left",
+          "optionId": "deck_left_standard",
+          "slotId": "deck_left",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "deck_right",
+          "optionId": "deck_right_standard",
+          "slotId": "deck_right",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "beam",
+          "optionId": "beam_standard",
+          "slotId": "beam",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "brace_left",
+          "optionId": "brace_left_standard",
+          "slotId": "brace_left",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "brace_right",
+          "optionId": "brace_right_standard",
+          "slotId": "brace_right",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "rail",
+          "optionId": "rail_standard",
+          "slotId": "rail",
+          "orientationQuarterTurns": 0,
+          "settingId": "loose"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "bank_shoes",
+        "outputModeId": "opposing_truss",
+        "routeId": "clear_channel"
+      },
+      "connections": [
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "deck_left",
+            "portId": "shoe"
+          },
+          "to": {
+            "partId": "shoe_left",
+            "portId": "deck"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "deck_right",
+            "portId": "shoe"
+          },
+          "to": {
+            "partId": "shoe_right",
+            "portId": "deck"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "brace_left",
+            "portId": "shoe"
+          },
+          "to": {
+            "partId": "shoe_left",
+            "portId": "brace"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "brace_right",
+            "portId": "shoe"
+          },
+          "to": {
+            "partId": "shoe_right",
+            "portId": "brace"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "brace_left",
+            "portId": "beam"
+          },
+          "to": {
+            "partId": "beam",
+            "portId": "left"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "brace_right",
+            "portId": "beam"
+          },
+          "to": {
+            "partId": "beam",
+            "portId": "right"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "rail",
+            "portId": "mount"
+          },
+          "to": {
+            "partId": "beam",
+            "portId": "rail"
+          }
+        }
+      ]
+    },
+    "labels": {
+      "options": {
+        "shoe_left_standard": "Left bank shoe",
+        "shoe_right_standard": "Right bank shoe",
+        "deck_left_standard": "Left deck",
+        "deck_right_standard": "Right deck",
+        "beam_standard": "Support beam",
+        "brace_left_standard": "Left brace",
+        "brace_right_standard": "Right brace",
+        "rail_standard": "Handrail"
+      },
+      "settings": {
+        "fixed": "Fixed",
+        "tensioned": "Tensioned",
+        "loose": "Loose"
+      },
+      "configuration": {
+        "bank_shoes": "Both bank shoes",
+        "opposing_truss": "Opposing braces",
+        "clear_channel": "Clear river channel"
+      }
+    }
+  },
+  {
+    "id": "coast_windmill",
+    "version": "island-2026-10-16-v5",
+    "title": "Headland Windmill",
+    "councilQuestion": "Gulls nest on the ledge under the cliff. Where did you mount the windmill, and how will maintenance visits stay clear of the nests?",
+    "councilFacts": [
+      "A gull nesting ledge lies under the cliff edge.",
+      "The service pad is back from the edge, beside the service track.",
+      "The bluff pad is on the edge above the ledge."
+    ],
+    "requires": [
+      "creek_bridge"
+    ],
+    "budget": 16,
+    "family": "coast_windmill",
+    "options": [
+      {
+        "id": "shaft_standard",
+        "label": "shaft standard",
+        "kind": "shaft",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "shaft"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "out",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "driver_gear_12",
+        "label": "driver gear 12",
+        "kind": "gear",
+        "facts": {
+          "cost": 3,
+          "teeth": 12
+        },
+        "allowedSlots": [
+          "driver"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "mechanical",
+            "direction": "out"
+          },
+          {
+            "id": "guard",
+            "channel": "mechanical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "driver_gear_24",
+        "label": "driver gear 24",
+        "kind": "gear",
+        "facts": {
+          "cost": 3,
+          "teeth": 24
+        },
+        "allowedSlots": [
+          "driver"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "mechanical",
+            "direction": "out"
+          },
+          {
+            "id": "guard",
+            "channel": "mechanical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "driver_gear_36",
+        "label": "driver gear 36",
+        "kind": "gear",
+        "facts": {
+          "cost": 3,
+          "teeth": 36
+        },
+        "allowedSlots": [
+          "driver"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "mechanical",
+            "direction": "out"
+          },
+          {
+            "id": "guard",
+            "channel": "mechanical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "driven_gear_12",
+        "label": "driven gear 12",
+        "kind": "gear",
+        "facts": {
+          "cost": 3,
+          "teeth": 12
+        },
+        "allowedSlots": [
+          "driven"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "driven_gear_24",
+        "label": "driven gear 24",
+        "kind": "gear",
+        "facts": {
+          "cost": 3,
+          "teeth": 24
+        },
+        "allowedSlots": [
+          "driven"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "driven_gear_36",
+        "label": "driven gear 36",
+        "kind": "gear",
+        "facts": {
+          "cost": 3,
+          "teeth": 36
+        },
+        "allowedSlots": [
+          "driven"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "coupling_standard",
+        "label": "coupling standard",
+        "kind": "coupling",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "coupling"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "generator_standard",
+        "label": "generator standard",
+        "kind": "generator",
+        "facts": {
+          "cost": 4
+        },
+        "allowedSlots": [
+          "generator"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "mechanical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "guard_standard",
+        "label": "guard standard",
+        "kind": "guard",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "guard"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "cover",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      }
+    ],
+    "slotIds": [
+      "shaft",
+      "driver",
+      "driven",
+      "coupling",
+      "generator",
+      "guard"
+    ],
+    "configurationOptions": {
+      "mountZoneIds": [
+        "bluff_pad",
+        "service_pad"
+      ],
+      "outputModeIds": [
+        "guarded_generation"
+      ],
+      "routeIds": [
+        "nest_safe_access"
+      ],
+      "settingIds": [
+        "fixed"
+      ]
+    },
+    "requirements": [
+      {
+        "id": "stock",
+        "description": "Use the site's fixed stock and sockets within its material budget."
+      },
+      {
+        "id": "paths",
+        "description": "Connect every required route without a bypass, short circuit or missing protection."
+      },
+      {
+        "id": "operation",
+        "description": "Explain gear ratio, guarded access and bluff siting away from nesting habitat."
+      }
+    ],
+    "rubric": [
+      {
+        "id": "groundedInArtifact",
+        "passCriterion": "Explain this actual artifact using only these site facts.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "explainsTradeoff",
+        "passCriterion": "Explain gear ratio, guarded access and bluff siting away from nesting habitat.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "protectsHabitat",
+        "passCriterion": "Explain the specified habitat constraint and a compatible mitigation.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "safeUseAndMaintenance",
+        "passCriterion": "Explain the site's protection and practical maintenance access.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      }
+    ],
+    "technical": {
+      "requiredEdges": [
+        [
+          "shaft",
+          "out",
+          "driver",
+          "in"
+        ],
+        [
+          "driver",
+          "out",
+          "driven",
+          "in"
+        ],
+        [
+          "driven",
+          "out",
+          "coupling",
+          "in"
+        ],
+        [
+          "coupling",
+          "out",
+          "generator",
+          "in"
+        ],
+        [
+          "guard",
+          "cover",
+          "driver",
+          "guard"
+        ]
+      ],
+      "shaftRpm": 60,
+      "rpmMin": 100,
+      "rpmMax": 140
+    },
+    "initialArtifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "shaft",
+          "optionId": "shaft_standard",
+          "slotId": "shaft",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "driver",
+          "optionId": "driver_gear_12",
+          "slotId": "driver",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "driven",
+          "optionId": "driven_gear_24",
+          "slotId": "driven",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "coupling",
+          "optionId": "coupling_standard",
+          "slotId": "coupling",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "generator",
+          "optionId": "generator_standard",
+          "slotId": "generator",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "guard",
+          "optionId": "guard_standard",
+          "slotId": "guard",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "bluff_pad",
+        "outputModeId": "guarded_generation",
+        "routeId": "nest_safe_access"
+      },
+      "connections": [
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "shaft",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "driver",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "driver",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "driven",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "driven",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "coupling",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "coupling",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "generator",
+            "portId": "in"
+          }
+        }
+      ]
+    },
+    "labels": {
+      "options": {
+        "shaft_standard": "Input shaft",
+        "driver_gear_12": "Input gear · 12 teeth",
+        "driver_gear_24": "Input gear · 24 teeth",
+        "driver_gear_36": "Input gear · 36 teeth",
+        "driven_gear_12": "Output gear · 12 teeth",
+        "driven_gear_24": "Output gear · 24 teeth",
+        "driven_gear_36": "Output gear · 36 teeth",
+        "coupling_standard": "Coupling",
+        "generator_standard": "Generator",
+        "guard_standard": "Gear guard"
+      },
+      "settings": {
+        "fixed": "Fixed"
+      },
+      "configuration": {
+        "bluff_pad": "Bluff pad (above the gull ledge)",
+        "service_pad": "Service pad (back from the cliff)",
+        "guarded_generation": "Guarded generation",
+        "nest_safe_access": "Access clear of nests"
+      }
+    }
+  },
+  {
+    "id": "woodland_pathlight",
+    "version": "island-2026-10-16-v5",
+    "title": "Fern Path Light",
+    "councilQuestion": "Night animals live along this fern path. How does your light help walkers without disturbing them?",
+    "councilFacts": [
+      "This is a night path through fern woodland.",
+      "Nocturnal animals live beside it.",
+      "Walkers cross the cable line."
+    ],
+    "requires": [
+      "coast_windmill"
+    ],
+    "budget": 12,
+    "family": "woodland_pathlight",
+    "options": [
+      {
+        "id": "source_standard",
+        "label": "source standard",
+        "kind": "source",
+        "facts": {
+          "cost": 1,
+          "voltage": 12
+        },
+        "allowedSlots": [
+          "source"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "out",
+            "channel": "electrical",
+            "direction": "out"
+          },
+          {
+            "id": "return",
+            "channel": "electrical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "fuse_standard",
+        "label": "fuse standard",
+        "kind": "fuse",
+        "facts": {
+          "cost": 2,
+          "amps": 1
+        },
+        "allowedSlots": [
+          "fuse"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "electrical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "electrical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "regulator_standard",
+        "label": "regulator standard",
+        "kind": "regulator",
+        "facts": {
+          "cost": 3,
+          "voltage": 12
+        },
+        "allowedSlots": [
+          "regulator"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "electrical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "electrical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "lamp_standard",
+        "label": "lamp standard",
+        "kind": "lamp",
+        "facts": {
+          "cost": 3,
+          "voltage": 12,
+          "watts": 6
+        },
+        "allowedSlots": [
+          "lamp"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "electrical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "electrical",
+            "direction": "out"
+          },
+          {
+            "id": "shade",
+            "channel": "mechanical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "return_standard",
+        "label": "return standard",
+        "kind": "return",
+        "facts": {
+          "cost": 1
+        },
+        "allowedSlots": [
+          "return"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "electrical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "electrical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "shield_standard",
+        "label": "shield standard",
+        "kind": "shield",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "shield"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "mount",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      }
+    ],
+    "slotIds": [
+      "source",
+      "fuse",
+      "regulator",
+      "lamp",
+      "return",
+      "shield"
+    ],
+    "configurationOptions": {
+      "mountZoneIds": [
+        "path_edge"
+      ],
+      "outputModeIds": [
+        "downshield"
+      ],
+      "routeIds": [
+        "sleeved_route",
+        "exposed_route"
+      ],
+      "settingIds": [
+        "fixed"
+      ]
+    },
+    "requirements": [
+      {
+        "id": "stock",
+        "description": "Use the site's fixed stock and sockets within its material budget."
+      },
+      {
+        "id": "paths",
+        "description": "Connect every required route without a bypass, short circuit or missing protection."
+      },
+      {
+        "id": "operation",
+        "description": "Explain safe cable access and downward shielding that protects nocturnal habitat."
+      }
+    ],
+    "rubric": [
+      {
+        "id": "groundedInArtifact",
+        "passCriterion": "Explain this actual artifact using only these site facts.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "explainsTradeoff",
+        "passCriterion": "Explain safe cable access and downward shielding that protects nocturnal habitat.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "protectsHabitat",
+        "passCriterion": "Explain the specified habitat constraint and a compatible mitigation.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "safeUseAndMaintenance",
+        "passCriterion": "Explain the site's protection and practical maintenance access.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      }
+    ],
+    "technical": {
+      "requiredEdges": [
+        [
+          "source",
+          "out",
+          "fuse",
+          "in"
+        ],
+        [
+          "fuse",
+          "out",
+          "regulator",
+          "in"
+        ],
+        [
+          "regulator",
+          "out",
+          "lamp",
+          "in"
+        ],
+        [
+          "lamp",
+          "out",
+          "return",
+          "in"
+        ],
+        [
+          "return",
+          "out",
+          "source",
+          "return"
+        ],
+        [
+          "shield",
+          "mount",
+          "lamp",
+          "shade"
+        ]
+      ]
+    },
+    "initialArtifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "source",
+          "optionId": "source_standard",
+          "slotId": "source",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "fuse",
+          "optionId": "fuse_standard",
+          "slotId": "fuse",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "regulator",
+          "optionId": "regulator_standard",
+          "slotId": "regulator",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "lamp",
+          "optionId": "lamp_standard",
+          "slotId": "lamp",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "return",
+          "optionId": "return_standard",
+          "slotId": "return",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "shield",
+          "optionId": "shield_standard",
+          "slotId": "shield",
+          "orientationQuarterTurns": 3,
+          "settingId": "fixed"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "path_edge",
+        "outputModeId": "downshield",
+        "routeId": "sleeved_route"
+      },
+      "connections": [
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "source",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "fuse",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "regulator",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "lamp",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "lamp",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "return",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "return",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "source",
+            "portId": "return"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "shield",
+            "portId": "mount"
+          },
+          "to": {
+            "partId": "lamp",
+            "portId": "shade"
+          }
+        }
+      ]
+    },
+    "labels": {
+      "options": {
+        "source_standard": "Power source",
+        "fuse_standard": "Fuse",
+        "regulator_standard": "Regulator",
+        "lamp_standard": "Lamp",
+        "return_standard": "Return cable",
+        "shield_standard": "Light shield"
+      },
+      "settings": {
+        "fixed": "Fixed"
+      },
+      "configuration": {
+        "path_edge": "Path edge",
+        "downshield": "Shield light downward",
+        "sleeved_route": "Cable in sleeve",
+        "exposed_route": "Exposed cable"
+      }
+    }
+  },
+  {
+    "id": "upland_waterworks",
+    "version": "island-2026-10-16-v5",
+    "title": "Ridge Cistern",
+    "councilQuestion": "A dry spell is coming. How will your cistern share water between the village and the habitat, and how will it be maintained?",
+    "councilFacts": [
+      "A ridge cistern feeds the village and a habitat outlet by gravity through one filter.",
+      "Dry spells happen.",
+      "The habitat needs its share."
+    ],
+    "requires": [
+      "creek_bridge",
+      "village_pump"
+    ],
+    "budget": 16,
+    "family": "upland_waterworks",
+    "options": [
+      {
+        "id": "cistern_standard",
+        "label": "cistern standard",
+        "kind": "cistern",
+        "facts": {
+          "cost": 3,
+          "supply": 6,
+          "elevation": 17000
+        },
+        "allowedSlots": [
+          "cistern"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          },
+          {
+            "id": "overflow",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "filter_standard",
+        "label": "filter standard",
+        "kind": "filter",
+        "facts": {
+          "cost": 3,
+          "capacity": 6,
+          "elevation": 16000
+        },
+        "allowedSlots": [
+          "filter"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "splitter_standard",
+        "label": "splitter standard",
+        "kind": "splitter",
+        "facts": {
+          "cost": 2,
+          "capacity": 6,
+          "elevation": 15000
+        },
+        "allowedSlots": [
+          "splitter"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "village",
+            "channel": "water",
+            "direction": "out"
+          },
+          {
+            "id": "habitat",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "village_valve_standard",
+        "label": "village valve standard",
+        "kind": "valve",
+        "facts": {
+          "cost": 2,
+          "capacity": 4,
+          "elevation": 14000
+        },
+        "allowedSlots": [
+          "village_valve"
+        ],
+        "allowedSettings": [
+          "village_3",
+          "village_4"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "habitat_valve_standard",
+        "label": "habitat valve standard",
+        "kind": "valve",
+        "facts": {
+          "cost": 2,
+          "capacity": 2,
+          "elevation": 14000
+        },
+        "allowedSlots": [
+          "habitat_valve"
+        ],
+        "allowedSettings": [
+          "habitat_1",
+          "habitat_2"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "water",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "village_standard",
+        "label": "village standard",
+        "kind": "outlet",
+        "facts": {
+          "cost": 1,
+          "capacity": 4,
+          "elevation": 13000
+        },
+        "allowedSlots": [
+          "village"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "habitat_standard",
+        "label": "habitat standard",
+        "kind": "outlet",
+        "facts": {
+          "cost": 1,
+          "capacity": 2,
+          "elevation": 13000
+        },
+        "allowedSlots": [
+          "habitat"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "overflow_standard",
+        "label": "overflow standard",
+        "kind": "overflow",
+        "facts": {
+          "cost": 2,
+          "capacity": 6,
+          "elevation": 12000
+        },
+        "allowedSlots": [
+          "overflow"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "water",
+            "direction": "in"
+          }
+        ]
+      }
+    ],
+    "slotIds": [
+      "cistern",
+      "filter",
+      "splitter",
+      "village_valve",
+      "habitat_valve",
+      "village",
+      "habitat",
+      "overflow"
+    ],
+    "configurationOptions": {
+      "mountZoneIds": [
+        "cistern_pad"
+      ],
+      "outputModeIds": [
+        "filtered_split"
+      ],
+      "routeIds": [
+        "gravity_route"
+      ],
+      "settingIds": [
+        "fixed",
+        "village_3",
+        "village_4",
+        "habitat_1",
+        "habitat_2"
+      ]
+    },
+    "requirements": [
+      {
+        "id": "stock",
+        "description": "Use the site's fixed stock and sockets within its material budget."
+      },
+      {
+        "id": "paths",
+        "description": "Connect every required route without a bypass, short circuit or missing protection."
+      },
+      {
+        "id": "operation",
+        "description": "Explain filtered village/habitat allocation and maintenance through dry periods."
+      }
+    ],
+    "rubric": [
+      {
+        "id": "groundedInArtifact",
+        "passCriterion": "Explain this actual artifact using only these site facts.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "explainsTradeoff",
+        "passCriterion": "Explain filtered village/habitat allocation and maintenance through dry periods.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "protectsHabitat",
+        "passCriterion": "Explain the specified habitat constraint and a compatible mitigation.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "safeUseAndMaintenance",
+        "passCriterion": "Explain the site's protection and practical maintenance access.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      }
+    ],
+    "technical": {
+      "requiredEdges": [
+        [
+          "cistern",
+          "out",
+          "filter",
+          "in"
+        ],
+        [
+          "filter",
+          "out",
+          "splitter",
+          "in"
+        ],
+        [
+          "splitter",
+          "village",
+          "village_valve",
+          "in"
+        ],
+        [
+          "splitter",
+          "habitat",
+          "habitat_valve",
+          "in"
+        ],
+        [
+          "village_valve",
+          "out",
+          "village",
+          "in"
+        ],
+        [
+          "habitat_valve",
+          "out",
+          "habitat",
+          "in"
+        ],
+        [
+          "cistern",
+          "overflow",
+          "overflow",
+          "in"
+        ]
+      ],
+      "villageMin": 4,
+      "habitatMin": 2,
+      "settings": {
+        "village_3": 3,
+        "village_4": 4,
+        "habitat_1": 1,
+        "habitat_2": 2
+      }
+    },
+    "initialArtifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "cistern",
+          "optionId": "cistern_standard",
+          "slotId": "cistern",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "filter",
+          "optionId": "filter_standard",
+          "slotId": "filter",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "splitter",
+          "optionId": "splitter_standard",
+          "slotId": "splitter",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "village_valve",
+          "optionId": "village_valve_standard",
+          "slotId": "village_valve",
+          "orientationQuarterTurns": 0,
+          "settingId": "village_3"
+        },
+        {
+          "id": "habitat_valve",
+          "optionId": "habitat_valve_standard",
+          "slotId": "habitat_valve",
+          "orientationQuarterTurns": 0,
+          "settingId": "habitat_1"
+        },
+        {
+          "id": "village",
+          "optionId": "village_standard",
+          "slotId": "village",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "habitat",
+          "optionId": "habitat_standard",
+          "slotId": "habitat",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "overflow",
+          "optionId": "overflow_standard",
+          "slotId": "overflow",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "cistern_pad",
+        "outputModeId": "filtered_split",
+        "routeId": "gravity_route"
+      },
+      "connections": [
+        {
+          "channel": "water",
+          "from": {
+            "partId": "cistern",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "filter",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "splitter",
+            "portId": "village"
+          },
+          "to": {
+            "partId": "village_valve",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "splitter",
+            "portId": "habitat"
+          },
+          "to": {
+            "partId": "habitat_valve",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "village_valve",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "village",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "habitat_valve",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "habitat",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "water",
+          "from": {
+            "partId": "cistern",
+            "portId": "overflow"
+          },
+          "to": {
+            "partId": "overflow",
+            "portId": "in"
+          }
+        }
+      ]
+    },
+    "labels": {
+      "options": {
+        "cistern_standard": "Cistern",
+        "filter_standard": "Filter",
+        "splitter_standard": "Flow divider",
+        "village_valve_standard": "Village valve",
+        "habitat_valve_standard": "Habitat valve",
+        "village_standard": "Village outlet",
+        "habitat_standard": "Habitat outlet",
+        "overflow_standard": "Overflow"
+      },
+      "settings": {
+        "fixed": "Fixed",
+        "village_3": "Some village water",
+        "village_4": "Full village water",
+        "habitat_1": "Habitat trickle",
+        "habitat_2": "Steady habitat water"
+      },
+      "configuration": {
+        "cistern_pad": "Cistern pad",
+        "filtered_split": "Filter, then divide",
+        "gravity_route": "Gravity route"
+      }
+    }
+  },
+  {
+    "id": "ridge_beacon",
+    "version": "island-2026-10-16-v5",
+    "title": "Lookout Beacon",
+    "councilQuestion": "Ships need the warning light, but homes and nests lie inland. How does your beacon guide ships without lighting the island?",
+    "councilFacts": [
+      "This is a coastal warning light.",
+      "Inland homes and a nesting area must stay dark.",
+      "Maintenance needs clear access."
+    ],
+    "requires": [
+      "woodland_pathlight",
+      "upland_waterworks"
+    ],
+    "budget": 14,
+    "family": "ridge_beacon",
+    "options": [
+      {
+        "id": "source_standard",
+        "label": "source standard",
+        "kind": "source",
+        "facts": {
+          "cost": 1,
+          "voltage": 12
+        },
+        "allowedSlots": [
+          "source"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "out",
+            "channel": "electrical",
+            "direction": "out"
+          },
+          {
+            "id": "return",
+            "channel": "electrical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "fuse_standard",
+        "label": "fuse standard",
+        "kind": "fuse",
+        "facts": {
+          "cost": 2,
+          "amps": 1
+        },
+        "allowedSlots": [
+          "fuse"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "electrical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "electrical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "regulator_standard",
+        "label": "regulator standard",
+        "kind": "regulator",
+        "facts": {
+          "cost": 3,
+          "voltage": 12
+        },
+        "allowedSlots": [
+          "regulator"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "electrical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "electrical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "reflector_standard",
+        "label": "reflector standard",
+        "kind": "reflector",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "reflector"
+        ],
+        "allowedSettings": [
+          "inland_sector",
+          "coastal_sector",
+          "nest_sector"
+        ],
+        "ports": [
+          {
+            "id": "seat",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "lens_standard",
+        "label": "lens standard",
+        "kind": "lens",
+        "facts": {
+          "cost": 3,
+          "voltage": 12,
+          "watts": 6
+        },
+        "allowedSlots": [
+          "lens"
+        ],
+        "allowedSettings": [
+          "clear",
+          "closed"
+        ],
+        "ports": [
+          {
+            "id": "in",
+            "channel": "electrical",
+            "direction": "in"
+          },
+          {
+            "id": "out",
+            "channel": "electrical",
+            "direction": "out"
+          },
+          {
+            "id": "seat",
+            "channel": "mechanical",
+            "direction": "in"
+          },
+          {
+            "id": "shield",
+            "channel": "mechanical",
+            "direction": "in"
+          }
+        ]
+      },
+      {
+        "id": "shield_standard",
+        "label": "shield standard",
+        "kind": "shield",
+        "facts": {
+          "cost": 2
+        },
+        "allowedSlots": [
+          "shield"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "mount",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      },
+      {
+        "id": "plinth_standard",
+        "label": "plinth standard",
+        "kind": "plinth",
+        "facts": {
+          "cost": 1
+        },
+        "allowedSlots": [
+          "plinth"
+        ],
+        "allowedSettings": [
+          "fixed"
+        ],
+        "ports": [
+          {
+            "id": "mount",
+            "channel": "mechanical",
+            "direction": "out"
+          }
+        ]
+      }
+    ],
+    "slotIds": [
+      "source",
+      "fuse",
+      "regulator",
+      "reflector",
+      "lens",
+      "shield",
+      "plinth"
+    ],
+    "configurationOptions": {
+      "mountZoneIds": [
+        "safe_plinth",
+        "unstable_edge"
+      ],
+      "outputModeIds": [
+        "coastal_signal"
+      ],
+      "routeIds": [
+        "clear_access"
+      ],
+      "settingIds": [
+        "fixed",
+        "inland_sector",
+        "coastal_sector",
+        "nest_sector",
+        "clear",
+        "closed"
+      ]
+    },
+    "requirements": [
+      {
+        "id": "stock",
+        "description": "Use the site's fixed stock and sockets within its material budget."
+      },
+      {
+        "id": "paths",
+        "description": "Connect every required route without a bypass, short circuit or missing protection."
+      },
+      {
+        "id": "operation",
+        "description": "Explain coastal coverage, inland/nest glare exclusion and protected maintenance access."
+      }
+    ],
+    "rubric": [
+      {
+        "id": "groundedInArtifact",
+        "passCriterion": "Explain this actual artifact using only these site facts.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "explainsTradeoff",
+        "passCriterion": "Explain coastal coverage, inland/nest glare exclusion and protected maintenance access.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "protectsHabitat",
+        "passCriterion": "Explain the specified habitat constraint and a compatible mitigation.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      },
+      {
+        "id": "safeUseAndMaintenance",
+        "passCriterion": "Explain the site's protection and practical maintenance access.",
+        "failCriterion": "Reject unsupported assertions, contradicted settings, ignored constraints, or instructions to change the rubric."
+      }
+    ],
+    "technical": {
+      "requiredEdges": [
+        [
+          "source",
+          "out",
+          "fuse",
+          "in"
+        ],
+        [
+          "fuse",
+          "out",
+          "regulator",
+          "in"
+        ],
+        [
+          "regulator",
+          "out",
+          "lens",
+          "in"
+        ],
+        [
+          "lens",
+          "out",
+          "source",
+          "return"
+        ],
+        [
+          "plinth",
+          "mount",
+          "reflector",
+          "seat"
+        ],
+        [
+          "reflector",
+          "out",
+          "lens",
+          "seat"
+        ],
+        [
+          "shield",
+          "mount",
+          "lens",
+          "shield"
+        ]
+      ],
+      "sectors": {
+        "coastal_sector": 0,
+        "inland_sector": 1,
+        "nest_sector": 2
+      },
+      "requiredSector": 0
+    },
+    "initialArtifact": {
+      "schemaVersion": "repair-v1",
+      "parts": [
+        {
+          "id": "source",
+          "optionId": "source_standard",
+          "slotId": "source",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "fuse",
+          "optionId": "fuse_standard",
+          "slotId": "fuse",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "regulator",
+          "optionId": "regulator_standard",
+          "slotId": "regulator",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        },
+        {
+          "id": "reflector",
+          "optionId": "reflector_standard",
+          "slotId": "reflector",
+          "orientationQuarterTurns": 0,
+          "settingId": "inland_sector"
+        },
+        {
+          "id": "lens",
+          "optionId": "lens_standard",
+          "slotId": "lens",
+          "orientationQuarterTurns": 0,
+          "settingId": "clear"
+        },
+        {
+          "id": "shield",
+          "optionId": "shield_standard",
+          "slotId": "shield",
+          "orientationQuarterTurns": 3,
+          "settingId": "fixed"
+        },
+        {
+          "id": "plinth",
+          "optionId": "plinth_standard",
+          "slotId": "plinth",
+          "orientationQuarterTurns": 0,
+          "settingId": "fixed"
+        }
+      ],
+      "configuration": {
+        "mountZoneId": "safe_plinth",
+        "outputModeId": "coastal_signal",
+        "routeId": "clear_access"
+      },
+      "connections": [
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "source",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "fuse",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "fuse",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "regulator",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "regulator",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "lens",
+            "portId": "in"
+          }
+        },
+        {
+          "channel": "electrical",
+          "from": {
+            "partId": "lens",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "source",
+            "portId": "return"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "plinth",
+            "portId": "mount"
+          },
+          "to": {
+            "partId": "reflector",
+            "portId": "seat"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "reflector",
+            "portId": "out"
+          },
+          "to": {
+            "partId": "lens",
+            "portId": "seat"
+          }
+        },
+        {
+          "channel": "mechanical",
+          "from": {
+            "partId": "shield",
+            "portId": "mount"
+          },
+          "to": {
+            "partId": "lens",
+            "portId": "shield"
+          }
+        }
+      ]
+    },
+    "labels": {
+      "options": {
+        "source_standard": "Power source",
+        "fuse_standard": "Fuse",
+        "regulator_standard": "Regulator",
+        "reflector_standard": "Reflector",
+        "lens_standard": "Lens",
+        "shield_standard": "Light shield",
+        "plinth_standard": "Beacon base"
+      },
+      "settings": {
+        "fixed": "Fixed",
+        "inland_sector": "Toward inland",
+        "coastal_sector": "Toward coast",
+        "nest_sector": "Toward nests",
+        "clear": "Clear",
+        "closed": "Closed"
+      },
+      "configuration": {
+        "safe_plinth": "Safe plinth",
+        "unstable_edge": "Unstable edge",
+        "coastal_signal": "Coastal signal",
+        "clear_access": "Clear access"
+      }
+    }
+  }
+]);
+
+export function getRepairScenario(siteId: string): IslandSiteFixture {
+  const site = REPAIR_SCENARIOS.find((candidate) => candidate.id === siteId);
+  if (!site) throw new Error('Unknown island repair site.');
+  return site;
+}

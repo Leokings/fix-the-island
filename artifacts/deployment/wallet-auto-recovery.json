@@ -1,0 +1,92 @@
+{
+  "scope": "Read-only live StudioNet recovery using public wallet address; no real-browser wallet approval or new transaction",
+  "sourceCommit": "b79965973c7d2a8ca4b38e01a08ba178d9c62577",
+  "checkedAt": "2026-10-15T10:02:49.880Z",
+  "chainId": 61999,
+  "caller": "0x63038a310a46ac61a59c1bc5ead5fe41040ef38e",
+  "discovered": [
+    {
+      "siteId": "creek_bridge",
+      "txId": "0x08460062ee77ef270e2056ffe7ed187f4d78833cb808f05c6858ce8b183b29e9"
+    },
+    {
+      "siteId": "tidal_sluice",
+      "txId": "0x489dc97d8b90cda11608e57a749263a70516cffa972b5ccf373b2412a8712a12"
+    },
+    {
+      "siteId": "village_pump",
+      "txId": "0x4eb78a44432da802dc4943b2fee3c8e9fde7d7c5771c320a072a55d8a8e8e7ca"
+    },
+    {
+      "siteId": "pier_hoist",
+      "txId": "0x4d7a90fd68f415d217f0f1350f72e8b8ea99ad63481d358104c21c899e890311"
+    }
+  ],
+  "checked": 4,
+  "states": [
+    {
+      "siteId": "pier_hoist",
+      "status": "finalized"
+    },
+    {
+      "siteId": "pier_hoist",
+      "status": "finalized-success",
+      "txId": "0x4d7a90fd68f415d217f0f1350f72e8b8ea99ad63481d358104c21c899e890311",
+      "digest": "0x8807d482aaa3408c23ac2af62ca55ac7ec58ecf711525bdc05434a78151e91a5",
+      "decision": "approved"
+    },
+    {
+      "siteId": "village_pump",
+      "status": "finalized"
+    },
+    {
+      "siteId": "village_pump",
+      "status": "finalized-success",
+      "txId": "0x4eb78a44432da802dc4943b2fee3c8e9fde7d7c5771c320a072a55d8a8e8e7ca",
+      "digest": "0xa2bc27888a2489c5bd9264d684e4c0bfc91070284d3bb73548e81638185e7a80",
+      "decision": "approved"
+    },
+    {
+      "siteId": "tidal_sluice",
+      "status": "finalized"
+    },
+    {
+      "siteId": "tidal_sluice",
+      "status": "finalized-success",
+      "txId": "0x489dc97d8b90cda11608e57a749263a70516cffa972b5ccf373b2412a8712a12",
+      "digest": "0x82229837a0ad5beca45b4e5d62cb482815d5622cea85db9736d0bfc07160a1d6",
+      "decision": "approved"
+    },
+    {
+      "siteId": "creek_bridge",
+      "status": "failed",
+      "reason": "no-majority",
+      "message": "This review ended without a validator majority. Your build is saved and can be tested and submitted again."
+    }
+  ],
+  "restoredSiteIds": [
+    "pier_hoist",
+    "village_pump",
+    "tidal_sluice"
+  ],
+  "pendingTickets": [],
+  "bridge": {
+    "phase": "revision",
+    "hasSavedBuild": true,
+    "hasPendingTicket": false
+  },
+  "bridgePreflight": {
+    "nonce": "0",
+    "technicallyValid": true,
+    "technicalFlags": {
+      "schema": true,
+      "inventory": true,
+      "budget": true,
+      "connections": true,
+      "operation": true,
+      "dependencies": true,
+      "nonce": true,
+      "newSite": true
+    }
+  }
+}

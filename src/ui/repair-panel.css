@@ -1,0 +1,85 @@
+/* StageB placeholders. All bounds are CSS px; the actual assembly is rendered by CoreBuilder. */
+.repair-panel { position: absolute; overflow: hidden; pointer-events: none; color: #223632; font: 20px/1.25 system-ui, sans-serif; z-index: 20; }
+.repair-panel [hidden] { display: none !important; }
+.repair-panel * { box-sizing: border-box; }
+.repair-panel button, .repair-panel textarea, .rp-details { pointer-events: auto; }
+.rp-button { min-width: 44px; min-height: 44px; border: 1px solid #6d8074; border-radius: 5px; background: #f2ead7; color: #223632; font: inherit; cursor: pointer; padding: 5px 8px; touch-action: manipulation; }
+.rp-button:disabled { opacity: .55; cursor: default; }
+.rp-button[aria-pressed=true], .rp-button[aria-selected=true] { background: #cddfcf; border-color: #355d50; }
+.repair-panel :focus-visible { outline: 3px solid #117e9c; outline-offset: -3px; }
+.rp-mode, .rp-diagnosis, .rp-side, .rp-dock, .rp-drawer, .rp-status, .rp-exit { position: absolute; }
+.rp-mode, .rp-diagnosis { background: rgb(242 234 215 / 92%); border-radius: 4px; padding: 3px 8px; overflow: hidden; }
+.rp-mode { font-size: 15px; }
+.rp-diagnosis { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; font-size: 22px; line-height: 28px; }
+.rp-side { overflow: hidden; }
+.rp-tabs { display: grid; grid-template-columns: repeat(3, 1fr); height: 44px; pointer-events: auto; }
+.rp-tabs .rp-button { border-radius: 0; padding: 0 2px; text-transform: capitalize; }
+.rp-context { height: 88px; background: rgb(242 234 215 / 92%); }
+.rp-socket-row { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; height: 44px; }
+.rp-socket-row .rp-button { border-radius: 0; overflow: hidden; padding: 2px; text-overflow: ellipsis; white-space: nowrap; }
+.rp-help { height: 44px; overflow: hidden; padding: 2px 7px; font-size: 17px; line-height: 20px; }
+.rp-assembly, .rp-anchors { position: absolute; background: transparent; }
+.rp-assembly { pointer-events: none; }
+.rp-anchors { overflow: hidden; }
+.rp-anchor { position: absolute; width: 44px; height: 44px; transform: translate(-50%, -50%); font-size: 22px; background: rgb(242 234 215 / 72%); }
+.rp-dock { display: flex; flex-direction: column; gap: 8px; background: rgb(242 234 215 / 90%); border-radius: 5px; padding: 8px; padding-left: max(8px, env(safe-area-inset-left)); padding-right: max(8px, env(safe-area-inset-right)); overflow: hidden; }
+.rp-content { display: flex; align-items: center; gap: 8px; min-width: 0; min-height: 64px; flex: 1; overflow-x: auto; overflow-y: hidden; scrollbar-width: thin; }
+.rp-content > .rp-button { flex-shrink: 0; }
+.rp-tray { display: flex; flex: 1; gap: 6px; min-width: 0; }
+.rp-part { min-width: 88px; max-width: 160px; flex: 1; display: flex; align-items: center; gap: 4px; overflow: hidden; }
+.rp-part-glyph { font-size: 32px; flex-shrink: 0; }
+.rp-part-label { font-size: 17px; line-height: 20px; overflow: hidden; }
+.rp-paging { display: flex; align-items: center; flex-shrink: 0; gap: 2px; font-size: 14px; }
+.rp-empty { font-size: 16px; }
+.rp-actions { display: flex; height: 44px; gap: 8px; flex-shrink: 0; padding-right: 56px; }
+.rp-actions .rp-button { min-width: 80px; }
+.rp-field-nav, .rp-detent, .rp-port-picker { display: flex; align-items: center; gap: 4px; min-width: 220px; }
+.rp-field-nav span, .rp-detent span, .rp-port-picker span { flex: 1; overflow: hidden; text-overflow: ellipsis; font-size: 18px; }
+.rp-endpoints { display: flex; gap: 4px; }
+.rp-endpoints .rp-button { max-width: 250px; overflow: hidden; text-overflow: ellipsis; font-size: 17px; }
+.rp-drawer { display: flex; flex-direction: column; gap: 6px; padding: 8px; padding-left: max(8px, env(safe-area-inset-left)); background: rgb(242 234 215 / 96%); border: 1px solid #6d8074; border-radius: 5px; pointer-events: auto; overflow: hidden; }
+.rp-drawer-heading { font-size: 22px; }
+.rp-facts { font-size: 20px; line-height: 24px; white-space: pre-line; flex-shrink: 0; max-height: 72px; overflow-y: auto; }
+.rp-rationale { width: 100%; min-height: 44px; flex: 1; resize: none; border: 1px solid #6d8074; border-radius: 4px; color: inherit; background: #fff9ec; padding: 6px; font: 20px/1.25 system-ui, sans-serif; }
+.rp-counts { font-size: 16px; flex-shrink: 0; }
+.rp-details { overflow-y: auto; min-height: 0; flex: 1; font-size: 20px; overscroll-behavior: contain; }
+.rp-details p { margin: 0 0 8px; overflow-wrap: anywhere; }
+.rp-review-text { white-space: pre-wrap; }
+.rp-issue { border-left: 3px solid #9b603d; padding-left: 6px; }
+.rp-drawer-actions { display: flex; gap: 8px; height: 44px; flex-shrink: 0; }
+.rp-drawer-actions .rp-button { flex: 1; }
+.rp-status { overflow: hidden; text-overflow: ellipsis; font-size: 16px; }
+.rp-phone { font-size: 16px; }
+.rp-phone .rp-mode { font-size: 12px; line-height: 18px; padding: 2px 4px; }
+.rp-phone .rp-diagnosis { font-size: 16px; line-height: 20px; padding: 2px 6px; }
+.rp-phone .rp-tabs { font-size: 13px; }
+.rp-phone .rp-help { font-size: 14px; }
+.rp-phone .rp-dock { flex-direction: row; padding: 10px 64px 10px 4px; gap: 4px; }
+.rp-phone .rp-content { min-height: 44px; gap: 4px; flex: 1; }
+.rp-phone .rp-actions { padding: 0; gap: 4px; }
+.rp-phone .rp-actions .rp-button { min-width: 44px; padding: 4px; font-size: 14px; }
+.rp-phone .rp-actions [data-key=feedback] { width: 44px; font-size: 11px; }
+.rp-phone .rp-tray { flex: 0 0 auto; }
+.rp-phone .rp-part { min-width: 72px; width: 82px; height: 44px; padding: 2px; }
+.rp-phone .rp-part-glyph { font-size: 24px; }
+.rp-phone .rp-part-label { font-size: 11px; line-height: 12px; }
+.rp-phone .rp-paging { gap: 0; }
+.rp-phone .rp-paging span { display: none; }
+.rp-phone .rp-field-nav, .rp-phone .rp-detent, .rp-phone .rp-port-picker { min-width: 200px; }
+.rp-phone .rp-endpoints .rp-button { min-width: 120px; font-size: 13px; }
+.rp-phone .rp-field-nav span, .rp-phone .rp-detent span, .rp-phone .rp-port-picker span { font-size: 14px; }
+.rp-phone .rp-drawer { padding: 4px; gap: 3px; }
+.rp-phone .rp-drawer-heading { font-size: 16px; line-height: 20px; flex-shrink: 0; }
+.rp-phone .rp-facts { font-size: 16px; line-height: 18px; max-height: 54px; }
+.rp-phone .rp-rationale, .rp-phone .rp-details { font-size: 16px; }
+.rp-phone .rp-counts { font-size: 16px; line-height: 18px; }
+.rp-phone .rp-drawer-actions { gap: 4px; }
+.rp-keyboard .rp-drawer { display: grid; grid-template-columns: minmax(0, 1fr) 60px; gap: 4px; padding: 4px; }
+.rp-keyboard .rp-drawer-heading, .rp-keyboard .rp-facts, .rp-keyboard .rp-counts, .rp-keyboard .rp-details { display: none; }
+.rp-keyboard .rp-rationale { min-height: 44px; height: 44px; font-size: 16px; }
+.rp-keyboard .rp-drawer-actions { width: 60px; height: 44px; }
+.rp-with-drawer .rp-dock { background: transparent; }
+/* The council's question above the one-line answer, and beside it at review. */
+.rp-council-question { margin: 0; padding: 8px 12px; border-left: 4px solid #c7743a; background: #00000008; border-radius: 0 10px 10px 0; font-weight: 700; line-height: 1.35; flex-shrink: 0; }
+.rp-council-question[hidden] { display: none; }
+.rp-review-label { margin-bottom: 0; font-weight: 800; }

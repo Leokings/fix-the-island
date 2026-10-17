@@ -1,0 +1,141 @@
+{
+  "asset": "Original island restorer",
+  "publish": "LOCKED",
+  "gate": "Awaiting Orchestrator review",
+  "bind_pose": "Authored rest A-pose",
+  "animations": 0,
+  "height_m": 1.6799999475479126,
+  "blender_front": "-Y",
+  "gltf_front": "+Z",
+  "gltf_up": "+Y",
+  "gltf_ground_y": 0,
+  "bones": 22,
+  "deforming_bones": 21,
+  "textures": [
+    {
+      "name": "Restorer_Albedo_1024",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "Restorer_ORM_1024",
+      "width": 1024,
+      "height": 1024
+    }
+  ],
+  "mesh": [
+    {
+      "name": "Restorer_Body",
+      "vertices": 3381,
+      "triangles": 6498,
+      "uv_layers": 1,
+      "uv_loops": 19494,
+      "materials": [
+        "Restorer_Fabric",
+        "Restorer_Skin",
+        "Restorer_Hair",
+        "Restorer_Leather",
+        "Restorer_Glove",
+        "Restorer_Metal"
+      ],
+      "unweighted_vertices": 0,
+      "max_influences": 3
+    },
+    {
+      "name": "Restorer_Cap",
+      "vertices": 386,
+      "triangles": 760,
+      "uv_layers": 1,
+      "uv_loops": 2280,
+      "materials": [
+        "Restorer_Cap"
+      ],
+      "unweighted_vertices": 0,
+      "max_influences": 1
+    }
+  ],
+  "camera": {
+    "yaw_deg": 35,
+    "downward_pitch_deg": 52,
+    "vertical_span_m": 8.4,
+    "distance_m": 32,
+    "target_height_m": 0.85
+  },
+  "renders": [
+    {
+      "path": "artifacts/hero-turnaround/bind-a-pose.png",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "source": "Native Blender Cycles studio render; no compositing or retouching",
+      "pose": "Rest A-pose",
+      "vertical_span_m": 2.12
+    },
+    {
+      "path": "artifacts/hero-turnaround/front.png",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "source": "Native Blender Cycles studio render; no compositing or retouching",
+      "pose": "Rest A-pose",
+      "vertical_span_m": 2.05
+    },
+    {
+      "path": "artifacts/hero-turnaround/side.png",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "source": "Native Blender Cycles studio render; no compositing or retouching",
+      "pose": "Rest A-pose",
+      "vertical_span_m": 2.05
+    },
+    {
+      "path": "artifacts/hero-turnaround/back.png",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "source": "Native Blender Cycles studio render; no compositing or retouching",
+      "pose": "Rest A-pose",
+      "vertical_span_m": 2.05
+    },
+    {
+      "path": "artifacts/hero-turnaround/locked-game-camera.png",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "source": "Native Blender Cycles studio render; no compositing or retouching",
+      "pose": "Rest A-pose",
+      "vertical_span_m": 8.4
+    },
+    {
+      "path": "artifacts/hero-turnaround/locked-angle-close.png",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "source": "Native Blender Cycles studio render; no compositing or retouching",
+      "pose": "Rest A-pose",
+      "vertical_span_m": 2.12
+    }
+  ],
+  "total_triangles": 7258,
+  "total_vertices": 3767,
+  "glb": {
+    "bytes": 1755880,
+    "sha256": "c0fdba913057c656b3b9a1e46f590691a09a22a2932574f71147d6a98046c5bb",
+    "version": 2,
+    "meshes": 2,
+    "skins": 1,
+    "joint_counts": [
+      22
+    ],
+    "embedded_images": 2,
+    "animations": 0,
+    "all_primitives_skinned_and_uv_mapped": true
+  }
+}

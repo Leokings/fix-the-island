@@ -1,0 +1,6 @@
+# Offline verification uses explicit pytest plugins, never gltest network writes.
+# No funded/keyed accounts or hosted network are configured.
+contract_path: contracts/
+networks:
+  localnet:
+    accounts: []

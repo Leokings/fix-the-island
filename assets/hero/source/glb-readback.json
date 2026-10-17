@@ -1,0 +1,121 @@
+{
+  "glb_sha256": "c0fdba913057c656b3b9a1e46f590691a09a22a2932574f71147d6a98046c5bb",
+  "bytes": 1755880,
+  "triangles": 7258,
+  "source_vertices": 3767,
+  "exported_vertices_including_UV_normal_material_splits": 4697,
+  "exported_uv_coordinates": 4697,
+  "meshes": [
+    {
+      "name": "Restorer_Body",
+      "primitives": [
+        {
+          "vertices": 1776,
+          "triangles": 2622,
+          "uvs": 1776
+        },
+        {
+          "vertices": 883,
+          "triangles": 1432,
+          "uvs": 883
+        },
+        {
+          "vertices": 114,
+          "triangles": 116,
+          "uvs": 114
+        },
+        {
+          "vertices": 609,
+          "triangles": 778,
+          "uvs": 609
+        },
+        {
+          "vertices": 673,
+          "triangles": 1310,
+          "uvs": 673
+        },
+        {
+          "vertices": 151,
+          "triangles": 240,
+          "uvs": 151
+        }
+      ]
+    },
+    {
+      "name": "Restorer_Cap",
+      "primitives": [
+        {
+          "vertices": 491,
+          "triangles": 760,
+          "uvs": 491
+        }
+      ]
+    }
+  ],
+  "gltf_world_bounds_min": [
+    -0.5929181575775146,
+    0.0,
+    -0.12600000202655792
+  ],
+  "gltf_world_bounds_max": [
+    0.5929222702980042,
+    1.6799999475479126,
+    0.2698897421360016
+  ],
+  "height_m": 1.6799999475479126,
+  "all_values_finite": true,
+  "maximum_weight_sum_error": 7.078051567077637e-08,
+  "maximum_skin_influences": 3,
+  "locked_camera_projected_bind_A_pose_bounds": {
+    "min_x": 896.9463886599988,
+    "min_y": 467.4152759728687,
+    "max_x": 1022.4494686326476,
+    "max_y": 631.8895294623716,
+    "width_px": 125.50307997264883,
+    "height_px": 164.47425348950287,
+    "vertical_body_axis_px": 132.9828786703422,
+    "note": "Bind A-pose includes brim, toe-box depth and spread arms; body height and camera span are unchanged."
+  },
+  "uvs_outside_atlas": 0,
+  "bones_including_root": 22,
+  "embedded_PNGs": 2,
+  "garment_connectivity": [
+    {
+      "name": "Continuous jacket torso and both sleeves",
+      "connected_components": 1,
+      "vertices": 643,
+      "nonmanifold_edges": 0,
+      "blender_bounds_min": [
+        -0.525678813457489,
+        -0.12233899533748627,
+        0.8310311436653137
+      ],
+      "blender_bounds_max": [
+        0.525678813457489,
+        0.12233899533748627,
+        1.2936241626739502
+      ]
+    },
+    {
+      "name": "Continuous trouser pelvis and both legs",
+      "connected_components": 1,
+      "vertices": 502,
+      "nonmanifold_edges": 0,
+      "blender_bounds_min": [
+        -0.16447333991527557,
+        -0.10832668095827103,
+        0.18099643290042877
+      ],
+      "blender_bounds_max": [
+        0.16447333991527557,
+        0.10832668095827103,
+        0.8854520320892334
+      ]
+    }
+  ],
+  "animations": 0,
+  "embedded_studio_cameras": 0,
+  "embedded_studio_lights": 0,
+  "fresh_Blender_GLB_import": "Successful: two UV meshes, one 22-bone armature, skin modifiers intact",
+  "visual_gate": "Not assigned. Orchestrator owns turnaround gate."
+}
